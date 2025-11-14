@@ -11,22 +11,38 @@ def mask_to_bbox(mask):
     y_min, y_max = ys.min(), ys.max()
     return x_min, y_min, x_max, y_max
 
-def write_yolo_label(label_path, bbox, img_w, img_h, class_id=0):
-    x_min, y_min, x_max, y_max = bbox
-    x_center = (x_min + x_max) / 2.0
-    y_center = (y_min + y_max) / 2.0
-    w = x_max - x_min
-    h = y_max - y_min
-    # normalize
-    x_center /= img_w
-    y_center /= img_h
-    w /= img_w
-    h /= img_h
+
+def mask_to_bboxes_connected_components(mask):
+    # find contours on binary mask and return list of bboxes (x_min,y_min,x_max,y_max)
+    contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    bboxes = []
+    for cnt in contours:
+        x, y, w, h = cv2.boundingRect(cnt)
+        if w <= 0 or h <= 0:
+            continue
+        bboxes.append((x, y, x + w, y + h))
+    return bboxes
+
+def write_yolo_label(label_path, bboxes, img_w, img_h, class_id=0):
+    # bboxes: list of (x_min,y_min,x_max,y_max)
+    lines = []
+    for bbox in bboxes:
+        x_min, y_min, x_max, y_max = bbox
+        x_center = (x_min + x_max) / 2.0
+        y_center = (y_min + y_max) / 2.0
+        w = x_max - x_min
+        h = y_max - y_min
+        # normalize
+        x_center /= img_w
+        y_center /= img_h
+        w /= img_w
+        h /= img_h
+        lines.append(f"{class_id} {x_center:.6f} {y_center:.6f} {w:.6f} {h:.6f}\n")
     with open(label_path, 'w') as f:
-        f.write(f"{class_id} {x_center:.6f} {y_center:.6f} {w:.6f} {h:.6f}\n")
+        f.writelines(lines)
 
 
-def convert_dataset(images_dir, masks_dir, labels_out_dir, image_exts=('.jpg','.png','.jpeg')):
+def convert_dataset(images_dir, masks_dir, labels_out_dir, image_exts=('.jpg','.png','.jpeg'), multi=False):
     os.makedirs(labels_out_dir, exist_ok=True)
     img_paths = []
     for ext in image_exts:
@@ -56,15 +72,23 @@ def convert_dataset(images_dir, masks_dir, labels_out_dir, image_exts=('.jpg','.
             continue
 
         _, bin_mask = cv2.threshold(mask, 127, 255, cv2.THRESH_BINARY)
-        bbox = mask_to_bbox(bin_mask)
-        if bbox is None:
-            no_mask_count += 1
-            open(os.path.join(labels_out_dir, img_name + '.txt'), 'w').close()
-            continue
+        if multi:
+            bboxes = mask_to_bboxes_connected_components(bin_mask)
+            if len(bboxes) == 0:
+                no_mask_count += 1
+                open(os.path.join(labels_out_dir, img_name + '.txt'), 'w').close()
+                continue
+        else:
+            bbox = mask_to_bbox(bin_mask)
+            if bbox is None:
+                no_mask_count += 1
+                open(os.path.join(labels_out_dir, img_name + '.txt'), 'w').close()
+                continue
+            bboxes = [bbox]
 
         img = cv2.imread(img_path)
         h, w = img.shape[:2]
-        write_yolo_label(os.path.join(labels_out_dir, img_name + '.txt'), bbox, w, h, class_id=0)
+        write_yolo_label(os.path.join(labels_out_dir, img_name + '.txt'), bboxes, w, h, class_id=0)
 
     print(f"Missing masks: {missing_masks}, No mask pixels: {no_mask_count}")
     print("Done.")
@@ -75,5 +99,6 @@ if __name__ == "__main__":
     p.add_argument('--images', required=True)
     p.add_argument('--masks', required=True)
     p.add_argument('--labels_out', required=True)
+    p.add_argument('--multi', action='store_true', help='Export multiple bboxes per image using connected components')
     args = p.parse_args()
-    convert_dataset(args.images, args.masks, args.labels_out)
+    convert_dataset(args.images, args.masks, args.labels_out, multi=args.multi)

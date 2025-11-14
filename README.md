@@ -39,3 +39,46 @@ Quick start:
    `yolo detect train data=configs/kvasir.yaml model=yolov8s.pt epochs=50 imgsz=640 batch=16 project=models name=yolov8_kvasir`
 6. Visualize predictions:
    `python scripts/infer_and_viz.py --weights models/yolov8_kvasir/weights/best.pt --imgs data/processed/images/val --out results/predictions`
+   
+---
+
+Additional tools
+
+- Video inference (run a trained model on video files):
+
+```bash
+python scripts/video_infer_yolo.py \
+   --weights runs/detect/train/weights/best.pt \
+   --video data/videos/sample.mp4 \
+   --out results/video_out.mp4 \
+   --csv results/detections.csv \
+   --conf 0.25 --imgsz 640 --skip 1
+```
+
+- Multiple bbox export from masks:
+
+The original converter writes a single bbox per image. Use the `--multi` flag to export one bbox per connected mask component instead:
+
+```bash
+python scripts/convert_masks_to_yolo.py \
+   --images data/archive/Kvasir-SEG/Kvasir-SEG/images \
+   --masks  data/archive/Kvasir-SEG/Kvasir-SEG/masks \
+   --labels_out data/processed/labels --multi
+```
+
+- Evaluation on validation split (Ultralytics val):
+
+```bash
+python scripts/eval_val.py --weights runs/detect/train/weights/best.pt --data yolo_data.yaml --imgsz 640
+```
+
+Notes
+- If you don't have real videos, you can synthesize a demo video from images using `ffmpeg`:
+
+```bash
+ffmpeg -framerate 10 -pattern_type glob -i 'data/archive/Kvasir-SEG/Kvasir-SEG/images/*.jpg' \
+   -c:v libx264 -pix_fmt yuv420p results/sample_from_images.mp4
+```
+
+---
+If you'd like, I can also add a small evaluation notebook and CI checks to verify scripts run in a minimal CPU environment.

@@ -1,0 +1,11 @@
+train: data/processed/images/train
+val: data/processed/images/val
+
+nc: 1
+names: ['polyp']
+
+# Notes:
+# - Use `scripts/convert_masks_to_yolo.py --multi` if you want multiple boxes per image.
+# - Ensure labels are in `data/processed/labels/train` and `data/processed/labels/val` with matching basenames.
+# - Train example:
+#   yolo task=detect mode=train model=yolov8n.pt data=yolo_data.yaml epochs=50 imgsz=640
