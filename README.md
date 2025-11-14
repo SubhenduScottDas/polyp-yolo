@@ -358,7 +358,7 @@ Our trained model was validated across **multiple polyp types** and anatomical l
 |-------|------------|------------|----------------|-------------|-------------|
 | **PolipoMSDz2.mpv** | MSD Variant | **711** | 94.99% | 17MB | ⭐ Excellent |
 | **Pediculado3.mpv** | Pedunculated | **469** | 93.66% | 9.1MB | ⭐ Excellent |
-| **Polypileocecalvalve1.mpv** | Ileocecal Valve | **119** | 93.51% | - | ⭐ Excellent |
+| **Polypileocecalvalve1.mpv** | Ileocecal Valve | **119** | 93.51% | 3.1MB | ⭐ Excellent |
 
 ### Test Commands Used
 
