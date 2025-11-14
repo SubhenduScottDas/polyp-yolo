@@ -588,6 +588,15 @@ python scripts/convert_masks_to_yolo.py \
 
 This uses OpenCV's `cv2.findContours()` to detect separate connected components and creates individual bounding boxes for each polyp.
 
+## 📚 Documentation
+
+| Document | Description | Use Case |
+|----------|-------------|----------|
+| **[TRAINING.md](TRAINING.md)** | Comprehensive training guide | Model development & optimization |
+| **[EVALUATION.md](EVALUATION.md)** | Performance analysis & benchmarks | Model validation & comparison |
+| **[DEPLOYMENT.md](DEPLOYMENT.md)** | Production deployment guide | Clinical integration & scaling |
+| **[REPOSITORY_SIZE.md](REPOSITORY_SIZE.md)** | Repository size breakdown | Understanding git strategy |
+
 ---
 
 **Project Status**: ✅ Complete - Production-ready polyp detection system with medical-grade accuracy
