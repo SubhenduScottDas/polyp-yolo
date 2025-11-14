@@ -11,16 +11,29 @@ __pycache__/
 .Python
 *.ipynb_checkpoints/
 
-# YOLO training artifacts
+# YOLO training artifacts (exclude training runs but keep production model)
 runs/
-models/
-*.pt
 wandb/
 
-# Results and logs
+# Exclude all models EXCEPT the production model
+models/
+!models/polyp_yolov8n_clean/
+# Keep essential model files for end users
+!models/polyp_yolov8n_clean/weights/
+!models/polyp_yolov8n_clean/weights/best.pt
+!models/polyp_yolov8n_clean/args.yaml
+!models/polyp_yolov8n_clean/results.csv
+# Exclude large training visualization files but keep the model
+models/polyp_yolov8n_clean/*.png
+models/polyp_yolov8n_clean/*.jpg
+
+# Results and logs (exclude temporary results but allow sample outputs)
 results/
 logs/
-*.csv
+# Allow specific result files that demonstrate the model
+!results/demo_detections.csv
+!results/sample_inference/
+*.log
 
 # Data directory - all data maintained locally only
 data/

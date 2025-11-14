@@ -48,17 +48,15 @@ polyp-yono/
 │     ├─ non-sequential frames/ # Static test images
 │     ├─ sequential frames/     # Frame sequences
 │     └─ videos/               # Medical endoscopy videos (.mpg)
-├─ models/                     # Trained model outputs (gitignored)
-│  └─ polyp_yolov8n_clean/     # Production model (mAP@50: 89.4%)
+├─ models/                     # Trained model outputs 
+│  └─ polyp_yolov8n_clean/     # Production model (mAP@50: 89.4%) ✅ INCLUDED
 │     ├─ weights/
-│     │  ├─ best.pt            # Best performing weights
-│     │  └─ last.pt            # Final epoch weights
-│     ├─ args.yaml             # Training arguments
-│     └─ results.csv           # Training metrics log
+│     │  └─ best.pt            # Best performing weights (6MB) ✅ INCLUDED
+│     ├─ args.yaml             # Training arguments ✅ INCLUDED  
+│     └─ results.csv           # Training metrics log ✅ INCLUDED
 ├─ notebooks/                  # Jupyter notebooks for analysis
-├─ results/                    # Inference outputs (gitignored)
-│  ├─ *.mp4                    # Annotated videos with bounding boxes
-│  └─ *_detections.csv         # Frame-by-frame detection logs
+├─ results/                    # Inference outputs 
+│  └─ sample_inference/        # Example detection outputs ✅ INCLUDED
 ├─ runs/                       # Ultralytics training runs (gitignored)
 │  └─ detect/                  # Detection training outputs
 ├─ scripts/                    # Core processing pipeline
@@ -91,6 +89,32 @@ polyp-yono/
 - **`test_output/`**: Temporary inference results for testing
 
 ## Quick Start
+
+### 🚀 For End Users (Using Pre-trained Model)
+
+**The repository includes a ready-to-use trained model!** You can clone and immediately start detecting polyps:
+
+```bash
+# 1. Clone the repository (includes 6MB trained model)
+git clone https://github.com/SubhenduScottDas/polyp-yono.git
+cd polyp-yono
+
+# 2. Install dependencies  
+conda env create -f environment.yml
+conda activate polypbench
+
+# 3. Run inference on your video immediately!
+python scripts/video_infer_yolo.py \
+  --video YOUR_VIDEO.mp4 \
+  --weights models/polyp_yolov8n_clean/weights/best.pt \
+  --out results/annotated_output.mp4 \
+  --csv results/detections.csv \
+  --conf 0.5
+```
+
+**✅ No training required** - the production model (89.4% mAP@50) is ready to use!
+
+### 🔬 For Researchers (Full Training Pipeline)
 
 1. **Install dependencies:**
    ```bash
