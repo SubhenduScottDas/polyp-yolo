@@ -86,7 +86,8 @@ polyp-yono/
 ├─ requirements.txt            # Python package dependencies
 ├─ yolo_data.yaml              # YOLO training dataset configuration
 ├─ yolov8n.pt                  # Pre-trained YOLO weights
-└─ README.md                   # Project documentation
+├─ README.md                   # Project documentation
+└─ REPOSITORY_SIZE.md          # Detailed size analysis and git strategy
 ```
 
 ### Folder Descriptions
@@ -126,7 +127,9 @@ polyp-yono/
 ✅ **Test results** (35MB) - Comprehensive detection outputs  
 ✅ **Complete documentation** - Training process, evaluation, and usage instructions
 
-**Total repository size: ~75MB** - A complete, self-contained research package!
+**Total repository size: ~97MB** - A complete, self-contained research package!
+
+📊 **[Detailed Size Analysis →](REPOSITORY_SIZE.md)** - See complete breakdown of local vs. clone sizes
 
 ## Quick Start
 
