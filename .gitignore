@@ -27,16 +27,16 @@ models/
 models/polyp_yolov8n_clean/*.png
 models/polyp_yolov8n_clean/*.jpg
 
-# Results and logs (exclude temporary results but allow sample outputs)
-results/
-logs/
-# Allow specific result files that demonstrate the model
+# Results directory - exclude all except test results
+results/*
 !results/demo_detections.csv
 !results/sample_inference/
-*.log
+!results/*_detections.csv
+!results/*_annotated.mp4
 
-# Data directory - all data maintained locally only
-data/
+# Data directory - exclude all except test-set
+data/*
+!data/test-set/
 
 # Temporary files
 tmp/
