@@ -1,0 +1,11 @@
+ultralytics
+opencv-python-headless
+pycocotools
+albumentations
+tqdm
+pandas
+matplotlib
+seaborn
+wandb
+onnx
+onnxruntime

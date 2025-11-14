@@ -1,0 +1,22 @@
+name: polypbench
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - torch
+      - torchvision
+      - torchaudio
+      - ultralytics
+      - opencv-python-headless
+      - pycocotools
+      - albumentations
+      - tqdm
+      - pandas
+      - matplotlib
+      - seaborn
+      - wandb
+      - onnx
+      - onnxruntime
