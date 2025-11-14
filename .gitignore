@@ -1,0 +1,30 @@
+# OS and editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.ipynb_checkpoints/
+
+# YOLO training artifacts
+runs/
+models/
+*.pt
+wandb/
+
+# Results and logs
+results/
+logs/
+*.csv
+
+# Large dataset (keep processed data, ignore raw archive)
+data/archive/
+
+# Temporary files
+tmp/
+temp/
