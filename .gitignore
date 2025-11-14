@@ -38,6 +38,9 @@ results/*
 data/*
 !data/test-set/
 
+# Thesis preparation documents - exclude from version control
+thesis-prep-docs/
+
 # Temporary files
 tmp/
 temp/
