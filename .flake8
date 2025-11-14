@@ -1,0 +1,57 @@
+[flake8]
+max-line-length = 88
+max-complexity = 10
+
+# Ignore specific warnings that are acceptable in this codebase
+extend-ignore = 
+    E203,  # whitespace before ':' (conflicts with black)
+    E501,  # line too long (handled by max-line-length) 
+    W503,  # line break before binary operator (conflicts with black)
+    E402,  # module level import not at top of file
+    E722,  # bare except (acceptable for quick scripts)
+    F401,  # imported but unused (for backwards compatibility)
+    W291,  # trailing whitespace
+    W293,  # blank line contains whitespace
+    E302,  # expected 2 blank lines (relaxed for scripts)
+    E305,  # expected 2 blank lines after class/function definition
+
+# Exclude large directories and generated files
+exclude = 
+    .git,
+    __pycache__,
+    .venv,
+    venv,
+    .env,
+    env,
+    build,
+    dist,
+    *.egg-info,
+    data,
+    runs,
+    models, 
+    results,
+    test_output,
+    notebooks,
+    .tox,
+    .mypy_cache,
+    .pytest_cache
+
+# Per-file ignores to handle existing code style
+per-file-ignores =
+    # Allow multiple imports on one line in scripts (existing style)
+    scripts/convert_masks_to_yolo.py: E401,E701
+    scripts/split_train_val.py: E401,E701  
+    scripts/infer_and_viz.py: E401,E701
+    scripts/video_infer_yolo.py: E401,E701
+    scripts/eval_val.py: E401,E701
+    
+    # Allow long lines in config files
+    *.cfg: E501
+    *.ini: E501
+    
+    # Relax some rules for main script blocks
+    scripts/*: F401,E302
+
+# Count
+count = True
+statistics = True

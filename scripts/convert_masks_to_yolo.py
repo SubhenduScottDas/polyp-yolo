@@ -1,5 +1,6 @@
 # scripts/convert_masks_to_yolo.py
-import os, glob, cv2
+# flake8: noqa: E401 - Multiple imports acceptable for utility scripts
+import os, glob, cv2  # noqa: E401
 import numpy as np
 from pathlib import Path
 

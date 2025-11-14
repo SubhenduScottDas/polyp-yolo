@@ -1,4 +1,5 @@
-import os, glob, shutil, random
+# flake8: noqa: E401 - Multiple imports acceptable for utility scripts
+import os, glob, shutil, random  # noqa: E401
 from pathlib import Path
 
 def train_val_split(images_dir, labels_dir, out_dir, val_ratio=0.2, seed=42):

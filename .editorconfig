@@ -1,0 +1,52 @@
+# Editor and IDE configuration
+*.pyc
+__pycache__/
+
+# Linting and formatting tool configuration
+.flake8
+.mypy_cache/
+.pytest_cache/
+
+# Coverage reports  
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
+# Development and testing
+.tox/
+.nox/
+.cache
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+.env
+env/
+
+# IDE files
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Documentation builds
+docs/_build/
+site/
+
+# Distribution builds
+build/
+dist/
+*.egg-info/
+*.whl
+
+# Backup files
+*.bak
+*.swp
+*~

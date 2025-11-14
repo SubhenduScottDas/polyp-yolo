@@ -1,0 +1,154 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools-scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polyp-yono"
+description = "YOLOv8-based polyp detection system for medical imaging"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+    {name = "SubhenduScottDas", email = "subhendu@example.com"},
+]
+keywords = ["yolo", "polyp", "detection", "medical", "computer-vision"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Healthcare Industry", 
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "ultralytics>=8.0.0",
+    "opencv-python-headless>=4.5.0",
+    "torch>=1.9.0",
+    "torchvision>=0.10.0", 
+    "numpy>=1.21.0",
+    "pandas>=1.3.0",
+    "tqdm>=4.62.0",
+    "pathlib",
+]
+
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+    "black>=22.0",
+    "flake8>=4.0", 
+    "isort>=5.0",
+    "mypy>=0.910",
+]
+
+training = [
+    "wandb>=0.12.0",
+    "albumentations>=1.1.0",
+    "seaborn>=0.11.0",
+    "matplotlib>=3.5.0",
+]
+
+export = [
+    "onnx>=1.10.0",
+    "onnxruntime>=1.9.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/SubhenduScottDas/polyp-yono"
+Repository = "https://github.com/SubhenduScottDas/polyp-yono"
+Issues = "https://github.com/SubhenduScottDas/polyp-yono/issues"
+
+[project.scripts]
+convert-masks-to-yolo = "scripts.convert_masks_to_yolo:main"
+split-train-val = "scripts.split_train_val:main"
+
+[tool.setuptools]
+packages = ["scripts"]
+
+[tool.setuptools_scm]
+write_to = "_version.py"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+extend-exclude = '''
+/(
+    \.git
+  | \.venv
+  | venv
+  | \.env
+  | env
+  | data
+  | runs  
+  | models
+  | results
+  | test_output
+)/
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+skip_glob = ["data/*", "runs/*", "models/*", "results/*", "test_output/*"]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+ignore_missing_imports = true
+exclude = [
+    "data/",
+    "runs/", 
+    "models/",
+    "results/",
+    "test_output/",
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --strict-markers"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+[tool.coverage.run]
+source = ["scripts"]
+omit = [
+    "*/test*",
+    "*/venv/*", 
+    "*/env/*",
+    "data/*",
+    "runs/*",
+    "models/*", 
+    "results/*",
+    "test_output/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError", 
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]
