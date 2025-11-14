@@ -22,8 +22,8 @@ results/
 logs/
 *.csv
 
-# Large dataset (keep processed data, ignore raw archive)
-data/archive/
+# Data directory - all data maintained locally only
+data/
 
 # Temporary files
 tmp/
