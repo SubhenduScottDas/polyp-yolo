@@ -34,7 +34,10 @@ exclude =
     notebooks,
     .tox,
     .mypy_cache,
-    .pytest_cache
+    .pytest_cache,
+    Library,
+    .vscode,
+    .idea
 
 # Per-file ignores to handle existing code style
 per-file-ignores =

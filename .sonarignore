@@ -1,0 +1,81 @@
+# SonarQube exclusions configuration
+# Defines patterns for files and directories to exclude from analysis
+
+# System and library directories - DO NOT ANALYZE
+Library/**
+/Library/**
+**/Library/**
+
+# IDE and editor directories
+.vscode/**
+.idea/**
+*.code-workspace
+*.sublime-*
+
+# Data directories - contain datasets, not source code
+data/**
+runs/**
+models/**
+results/**
+test_output/**
+notebooks/**
+
+# Generated files and artifacts
+**/__pycache__/**
+**/*.pyc
+**/*.pyo
+**/*.egg-info/**
+**/build/**
+**/dist/**
+**/.mypy_cache/**
+**/.pytest_cache/**
+**/.coverage
+**/htmlcov/**
+
+# Model weights and data files
+**/*.pt
+**/*.pth
+**/*.onnx
+**/*.pb
+
+# Media files
+**/*.jpg
+**/*.jpeg
+**/*.png
+**/*.gif
+**/*.bmp
+**/*.tiff
+**/*.mp4
+**/*.avi
+**/*.mov
+**/*.mpg
+**/*.mpeg
+
+# Data files  
+**/*.csv
+**/*.json
+**/*.xml
+**/*.yaml
+**/*.yml
+
+# Documentation files
+**/*.md
+**/*.rst
+**/*.txt
+
+# Configuration files that don't need analysis
+.git/**
+*.log
+*.tmp
+*.temp
+
+# Virtual environments
+venv/**
+.venv/**
+env/**
+.env/**
+
+# OS specific files
+.DS_Store
+Thumbs.db
+desktop.ini
