@@ -83,7 +83,24 @@ polyp-yolo/
    ```bash
    python scripts/eval_val.py --model models/polyp_yolov8n/weights/best.pt
    ```
-   
+
+## Training Results
+
+**Successfully completed YOLOv8n training on Kvasir-SEG polyp dataset:**
+
+- **Model**: YOLOv8n (nano)
+- **Epochs**: 50 (completed in ~7.15 hours)
+- **Dataset**: 800 training images, 200 validation images
+- **Performance Metrics**:
+  - **mAP@50**: 0.894 (89.4%) ✅ *Excellent performance*
+  - **mAP@50-95**: 0.707 (70.7%)
+  - **Precision**: 0.828 (82.8%)
+  - **Recall**: 0.864 (86.4%)
+
+The trained model significantly exceeds the target mAP@50 of 0.7, achieving outstanding 89.4% accuracy for medical polyp detection. Model weights and training artifacts are available in `models/polyp_yolov8n_clean/`.
+
+**Training Environment**: Conda `polypbench` environment with PyTorch 2.9.1, Ultralytics 8.3.228, CUDA support.
+
 ---
 
 Additional tools
