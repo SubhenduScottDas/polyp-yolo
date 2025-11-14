@@ -1,3 +1,7 @@
+# 🔬 YOLO-based Polyp Detection System
+
+**📊 Complete Research Package: ~75MB total with trained model + test data + results**
+
 ## Local Data Management
 
 **📦 What's Included in This Repository:**
