@@ -147,4 +147,4 @@ python generate_thesis_figures.py --figures all
 ## License
 
 Part of the Polyp Detection YOLOv8 project.  
-© 2024 Subhendu Das
+© 2025 Subhendu Das
