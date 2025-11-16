@@ -38,8 +38,12 @@ results/*
 data/*
 !data/test-set/
 
-# Thesis preparation documents - exclude from version control
-thesis-prep-docs/
+# Thesis preparation documents - INCLUDE draft thesis, EXCLUDE generated outputs
+thesis-prep-docs/content/
+thesis-prep-docs/figures/
+thesis-prep-docs/generated/
+thesis-prep-docs/literature/
+thesis-prep-docs/template/
 
 # Temporary files
 tmp/

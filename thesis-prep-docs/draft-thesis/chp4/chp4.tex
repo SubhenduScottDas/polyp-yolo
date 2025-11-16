@@ -1,0 +1,651 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Chapter 4: Implementation
+%% Indian Institute of Information Technology Kalyani
+%% Deep Learning-Based Polyp Detection in Colonoscopy Videos Using YOLOv8
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter[Implementation]{Implementation}
+\label{chp4}
+
+\section{Introduction}
+\label{chp4.1}
+
+This chapter details the technical implementation of the polyp detection system, covering all software components from data preprocessing through training to inference and evaluation. The complete system comprises five core Python scripts, configuration files, and supporting utilities. The implementation prioritizes modularity, reproducibility, and production readiness.
+
+\section{System Architecture}
+\label{chp4.2}
+
+\subsection{Technology Stack}
+
+\textbf{Core Dependencies:}
+\begin{itemize}
+\item \textbf{Python 3.8+}: Programming language
+\item \textbf{PyTorch 2.9.1}: Deep learning framework
+\item \textbf{Ultralytics 8.3.228}: YOLOv8 implementation
+\item \textbf{OpenCV 4.12.0.88}: Image and video processing
+\item \textbf{NumPy}: Numerical computations
+\item \textbf{Pandas}: CSV data handling
+\end{itemize}
+
+\textbf{Supporting Libraries:}
+\begin{itemize}
+\item \texttt{albumentations}: Advanced data augmentation
+\item \texttt{pycocotools}: COCO evaluation metrics
+\item \texttt{tqdm}: Progress bars
+\item \texttt{matplotlib}, \texttt{seaborn}: Visualization
+\item \texttt{pathlib}: Cross-platform path handling
+\end{itemize}
+
+\subsection{Project Structure}
+
+\begin{verbatim}
+polyp-yolo/
+├── scripts/
+│   ├── convert_masks_to_yolo.py    # Data conversion
+│   ├── split_train_val.py          # Dataset splitting
+│   ├── infer_and_viz.py            # Image inference
+│   ├── video_infer_yolo.py         # Video processing
+│   └── eval_val.py                 # Model evaluation
+├── data/
+│   ├── archive/Kvasir-SEG/         # Raw dataset (local)
+│   ├── processed/                  # YOLO format (local)
+│   └── test-set/videos/            # Test videos (tracked)
+├── models/
+│   └── polyp_yolov8n_clean/        # Trained model
+│       ├── weights/best.pt         # Best weights
+│       ├── args.yaml               # Training config
+│       └── results.csv             # Metrics log
+├── results/                        # Inference outputs
+├── yolo_data.yaml                  # Dataset config
+├── yolov8n.pt                      # Pretrained weights
+└── requirements.txt                # Dependencies
+\end{verbatim}
+
+\section{Script 1: Mask to YOLO Conversion}
+\label{chp4.3}
+
+\subsection{Purpose and Design}
+
+\texttt{convert\_masks\_to\_yolo.py} transforms binary segmentation masks to YOLO bounding box format.
+
+\textbf{Key Features:}
+\begin{itemize}
+\item Single and multi-component bbox generation
+\item Normalized YOLO coordinate format
+\item Error handling for empty masks
+\item Progress tracking
+\end{itemize}
+
+\subsection{Implementation}
+
+\begin{lstlisting}[language=Python, caption=Mask to BBox Conversion - Core Functions]
+import cv2
+import numpy as np
+from pathlib import Path
+
+def mask_to_bbox(mask):
+    """Convert binary mask to single bounding box."""
+    rows = np.any(mask, axis=1)
+    cols = np.any(mask, axis=0)
+    
+    if not rows.any() or not cols.any():
+        return None  # Empty mask
+    
+    y_min, y_max = np.where(rows)[0][[0, -1]]
+    x_min, x_max = np.where(cols)[0][[0, -1]]
+    
+    return (x_min, y_min, x_max, y_max)
+
+def mask_to_bboxes_multi(mask):
+    """Detect multiple components and generate separate bboxes."""
+    num_labels, labels = cv2.connectedComponents(mask)
+    bboxes = []
+    
+    for label in range(1, num_labels):  # Skip background (0)
+        component_mask = (labels == label).astype(np.uint8) * 255
+        bbox = mask_to_bbox(component_mask)
+        
+        if bbox:
+            area = (bbox[2] - bbox[0]) * (bbox[3] - bbox[1])
+            if area > MIN_AREA_THRESHOLD:  # Filter noise
+                bboxes.append(bbox)
+    
+    return bboxes
+
+def bbox_to_yolo(bbox, img_width, img_height):
+    """Convert pixel bbox to normalized YOLO format."""
+    x_min, y_min, x_max, y_max = bbox
+    
+    x_center = (x_min + x_max) / (2 * img_width)
+    y_center = (y_min + y_max) / (2 * img_height)
+    width = (x_max - x_min) / img_width
+    height = (y_max - y_min) / img_height
+    
+    return (x_center, y_center, width, height)
+\end{lstlisting}
+
+\subsection{Algorithm Flow}
+
+\begin{algorithm}[H]
+\caption{Mask to YOLO Conversion Pipeline}
+\label{Alg4.1}
+\KwIn{Masks directory $M$, Images directory $I$, Multi-component flag $m$}
+\KwOut{YOLO label files in output directory}
+\For{each mask file $f$ in $M$}{
+    Read binary mask image\;
+    Get corresponding image dimensions $(W, H)$\;
+    \eIf{multi-component mode enabled}{
+        $\text{bboxes} \leftarrow$ DetectMultipleComponents(mask)\;
+    }{
+        $\text{bbox} \leftarrow$ DetectSingleComponent(mask)\;
+        $\text{bboxes} \leftarrow [\text{bbox}]$\;
+    }
+    \For{each bbox in bboxes}{
+        $(x_c, y_c, w, h) \leftarrow$ ConvertToYOLO(bbox, $W$, $H$)\;
+        Write "0 $x_c$ $y_c$ $w$ $h$" to label file\;
+    }
+}
+\end{algorithm}
+
+\subsection{Usage Examples}
+
+\begin{lstlisting}[language=bash, caption=Running Mask Conversion]
+# Single bbox per image (default)
+python scripts/convert_masks_to_yolo.py \
+  --input_dir data/archive/Kvasir-SEG/Kvasir-SEG \
+  --output_dir data/processed
+
+# Multi-component detection
+python scripts/convert_masks_to_yolo.py \
+  --input_dir data/archive/Kvasir-SEG/Kvasir-SEG \
+  --output_dir data/processed \
+  --multi
+\end{lstlisting}
+
+\section{Script 2: Train-Validation Split}
+\label{chp4.4}
+
+\subsection{Purpose}
+
+\texttt{split\_train\_val.py} creates reproducible random train/validation splits while maintaining image-label correspondence.
+
+\subsection{Implementation}
+
+\begin{lstlisting}[language=Python, caption=Dataset Splitting Implementation]
+import random
+import shutil
+from pathlib import Path
+
+def split_dataset(images_dir, labels_dir, output_dir, 
+                  val_ratio=0.2, seed=42):
+    """Split images and labels into train/val sets."""
+    random.seed(seed)  # Reproducibility
+    
+    # Get all image files
+    image_files = sorted(Path(images_dir).glob('*.jpg'))
+    image_names = [f.stem for f in image_files]
+    
+    # Shuffle
+    random.shuffle(image_names)
+    
+    # Split
+    split_idx = int(len(image_names) * (1 - val_ratio))
+    train_names = image_names[:split_idx]
+    val_names = image_names[split_idx:]
+    
+    print(f"Training: {len(train_names)} images")
+    print(f"Validation: {len(val_names)} images")
+    
+    # Create directories
+    for split in ['train', 'val']:
+        (output_dir / 'images' / split).mkdir(parents=True)
+        (output_dir / 'labels' / split).mkdir(parents=True)
+    
+    # Copy files
+    for name in train_names:
+        copy_image_and_label(name, 'train', ...)
+    
+    for name in val_names:
+        copy_image_and_label(name, 'val', ...)
+\end{lstlisting}
+
+\subsection{Key Features}
+
+\begin{itemize}
+\item \textbf{Reproducible}: Fixed seed ensures same split across runs
+\item \textbf{Matched Pairs}: Guarantees image-label correspondence
+\item \textbf{Configurable Ratio}: Default 80:20, adjustable via CLI
+\item \textbf{Validation}: Checks for missing label files
+\end{itemize}
+
+\section{Script 3: Image Inference and Visualization}
+\label{chp4.5}
+
+\subsection{Purpose}
+
+\texttt{infer\_and\_viz.py} performs detection on individual images with visual annotations.
+
+\subsection{Implementation}
+
+\begin{lstlisting}[language=Python, caption=Image Inference Script]
+from ultralytics import YOLO
+import cv2
+
+def infer_and_visualize(model_path, images_dir, output_dir, 
+                        conf_thresh=0.25):
+    """Run inference and save annotated images."""
+    model = YOLO(model_path)
+    
+    for img_path in Path(images_dir).glob('*.jpg'):
+        # Run inference
+        results = model.predict(
+            source=str(img_path),
+            conf=conf_thresh,
+            save=False,
+            verbose=False
+        )
+        
+        # Draw bounding boxes
+        img = cv2.imread(str(img_path))
+        result = results[0]
+        
+        if result.boxes:
+            for box in result.boxes:
+                x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()
+                conf = box.conf[0].item()
+                cls = int(box.cls[0].item())
+                
+                # Draw rectangle
+                cv2.rectangle(img, (int(x1), int(y1)), 
+                             (int(x2), int(y2)), (0, 255, 0), 2)
+                
+                # Add label
+                label = f"polyp {conf:.2f}"
+                cv2.putText(img, label, (int(x1), int(y1)-10),
+                           cv2.FONT_HERSHEY_SIMPLEX, 0.6, 
+                           (0, 255, 0), 2)
+        
+        # Save
+        output_path = output_dir / img_path.name
+        cv2.imwrite(str(output_path), img)
+\end{lstlisting}
+
+\section{Script 4: Video Inference}
+\label{chp4.6}
+
+\subsection{Purpose}
+
+\texttt{video\_infer\_yolo.py} is the core production script for real-time colonoscopy video processing.
+
+\subsection{Architecture}
+
+The script comprises three main components:
+
+\textbf{1. Video Processing Loop}
+\begin{itemize}
+\item Reads video frames using OpenCV VideoCapture
+\item Applies frame skipping for performance optimization
+\item Maintains consistent output frame rate
+\end{itemize}
+
+\textbf{2. Detection Pipeline}
+\begin{itemize}
+\item Resizes frames to 640x640 for inference
+\item Runs YOLOv8 prediction
+\item Applies confidence thresholding
+\item Performs Non-Maximum Suppression
+\end{itemize}
+
+\textbf{3. Output Generation}
+\begin{itemize}
+\item Draws bounding boxes on frames
+\item Writes annotated video
+\item Logs detections to CSV
+\end{itemize}
+
+\subsection{Implementation}
+
+\begin{lstlisting}[language=Python, caption=Video Inference - Core Function]
+def video_infer(weights, video_path, out_video, out_csv=None,
+                conf=0.25, imgsz=640, skip=1):
+    """Process video with YOLO detection."""
+    model = YOLO(weights)
+    names = model.names if hasattr(model, 'names') else {0: 'polyp'}
+    
+    # Open video
+    cap = cv2.VideoCapture(str(video_path))
+    if not cap.isOpened():
+        raise RuntimeError(f"Cannot open video: {video_path}")
+    
+    # Get video properties
+    fps = cap.get(cv2.CAP_PROP_FPS) or 25
+    width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+    height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+    
+    # Setup output video
+    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+    writer = cv2.VideoWriter(str(out_video), fourcc, 
+                             fps / max(1, skip), (width, height))
+    
+    # Setup CSV logging
+    csv_file = None
+    csv_writer = None
+    if out_csv:
+        csv_file = open(out_csv, 'w', newline='')
+        csv_writer = csv.writer(csv_file)
+        csv_writer.writerow(['frame', 'class_id', 'class_name', 
+                            'conf', 'x1', 'y1', 'x2', 'y2'])
+    
+    frame_idx = 0
+    written_frames = 0
+    
+    while True:
+        ret, frame = cap.read()
+        if not ret:
+            break
+        
+        frame_idx += 1
+        
+        # Skip frames if needed
+        if (frame_idx - 1) % skip != 0:
+            continue
+        
+        # Run inference
+        results = model.predict(source=frame, conf=conf, 
+                               imgsz=imgsz, save=False, verbose=False)
+        result = results[0]
+        
+        # Process detections
+        if result.boxes is None or len(result.boxes) == 0:
+            out_frame = frame
+        else:
+            boxes = result.boxes.xyxy.cpu().numpy()
+            scores = result.boxes.conf.cpu().numpy()
+            classes = result.boxes.cls.cpu().numpy()
+            
+            out_frame = draw_boxes(frame.copy(), boxes, 
+                                  scores, classes, names)
+            
+            # Log to CSV
+            if csv_writer:
+                for (x1,y1,x2,y2), s, c in zip(boxes, scores, classes):
+                    csv_writer.writerow([
+                        written_frames, int(c), 
+                        names.get(int(c), str(int(c))), 
+                        float(s), float(x1), float(y1), 
+                        float(x2), float(y2)
+                    ])
+        
+        writer.write(out_frame)
+        written_frames += 1
+    
+    # Cleanup
+    cap.release()
+    writer.release()
+    if csv_file:
+        csv_file.close()
+    
+    print(f"Done. Output video: {out_video}")
+    if out_csv:
+        print(f"Detections CSV: {out_csv}")
+\end{lstlisting}
+
+\subsection{Drawing Function}
+
+\begin{lstlisting}[language=Python, caption=Bounding Box Visualization]
+def draw_boxes(img, boxes, scores, classes, names):
+    """Draw bounding boxes with labels on image."""
+    for (x1, y1, x2, y2), s, c in zip(boxes, scores, classes):
+        x1, y1, x2, y2 = map(int, [x1, y1, x2, y2])
+        
+        # Create label
+        label = f"{names.get(int(c), str(int(c)))} {s:.2f}"
+        
+        # Draw rectangle (green)
+        cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), 2)
+        
+        # Draw label background
+        (label_w, label_h), _ = cv2.getTextSize(
+            label, cv2.FONT_HERSHEY_SIMPLEX, 0.6, 2)
+        cv2.rectangle(img, (x1, y1 - label_h - 10), 
+                     (x1 + label_w, y1), (0, 255, 0), -1)
+        
+        # Draw label text
+        cv2.putText(img, label, (x1, max(15, y1 - 10)),
+                   cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 0), 2)
+    
+    return img
+\end{lstlisting}
+
+\subsection{CSV Output Format}
+
+The CSV log contains structured detection data:
+
+\begin{verbatim}
+frame,class_id,class_name,conf,x1,y1,x2,y2
+0,0,polyp,0.8734,123.4,456.7,234.5,567.8
+0,0,polyp,0.9123,345.6,678.9,456.7,789.0
+1,0,polyp,0.8901,125.3,458.2,236.1,569.3
+\end{verbatim}
+
+\textbf{Benefits:}
+\begin{itemize}
+\item Medical record keeping
+\item Post-processing analysis
+\item Statistical evaluation
+\item Integration with electronic health records
+\end{itemize}
+
+\section{Script 5: Model Evaluation}
+\label{chp4.7}
+
+\subsection{Purpose}
+
+\texttt{eval\_val.py} computes comprehensive metrics on the validation set.
+
+\subsection{Implementation}
+
+\begin{lstlisting}[language=Python, caption=Model Evaluation Script]
+from ultralytics import YOLO
+
+def evaluate_model(model_path, data_yaml, imgsz=640):
+    """Evaluate model on validation set."""
+    model = YOLO(model_path)
+    
+    # Run validation
+    metrics = model.val(
+        data=data_yaml,
+        imgsz=imgsz,
+        batch=16,
+        conf=0.25,
+        iou=0.5,
+        save_json=True,
+        save_hybrid=True
+    )
+    
+    # Extract metrics
+    results = {
+        'mAP@50': metrics.box.map50,
+        'mAP@50-95': metrics.box.map,
+        'Precision': metrics.box.mp,
+        'Recall': metrics.box.mr,
+        'F1-Score': 2 * (metrics.box.mp * metrics.box.mr) / 
+                    (metrics.box.mp + metrics.box.mr)
+    }
+    
+    # Print results
+    print("\n" + "="*50)
+    print("VALIDATION RESULTS")
+    print("="*50)
+    for metric, value in results.items():
+        print(f"{metric:15s}: {value:.4f}")
+    print("="*50 + "\n")
+    
+    return results
+\end{lstlisting}
+
+\subsection{Generated Outputs}
+
+The evaluation produces:
+\begin{itemize}
+\item Precision-Recall curve (\texttt{PR\_curve.png})
+\item F1-Score curve (\texttt{F1\_curve.png})
+\item Confusion matrix (\texttt{confusion\_matrix.png})
+\item Validation predictions (\texttt{val\_batch*\_pred.jpg})
+\item Metrics JSON file
+\end{itemize}
+
+\section{Configuration Files}
+\label{chp4.8}
+
+\subsection{YOLO Dataset Configuration}
+
+\texttt{yolo\_data.yaml} specifies dataset paths and classes:
+
+\begin{lstlisting}[language=yaml, caption=YOLO Dataset Configuration]
+# Dataset configuration for polyp detection
+train: data/processed/images/train
+val: data/processed/images/val
+
+# Number of classes
+nc: 1
+
+# Class names
+names: ['polyp']
+
+# Training parameters (optional)
+# Ultralytics will use defaults if not specified
+\end{lstlisting}
+
+\subsection{Model Training Configuration}
+
+Training arguments stored in \texttt{models/polyp\_yolov8n\_clean/args.yaml}:
+
+\begin{lstlisting}[language=yaml, caption=Training Arguments]
+task: detect
+mode: train
+model: yolov8n.pt
+data: yolo_data.yaml
+epochs: 50
+patience: 50
+batch: 16
+imgsz: 640
+save: true
+save_period: -1
+cache: false
+device: null
+workers: 8
+project: models
+name: polyp_yolov8n_clean
+exist_ok: false
+pretrained: true
+optimizer: SGD
+verbose: true
+seed: 0
+deterministic: true
+single_cls: true
+rect: false
+cos_lr: true
+close_mosaic: 10
+resume: false
+amp: true
+fraction: 1.0
+profile: false
+\end{lstlisting}
+
+\section{Deployment Considerations}
+\label{chp4.9}
+
+\subsection{Model Export}
+
+For production deployment, models can be exported to various formats:
+
+\begin{lstlisting}[language=Python, caption=Model Export Examples]
+from ultralytics import YOLO
+
+model = YOLO('models/polyp_yolov8n_clean/weights/best.pt')
+
+# Export to ONNX (cross-platform)
+model.export(format='onnx', dynamic=True)
+
+# Export to TensorRT (NVIDIA GPUs)
+model.export(format='engine', device=0)
+
+# Export to CoreML (iOS/macOS)
+model.export(format='coreml')
+
+# Export to TFLite (mobile/edge devices)
+model.export(format='tflite')
+\end{lstlisting}
+
+\subsection{Performance Optimization}
+
+\textbf{Inference Optimization:}
+\begin{itemize}
+\item Half-precision (FP16) for 2x speedup on compatible GPUs
+\item TensorRT for NVIDIA GPUs (3-5x speedup)
+\item Batch processing for multiple frames
+\item GPU memory management
+\end{itemize}
+
+\textbf{Memory Management:}
+\begin{lstlisting}[language=Python]
+# Enable garbage collection
+import gc
+torch.cuda.empty_cache()
+gc.collect()
+
+# Use context managers
+with torch.no_grad():
+    results = model.predict(frame)
+\end{lstlisting}
+
+\subsection{Error Handling}
+
+\begin{lstlisting}[language=Python, caption=Robust Error Handling]
+def safe_inference(model, frame, conf=0.25):
+    """Inference with error handling."""
+    try:
+        results = model.predict(
+            source=frame,
+            conf=conf,
+            verbose=False
+        )
+        return results[0]
+    except Exception as e:
+        logging.error(f"Inference failed: {e}")
+        return None
+\end{lstlisting}
+
+\section{Testing and Validation}
+\label{chp4.10}
+
+\subsection{Unit Testing}
+
+Key functions tested:
+\begin{itemize}
+\item Mask to bbox conversion (edge cases, empty masks)
+\item YOLO format normalization (boundary values)
+\item Video frame reading (corrupted frames)
+\item CSV writing (special characters, large numbers)
+\end{itemize}
+
+\subsection{Integration Testing}
+
+End-to-end pipeline validation:
+\begin{enumerate}
+\item Convert sample masks to YOLO format
+\item Split into train/val
+\item Train for 1 epoch (sanity check)
+\item Run inference on test images
+\item Verify output formats
+\end{enumerate}
+
+\section{Summary}
+\label{chp4.11}
+
+This chapter detailed the complete implementation of the polyp detection system across five core scripts: mask conversion, dataset splitting, image inference, video processing, and evaluation. Each script is modular, well-documented, and production-ready with comprehensive error handling.
+
+The video inference script (\texttt{video\_infer\_yolo.py}) represents the clinical deployment component, providing real-time detection with dual outputs (annotated video and structured CSV logs). Configuration files enable easy customization, while export options support diverse deployment targets from cloud servers to edge devices.
+
+The implementation emphasizes reproducibility through fixed random seeds, comprehensive logging, and detailed configuration tracking. This foundation enables both research reproducibility and clinical deployment readiness.

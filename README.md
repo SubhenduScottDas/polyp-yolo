@@ -86,6 +86,16 @@ polyp-yono/
 │     ├─ README.md             # Statistical analysis documentation
 │     └─ requirements.txt      # Analysis dependencies
 ├─ test_output/                # Inference test results
+├─ thesis-prep-docs/           # ✅ INCLUDED: Complete M.Tech thesis (LaTeX)
+│  ├─ draft-thesis/            # Full thesis ready for Overleaf compilation
+│  │  ├─ Polyp_Detection_Thesis.tex  # Main document
+│  │  ├─ header.tex            # Front matter (title, certificates, TOC)
+│  │  ├─ chp1-6/               # All 6 chapters (Introduction → Conclusion)
+│  │  ├─ Reference/            # Bibliography with 60+ IEEE references
+│  │  ├─ Abbreviation.tex      # 33 abbreviations (AI, YOLO, mAP, etc.)
+│  │  ├─ Figure/               # Professional diagrams (300 DPI)
+│  │  └─ README.md             # Compilation instructions
+│  └─ README.md                # Thesis preparation documentation
 ├─ environment.yml             # Conda environment specification
 ├─ requirements.txt            # Python package dependencies
 ├─ yolo_data.yaml              # YOLO training dataset configuration
@@ -109,6 +119,14 @@ polyp-yono/
 - **`scripts/`**: Core Python scripts for the entire ML pipeline
   - **`statistical-analysis/`**: Visualization and thesis figure generation scripts
 - **`test_output/`**: Temporary inference results for testing
+- **`thesis-prep-docs/`** (✅ INCLUDED): Complete M.Tech thesis in LaTeX format
+  - **`draft-thesis/`**: Full IIIT Kalyani thesis (~150-160 pages when compiled)
+    - All 6 chapters: Introduction, Literature Review, Methodology, Implementation, Results, Conclusion
+    - Front matter: Title pages, certificates, abstract, acknowledgements, TOC
+    - Bibliography: 60+ IEEE-formatted academic references
+    - Abbreviations: 33 technical terms (AI, CNN, YOLO, mAP, IoU, etc.)
+    - Professional figures: System architecture, data pipeline, training results (300 DPI)
+    - Ready for Overleaf: Upload and compile with `pdflatex → bibtex → pdflatex → pdflatex`
 
 ## 📊 Included Test Data & Results
 

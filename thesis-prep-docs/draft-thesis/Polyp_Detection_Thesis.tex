@@ -1,0 +1,132 @@
+\documentclass[12pt,twoside]{report}
+\tolerance=1000
+\hbadness=10000
+\raggedbottom
+
+\usepackage{acronym}
+\usepackage{hyperref}
+\usepackage[flushleft]{threeparttable}
+\usepackage{rotating}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{url}
+\usepackage{subfigure}
+\usepackage{amsfonts}
+\usepackage{amsmath,latexsym,amssymb,amsthm}
+\usepackage[mathscr]{eucal}
+\usepackage{verbatim}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{setspace}
+\usepackage{lscape,fancyhdr}
+\usepackage{longtable}
+\usepackage{lipsum}
+\usepackage{titletoc}
+\usepackage{varwidth}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+\usepackage{a4}
+\usepackage[top=4cm, left=4cm, right=2.5cm]{geometry}
+
+% Extra packages
+\usepackage{xparse}
+\usepackage{mathtools}
+\usepackage{romannum}
+\usepackage{algorithm2e}
+\usepackage{algpseudocode}
+\usepackage{amsfonts}
+\usepackage{wrapfig}
+\usepackage{bm}
+\usepackage{emptypage}
+\usepackage{verbatim}
+\usepackage{multirow}
+\usepackage{ragged2e}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{tikzpeople}
+\usepackage{tkz-berge}
+\usetikzlibrary{shapes,snakes,positioning,shapes.misc,arrows.meta}
+\usepackage[super]{nth}
+\usepackage{float}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\DeclareUnicodeCharacter{2212}{-}
+
+% Code listing settings
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny,
+    commentstyle=\color{gray},
+    keywordstyle=\color{blue},
+    stringstyle=\color{red}
+}
+
+% Theorem environments
+\newtheorem{secn}{Definition}[section]
+\newtheorem{theorem}[secn]{Theorem}
+\newtheorem{corollary}[secn]{Corollary}
+\newtheorem{proposition}[secn]{Proposition}
+\newtheorem{lemma}[secn]{Lemma}
+\newtheorem{definition}[secn]{Definition}
+\newtheorem{example}[secn]{Example}
+\newtheorem{remark}[secn]{Remark}
+\newtheorem{problem}[secn]{Problem}
+\newtheorem{construction}[secn]{Construction}
+
+\setcounter{section}{0}
+
+\newcommand\floor[1]{\lfloor#1\rfloor}
+\newcommand\ceil[1]{\lceil#1\rceil}
+
+% Numbering within environments
+\newcommand{\newsection}[1]{\setcounter{equation}{0} \setcounter{secn}{0}\section{#1}}
+\numberwithin{equation}{section}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\renewcommand{\qed}{\hfill \rule{2mm}{2mm}}
+
+\begin{document}
+    \include{header}
+    \addtolength{\headheight}{15pt}
+    \pagenumbering{arabic}
+    \pagestyle{fancy}
+    \renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter:\,\ #1}{}}
+    \renewcommand{\sectionmark}[1]{\markright{\thesection\,\ #1}}
+    \fancyhead{}
+    \fancyhead[LO]{\sl\rightmark}
+    \fancyhead[LE,RO]{\rm\thepage}
+    \fancyhead[RE]{\sl\leftmark}
+    \fancyfoot[C,L,E]{}
+
+    % Main content chapters
+    \clearpage
+    \input{chp1/chp1}
+    \cleardoublepage
+    \input{chp2/chp2}
+    \cleardoublepage
+    \input{chp3/chp3}
+    \cleardoublepage
+    \input{chp4/chp4}
+    \cleardoublepage
+    \input{chp5/chp5}
+    \cleardoublepage
+    \input{chp6/chp6}
+    \cleardoublepage
+    
+    % Publications
+    \cleardoublepage
+    \input{ch-mypub}
+    
+    % Bibliography
+    \cleardoublepage
+    \addcontentsline{toc}{chapter}{References}
+    \bibliographystyle{ieeetr}
+    \bibliography{Reference/Bibliography}
+\end{document}
