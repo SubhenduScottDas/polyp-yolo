@@ -6,7 +6,9 @@ This folder contains Python scripts for generating thesis figures, statistical a
 
 ### 1. `generate_thesis_figures.py`
 
-Generates professional diagrams and visualizations for the M.Tech thesis on Deep Learning-Based Polyp Detection Using YOLOv8.
+## Overview
+
+Generates professional diagrams and visualizations for the Deep Learning-Based Polyp Detection Using YOLOv8 research project.
 
 **Features:**
 - System overview diagram (Chapter 1)
@@ -46,7 +48,7 @@ python generate_thesis_figures.py \
 ```
 
 **Arguments:**
-- `--output-dir`: Output directory for generated figures (default: `../../thesis-prep-docs/draft-thesis/Figure`)
+- `--output-dir`: Output directory for generated figures (default: `../../results/figures`)
 - `--kvasir-dir`: Path to Kvasir-SEG dataset directory (default: `../../data/archive/Kvasir-SEG/Kvasir-SEG`)
 - `--figures`: Which figures to generate (choices: `overview`, `architecture`, `mask2bbox`, `augmentation`, `all`)
 
@@ -145,4 +147,4 @@ python generate_thesis_figures.py --figures all
 ## License
 
 Part of the Polyp Detection YOLOv8 project.  
-© 2024 Subhendu Das, IIIT Kalyani
+© 2024 Subhendu Das
