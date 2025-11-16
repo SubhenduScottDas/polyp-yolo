@@ -29,7 +29,7 @@ def create_system_overview(output_path: str):
     Args:
         output_path: Path to save the generated figure
     """
-    fig, ax = plt.subplots(figsize=(14, 6))
+    _, ax = plt.subplots(figsize=(14, 6))
     ax.set_xlim(0, 14)
     ax.set_ylim(0, 6)
     ax.axis('off')
@@ -90,7 +90,7 @@ def create_system_architecture(output_path: str):
     Args:
         output_path: Path to save the generated figure
     """
-    fig, ax = plt.subplots(figsize=(15, 8))
+    _, ax = plt.subplots(figsize=(15, 8))
     ax.set_xlim(0, 15)
     ax.set_ylim(0, 8)
     ax.axis('off')
