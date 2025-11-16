@@ -80,7 +80,11 @@ polyp-yono/
 │  ├─ split_train_val.py       # Create train/validation data splits
 │  ├─ infer_and_viz.py         # Single image inference with visualization
 │  ├─ video_infer_yolo.py      # Video inference with CSV logging
-│  └─ eval_val.py              # Model evaluation on validation set
+│  ├─ eval_val.py              # Model evaluation on validation set
+│  └─ statistical-analysis/    # Visualization & analysis scripts
+│     ├─ generate_thesis_figures.py  # Generate thesis diagrams
+│     ├─ README.md             # Statistical analysis documentation
+│     └─ requirements.txt      # Analysis dependencies
 ├─ test_output/                # Inference test results
 ├─ environment.yml             # Conda environment specification
 ├─ requirements.txt            # Python package dependencies
@@ -103,6 +107,7 @@ polyp-yono/
 - **`results/`** (✅ INCLUDED): Complete test results with CSV detections and annotated videos
 - **`runs/`**: Ultralytics training session outputs and logs
 - **`scripts/`**: Core Python scripts for the entire ML pipeline
+  - **`statistical-analysis/`**: Visualization and thesis figure generation scripts
 - **`test_output/`**: Temporary inference results for testing
 
 ## 📊 Included Test Data & Results
@@ -588,6 +593,42 @@ python scripts/convert_masks_to_yolo.py \
 
 This uses OpenCV's `cv2.findContours()` to detect separate connected components and creates individual bounding boxes for each polyp.
 
+## 📊 Thesis & Statistical Analysis
+
+### Generating Thesis Figures
+
+Professional diagrams and visualizations for research documentation are available through automated scripts:
+
+```bash
+# Navigate to statistical analysis directory
+cd scripts/statistical-analysis
+
+# Generate all thesis figures (300 DPI publication quality)
+python3 generate_thesis_figures.py
+
+# Generate specific figures only
+python3 generate_thesis_figures.py --figures overview architecture
+
+# Custom output directory
+python3 generate_thesis_figures.py --output-dir /path/to/output
+```
+
+**Available Figures:**
+- **System Overview**: 4-stage pipeline diagram (Input → Processing → Detection → Output)
+- **System Architecture**: Complete 5-layer architecture visualization
+- **Mask to BBox**: Conversion process using actual Kvasir-SEG data
+- **Data Augmentation**: 8 augmentation techniques with real polyp images
+
+**📖 [Statistical Analysis Documentation →](scripts/statistical-analysis/README.md)** - Complete usage guide and future analysis tools
+
+### M.Tech Thesis Package
+
+Complete thesis documentation available in `thesis-prep-docs/draft-thesis/`:
+- Full LaTeX source for M.Tech thesis (IIIT Kalyani)
+- 6 comprehensive chapters covering methodology, implementation, and results
+- Professional figures and diagrams generated from actual project data
+- Ready for Overleaf compilation
+
 ## 📚 Documentation
 
 | Document | Description | Use Case |
@@ -596,6 +637,7 @@ This uses OpenCV's `cv2.findContours()` to detect separate connected components 
 | **[EVALUATION.md](EVALUATION.md)** | Performance analysis & benchmarks | Model validation & comparison |
 | **[DEPLOYMENT.md](DEPLOYMENT.md)** | Production deployment guide | Clinical integration & scaling |
 | **[REPOSITORY_SIZE.md](REPOSITORY_SIZE.md)** | Repository size breakdown | Understanding git strategy |
+| **[scripts/statistical-analysis/README.md](scripts/statistical-analysis/README.md)** | Statistical analysis & visualization | Thesis figures & data analysis |
 
 ---
 
