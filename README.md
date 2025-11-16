@@ -634,3 +634,9 @@ python3 generate_thesis_figures.py --output-dir /path/to/output
 ---
 
 **Project Status**: ✅ Complete - Production-ready polyp detection system with medical-grade accuracy
+
+## 📄 License
+
+MIT License - © 2025 Subhendu Das
+
+---
