@@ -240,3 +240,7 @@ python scripts/monitor_performance.py \
 ---
 
 **📈 Summary**: The polyp detection model achieves **89.4% mAP@50**, significantly exceeding clinical requirements and demonstrating robust performance across diverse polyp types and challenging endoscopic conditions.
+
+---
+
+© 2025 Subhendu Das

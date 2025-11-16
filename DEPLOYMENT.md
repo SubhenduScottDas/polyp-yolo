@@ -479,3 +479,7 @@ Break-even: 87,000 detections/month
 ---
 
 **🚀 Summary**: The polyp detection system is production-ready with enterprise-grade security, scalability, and monitoring. Deploy with confidence in clinical environments using the provided configurations and best practices.
+
+---
+
+© 2025 Subhendu Das

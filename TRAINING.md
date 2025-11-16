@@ -233,3 +233,7 @@ python scripts/video_infer_yolo.py \
 ---
 
 **💡 Pro Tip**: Start with a small number of epochs (3-5) to validate your data pipeline, then scale up to full training once you confirm everything works correctly.
+
+---
+
+© 2025 Subhendu Das

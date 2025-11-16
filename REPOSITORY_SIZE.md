@@ -174,3 +174,7 @@ git gc --aggressive
 ---
 
 **💡 Pro Tip**: This size analysis demonstrates best practices for machine learning repositories - providing complete functionality while maintaining reasonable download sizes through smart data management strategies.
+
+---
+
+© 2025 Subhendu Das
