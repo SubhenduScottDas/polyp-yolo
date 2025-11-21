@@ -10,6 +10,9 @@ __pycache__/
 *.pyd
 .Python
 *.ipynb_checkpoints/
+.venv/
+venv/
+env/
 
 # YOLO training artifacts (exclude training runs but keep production model)
 runs/
