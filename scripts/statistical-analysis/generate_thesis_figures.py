@@ -251,7 +251,7 @@ def create_system_architecture_clearer(output_path: str):
                               edgecolor='#8B0000', facecolor=color, linewidth=3)
         ax.add_patch(box)
         ax.text(x + w/2, y + h/2, label, ha='center', va='center', 
-                fontsize=16, fontweight='bold', color='#8B0000')
+                fontsize=18, fontweight='bold', color='#8B0000')
 
     # Layer 2: Preprocessing - LARGER boxes
     y2 = 6.5
@@ -265,7 +265,7 @@ def create_system_architecture_clearer(output_path: str):
                               edgecolor='#CC6600', facecolor=color, linewidth=3)
         ax.add_patch(box)
         ax.text(x + w/2, y + h/2, label, ha='center', va='center', 
-                fontsize=15, fontweight='bold', color='#CC6600')
+                fontsize=18, fontweight='bold', color='#CC6600')
 
     # Arrow from data to preprocessing
     arrow = FancyArrowPatch((4, y1), (6.5, y2+1.3), arrowstyle='->', 
@@ -286,7 +286,7 @@ def create_system_architecture_clearer(output_path: str):
                               edgecolor='#0066CC', facecolor=color, linewidth=3)
         ax.add_patch(box)
         ax.text(x + w/2, y + h/2, label, ha='center', va='center', 
-                fontsize=15, fontweight='bold', color='#0066CC')
+                fontsize=18, fontweight='bold', color='#0066CC')
 
     # Arrows between model components (top row)
     arrow1 = FancyArrowPatch((15, y3+0.9), (15.5, y3+0.9), arrowstyle='->', 
@@ -314,7 +314,7 @@ def create_system_architecture_clearer(output_path: str):
                               edgecolor='#006600', facecolor=color, linewidth=3)
         ax.add_patch(box)
         ax.text(x + w/2, y + h/2, label, ha='center', va='center', 
-                fontsize=15, fontweight='bold', color='#006600')
+                fontsize=18, fontweight='bold', color='#006600')
 
     # Arrow from model to training
     arrow = FancyArrowPatch((13.5, y3+1.8), (14, y4), arrowstyle='->', 
@@ -334,7 +334,7 @@ def create_system_architecture_clearer(output_path: str):
                               edgecolor='#6600CC', facecolor=color, linewidth=3)
         ax.add_patch(box)
         ax.text(x + w/2, y + h/2, label, ha='center', va='center', 
-                fontsize=15, fontweight='bold', color='#6600CC')
+                fontsize=18, fontweight='bold', color='#6600CC')
 
     # Arrows in inference pipeline
     for i in range(3):
@@ -362,9 +362,9 @@ def create_system_architecture_clearer(output_path: str):
     # Add layer labels OUTSIDE boxes next to numbers - LARGER text
     labels = [
         (0.90, y1+0.75, 'Data', '#8B0000', 18),
-        (0.90, y2+1.95, 'Pre-\nprocessing', '#CC6600', 16),
-        (10.2, y3+0.9, 'Model\nArchitecture', '#0066CC', 16),
-        (10.6, y4+0.65, 'Training &\nValidation', '#006600', 16),
+        (0.90, y2+1.95, 'Pre-\nprocessing', '#CC6600', 18),
+        (10.2, y3+0.9, 'Model\nArchitecture', '#0066CC', 18),
+        (10.6, y4+0.65, 'Training &\nValidation', '#006600', 18),
         (0.90, y5+1.5, 'Inference', '#6600CC', 18)
     ]
     
