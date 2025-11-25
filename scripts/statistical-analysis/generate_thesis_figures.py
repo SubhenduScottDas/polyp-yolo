@@ -217,6 +217,167 @@ def create_system_architecture(output_path: str):
     plt.close()
 
 
+def create_system_architecture_clearer(output_path: str):
+    """
+    Create complete system architecture diagram with LARGER, MORE READABLE labels.
+    Optimized for thesis with improved legibility and layout.
+    
+    Shows 5-layer architecture with enhanced visibility:
+    1. Data Layer (Kvasir-SEG)
+    2. Preprocessing Layer (Mask to bbox, Split, Augmentation)
+    3. Model Layer (YOLOv8 components)
+    4. Training & Validation Layer
+    5. Inference Layer
+    
+    Args:
+        output_path: Path to save the generated figure
+    """
+    _, ax = plt.subplots(figsize=(20, 12), dpi=300)
+    ax.set_xlim(0, 20)
+    ax.set_ylim(0, 12)
+    ax.axis('off')
+
+    # Title - MUCH LARGER
+    ax.text(10, 11.2, 'Complete YOLOv8 Polyp Detection System Architecture', 
+            ha='center', fontsize=22, fontweight='bold', color='#1A3A4F')
+
+    # Layer 1: Data - LARGER boxes and text
+    y1 = 9
+    boxes_l1 = [
+        (2, y1, 4, 1.5, 'Kvasir-SEG\nDataset\n(1000 images)', '#FFE6E6'),
+    ]
+    for x, y, w, h, label, color in boxes_l1:
+        box = FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.08", 
+                              edgecolor='#8B0000', facecolor=color, linewidth=3)
+        ax.add_patch(box)
+        ax.text(x + w/2, y + h/2, label, ha='center', va='center', 
+                fontsize=16, fontweight='bold', color='#8B0000')
+
+    # Layer 2: Preprocessing - LARGER boxes
+    y2 = 6.5
+    boxes_l2 = [
+        (1.5, y2, 3, 1.3, 'Mask to\nBbox', '#FFF4E6'),
+        (5, y2, 3, 1.3, 'Train/Val\nSplit (80/20)', '#FFF4E6'),
+        (8.5, y2, 3, 1.3, 'Data\nAugmentation', '#FFF4E6'),
+    ]
+    for x, y, w, h, label, color in boxes_l2:
+        box = FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.08", 
+                              edgecolor='#CC6600', facecolor=color, linewidth=3)
+        ax.add_patch(box)
+        ax.text(x + w/2, y + h/2, label, ha='center', va='center', 
+                fontsize=15, fontweight='bold', color='#CC6600')
+
+    # Arrow from data to preprocessing
+    arrow = FancyArrowPatch((4, y1), (6.5, y2+1.3), arrowstyle='->', 
+                           mutation_scale=35, linewidth=3, color='#555')
+    ax.add_patch(arrow)
+
+    # Layer 3: Model Architecture - LARGER boxes
+    y3 = 4.3
+    boxes_l3 = [
+        (11.5, y3, 3.5, 1.8, 'YOLOv8-nano\nBackbone\n(CSPDarknet)', '#E6F3FF'),
+        (15.5, y3, 3.5, 1.8, 'Neck\n(PANet/FPN)', '#E6F3FF'),
+    ]
+    # Detection head box
+    boxes_l3.append((11.5, y3-2.2, 7.5, 1.5, 'Detection Head\n(Anchor-Free, Decoupled)', '#E6F3FF'))
+    
+    for x, y, w, h, label, color in boxes_l3:
+        box = FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.08", 
+                              edgecolor='#0066CC', facecolor=color, linewidth=3)
+        ax.add_patch(box)
+        ax.text(x + w/2, y + h/2, label, ha='center', va='center', 
+                fontsize=15, fontweight='bold', color='#0066CC')
+
+    # Arrows between model components (top row)
+    arrow1 = FancyArrowPatch((15, y3+0.9), (15.5, y3+0.9), arrowstyle='->', 
+                            mutation_scale=35, linewidth=3.5, color='#0066CC')
+    ax.add_patch(arrow1)
+    
+    # Arrow from neck to detection head
+    arrow2 = FancyArrowPatch((15, y3), (15, y3-2.2+1.5), arrowstyle='->', 
+                            mutation_scale=35, linewidth=3.5, color='#0066CC')
+    ax.add_patch(arrow2)
+
+    # Arrow from preprocessing to model
+    arrow = FancyArrowPatch((10, y2+0.6), (11.5, y3+0.9), arrowstyle='->', 
+                           mutation_scale=35, linewidth=3, color='#555')
+    ax.add_patch(arrow)
+
+    # Layer 4: Training & Validation - LARGER boxes
+    y4 = 8.5
+    boxes_l4 = [
+        (12, y4, 4, 1.3, 'Training\n(50 epochs, BS=16)', '#E6FFE6'),
+        (16.5, y4, 3, 1.3, 'Validation\n(mAP@50: 89.4%)', '#E6FFE6'),
+    ]
+    for x, y, w, h, label, color in boxes_l4:
+        box = FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.08", 
+                              edgecolor='#006600', facecolor=color, linewidth=3)
+        ax.add_patch(box)
+        ax.text(x + w/2, y + h/2, label, ha='center', va='center', 
+                fontsize=15, fontweight='bold', color='#006600')
+
+    # Arrow from model to training
+    arrow = FancyArrowPatch((13.5, y3+1.8), (14, y4), arrowstyle='->', 
+                           mutation_scale=35, linewidth=3, color='#555')
+    ax.add_patch(arrow)
+
+    # Layer 5: Inference Pipeline - LARGER boxes
+    y5 = 0.1
+    boxes_l5 = [
+        (2, y5, 3.5, 1.2, 'Image/Video\nInput', '#F0E6FF'),
+        (6.5, y5, 3.5, 1.2, 'Model\nInference', '#F0E6FF'),
+        (11, y5, 3.5, 1.2, 'NMS\nPost-processing', '#F0E6FF'),
+        (15.5, y5, 3.5, 1.2, 'Annotated\nOutput', '#F0E6FF'),
+    ]
+    for x, y, w, h, label, color in boxes_l5:
+        box = FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.08", 
+                              edgecolor='#6600CC', facecolor=color, linewidth=3)
+        ax.add_patch(box)
+        ax.text(x + w/2, y + h/2, label, ha='center', va='center', 
+                fontsize=15, fontweight='bold', color='#6600CC')
+
+    # Arrows in inference pipeline
+    for i in range(3):
+        x1 = 5.5 + i*4.5
+        x2 = 6.5 + i*4.5
+        arrow = FancyArrowPatch((x1, y5+0.6), (x2, y5+0.6), arrowstyle='->', 
+                               mutation_scale=35, linewidth=3, color='#6600CC')
+        ax.add_patch(arrow)
+
+    # Add step numbers in circles OUTSIDE boxes - positioned further left/right
+    steps = [
+        (0.5, y1+0.75, '1', '#8B0000'),
+        (0.5, y2+1.95, '2', '#CC6600'),
+        (10.8, y3+0.9, '3', '#0066CC'),
+        (11.2, y4+0.65, '4', '#006600'),
+        (0.5, y5+1.5, '5', '#6600CC')
+    ]
+    
+    for x, y, num, color in steps:
+        circle = plt.Circle((x, y), 0.35, color=color, zorder=10)
+        ax.add_patch(circle)
+        ax.text(x, y, num, ha='center', va='center', 
+                fontsize=18, fontweight='bold', color='white', zorder=11)
+    
+    # Add layer labels OUTSIDE boxes next to numbers - LARGER text
+    labels = [
+        (0.90, y1+0.75, 'Data', '#8B0000', 18),
+        (0.90, y2+1.95, 'Pre-\nprocessing', '#CC6600', 16),
+        (10.2, y3+0.9, 'Model\nArchitecture', '#0066CC', 16),
+        (10.6, y4+0.65, 'Training &\nValidation', '#006600', 16),
+        (0.90, y5+1.5, 'Inference', '#6600CC', 18)
+    ]
+    
+    for x, y, text, color, fontsize in labels:
+        ax.text(x, y, text, fontsize=fontsize, fontweight='bold', color=color,
+                ha='left' if x < 5 else 'right', va='center')
+
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=300, bbox_inches='tight', facecolor='white')
+    print(f'✓ Created {output_path}')
+    plt.close()
+
+
 def create_mask_to_bbox_visualization(kvasir_dir: str, output_path: str, num_examples: int = 3):
     """
     Create mask to bounding box conversion visualization using actual Kvasir-SEG data.
@@ -448,6 +609,8 @@ def main():
     if 'architecture' in figures_to_generate:
         print("\n[2/4] Generating system architecture diagram...")
         create_system_architecture(str(output_dir / 'chp3' / 'system_architecture.png'))
+        print("\n[2b/4] Generating clearer system architecture diagram...")
+        create_system_architecture_clearer(str(script_dir / 'system_architecture_clearer.png'))
     
     if 'mask2bbox' in figures_to_generate:
         print("\n[3/4] Generating mask to bbox visualization...")
