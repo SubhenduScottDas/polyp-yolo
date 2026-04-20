@@ -1,6 +1,57 @@
 # 🔬 YOLO-based Polyp Detection System
 
-**📊 Complete Research Package: ~75MB total with trained model + test data + results**
+**📊 Complete Research Package: ~150MB total with trained model + test data + Phase 1 & Phase 2 results**
+
+---
+
+## Table of Contents
+
+**🔬 Phase 1 — YOLOv8 Frame-by-Frame Detection**
+- [Local Data Management](#local-data-management)
+- [Repository Structure](#repository-structure)
+- [Included Test Data & Results](#-included-test-data--results)
+- [Quick Start](#quick-start)
+- [Training Results](#training-results)
+- [Complete Instruction Manual](#complete-instruction-manual)
+- [Real Video Testing Results](#-real-video-testing-results)
+- [Test Outcomes — Multi-Video Validation](#-test-outcomes---multi-video-validation)
+- [Complete Training Process Documentation](#complete-training-process-documentation)
+- [Additional Notes](#additional-notes)
+
+**🧠 Phase 2 — Temporal CADe Pipeline (SORT + Confidence Smoothing)**
+- [What Was Built](#what-was-built)
+- [Architecture: Seven-Step Pipeline](#architecture-seven-step-pipeline)
+- [Running the Temporal Pipeline](#running-the-temporal-pipeline)
+- [Phase 2 Results — All 7 Test Videos](#phase-2-results--all-7-test-videos)
+- [Visual Annotation Changes from Phase 1](#visual-annotation-changes-from-phase-1)
+- [Dependencies Added in Phase 2](#dependencies-added-in-phase-2)
+
+**📚 Reference**
+- [Thesis & Statistical Analysis](#-thesis--statistical-analysis)
+- [Documentation](#-documentation)
+- [License](#-license)
+
+**📄 Sub-READMEs & Guides**
+- [TRAINING.md](TRAINING.md) — Full training guide: data prep, hyperparameters, troubleshooting
+- [EVALUATION.md](EVALUATION.md) — Performance benchmarks and validation methodology
+- [DEPLOYMENT.md](DEPLOYMENT.md) — Production deployment and clinical integration
+- [REPOSITORY_SIZE.md](REPOSITORY_SIZE.md) — Git strategy and repository size breakdown
+- [scripts/statistical-analysis/README.md](scripts/statistical-analysis/README.md) — Statistical analysis and thesis figure generation
+
+---
+
+## Overview
+
+| Phase | What it does | Key entry point | Outputs |
+|-------|-------------|-----------------|---------|
+| **Phase 1** — Frame-by-Frame Detection | YOLOv8n inference per frame, no temporal memory | `scripts/video_infer_yolo.py` | `*_annotated.mp4`, `*_detections.csv` |
+| **Phase 2** — Temporal CADe Pipeline | SORT tracking + confidence smoothing + gap recovery | `pipeline/main_pipeline.py` | `*_tracked.mp4`, `*_tracked.csv` |
+
+YOLO model weights are **identical in both phases** — Phase 2 is entirely post-processing.
+
+**Trained model performance:** mAP@50 **89.4%** · mAP@50-95 70.7% · Precision 82.8% · Recall 86.4%
+
+---
 
 ## Local Data Management
 

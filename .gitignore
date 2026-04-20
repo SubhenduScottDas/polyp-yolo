@@ -30,19 +30,17 @@ models/
 models/polyp_yolov8n_clean/*.png
 models/polyp_yolov8n_clean/*.jpg
 
-# Results directory - exclude all except CSVs and sample_inference
-# Video files (mp4, mpg, avi, mov, mkv) are never tracked — regenerate by running the pipeline
+# Results directory — include everything except the demo synthesis video
 results/*
-results/**/*.mp4
-results/**/*.mpg
-results/**/*.avi
-results/**/*.mov
-results/**/*.mkv
 !results/demo_detections.csv
-!results/phase2/
-!results/phase2/*.csv
+!results/sample_from_images.mp4
+!results/video_demo_out.mp4
 !results/sample_inference/
 !results/*_detections.csv
+!results/*_annotated.mp4
+!results/phase2/
+!results/phase2/*.csv
+!results/phase2/*.mp4
 
 # Data directory - exclude all except test-set
 data/*
