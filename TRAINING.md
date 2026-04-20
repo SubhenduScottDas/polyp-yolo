@@ -1,6 +1,6 @@
 # 🎯 Training Guide
 
-**Last Updated**: November 14, 2025
+**Last Updated**: April 2026
 
 ## Overview
 
@@ -168,9 +168,9 @@ Dataset: Kvasir-SEG (800 train, 200 val)
 Results:
 ├── mAP@50: 89.4%
 ├── mAP@50-95: 70.7%
-├── Precision: 88.2%
-├── Recall: 86.1%
-└── Training Time: ~45 minutes (GPU)
+├── Precision: 82.8%
+├── Recall: 86.4%
+└── Training Time: ~7.15 hours (CPU)
 ```
 
 ### Training Curves
@@ -240,6 +240,10 @@ python scripts/video_infer_yolo.py \
 ---
 
 **💡 Pro Tip**: Start with a small number of epochs (3-5) to validate your data pipeline, then scale up to full training once you confirm everything works correctly.
+
+## 🧠 Phase 2 — Temporal CADe Pipeline
+
+After training, the Phase 2 temporal pipeline builds on top of the trained model without any retraining. It adds SORT tracking, confidence smoothing, and gap recovery. See `pipeline/main_pipeline.py` and the [Phase 2 section in README.md](README.md#what-was-built).
 
 ---
 

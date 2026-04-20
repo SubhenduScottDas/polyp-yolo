@@ -1,6 +1,6 @@
 # 📊 Model Evaluation & Benchmarks
 
-**Last Updated**: November 14, 2025
+**Last Updated**: April 2026
 
 ## Overview
 
@@ -16,15 +16,15 @@ Comprehensive evaluation results and benchmarks for the polyp detection YOLO mod
 Performance Metrics:
   mAP@50: 89.4%        # Primary metric (exceeds target of 70%)
   mAP@50-95: 70.7%     # Comprehensive accuracy  
-  Precision: 88.2%     # True positive rate
-  Recall: 86.1%        # Detection completeness
-  F1-Score: 87.1%      # Harmonic mean of precision/recall
+  Precision: 82.8%     # True positive rate
+  Recall: 86.4%        # Detection completeness
+  F1-Score: 84.6%      # Harmonic mean of precision/recall
   
 Technical Specs:
   Model Size: 6 MB     # Deployment-friendly
   Parameters: 3.2M     # Efficient architecture
   Inference Speed: ~30-60 FPS (GPU)
-  Training Time: 45 minutes (RTX GPU)
+  Training Time: ~7.15 hours (CPU)
 ```
 
 ## 📈 Validation Results
@@ -34,8 +34,8 @@ Technical Specs:
 |--------|-------|----------------|
 | **mAP@50** | **89.4%** | Excellent detection accuracy |
 | **mAP@50-95** | **70.7%** | Strong localization precision |
-| **Precision** | **88.2%** | Low false positive rate |
-| **Recall** | **86.1%** | High polyp detection rate |
+| **Precision** | **82.8%** | Low false positive rate |
+| **Recall** | **86.4%** | High polyp detection rate |
 | **True Positives** | 1,247 | Correctly identified polyps |
 | **False Positives** | 168 | Incorrect detections |
 | **False Negatives** | 202 | Missed polyps |
@@ -73,8 +73,8 @@ Tested on 3 different polyp morphologies with real endoscopy footage:
 ```
                 Predicted
                  Polyp  Background
-Actual Polyp      86.1%     13.9%    (Recall)
-       Background  11.8%     88.2%    
+Actual Polyp      86.4%     13.6%    (Recall)
+       Background  17.2%     82.8%    
                  (1-FPR)   (TNR)
 ```
 
@@ -116,9 +116,9 @@ Actual Polyp      86.1%     13.9%    (Recall)
 ### Clinical Performance Standards
 ```yaml
 Minimum Clinical Requirements:
-  Sensitivity (Recall): >80%     ✅ Achieved: 86.1%
-  Specificity: >85%              ✅ Achieved: 88.2%
-  False Positive Rate: <15%      ✅ Achieved: 11.8%
+  Sensitivity (Recall): >80%     ✅ Achieved: 86.4%
+  Specificity: >85%              ⚠️ Achieved: 82.8%
+  False Positive Rate: <15%      ⚠️ Achieved: 17.2%
   Real-time Processing: >25 FPS  ✅ Achieved: 30-60 FPS
   
 Advanced Requirements:
@@ -180,12 +180,13 @@ Optimizations:
 ### Standard Evaluation
 ```bash
 # Complete evaluation on validation set
-python scripts/eval_val.py --model models/polyp_yolov8n_clean/weights/best.pt
+python scripts/eval_val.py --weights models/polyp_yolov8n_clean/weights/best.pt
 
 # Video-based evaluation
 python scripts/video_infer_yolo.py \
-  --video data/test-set/videos/PolipoMSDz2.mpv \
-  --model models/polyp_yolov8n_clean/weights/best.pt \
+  --video data/test-set/videos/PolipoMSDz2.mpg \
+  --weights models/polyp_yolov8n_clean/weights/best.pt \
+  --out results/PolipoMSDz2_evaluation.mp4 \
   --csv evaluation_results.csv
 ```
 

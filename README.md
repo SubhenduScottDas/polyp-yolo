@@ -1,6 +1,6 @@
 # 🔬 YOLO-based Polyp Detection System
 
-**📊 Complete Research Package: ~150MB total with trained model + test data + Phase 1 & Phase 2 results**
+**📊 Complete Research Package: ~150MB local / ~45MB remote clone — trained model + test data + Phase 1 & Phase 2 results**
 
 ---
 
@@ -122,9 +122,15 @@ polyp-yono/
 │     ├─ args.yaml             # Training arguments ✅ INCLUDED  
 │     └─ results.csv           # Training metrics log ✅ INCLUDED
 ├─ notebooks/                  # Jupyter notebooks for analysis
-├─ results/                    # ✅ INCLUDED: Comprehensive test results
-│  ├─ *_detections.csv         # Detection results for each test video
-│  ├─ *_annotated.mp4          # Annotated videos showing bounding boxes
+├─ pipeline/                   # Phase 2 temporal CADe pipeline
+│  ├─ detector.py              # YOLOv8 frame detector wrapper
+│  ├─ tracker.py               # SORT multi-object tracker
+│  ├─ temporal_buffer.py       # Confidence smoother + gap recovery
+│  └─ main_pipeline.py         # Phase 2 entry point
+├─ results/                    # ✅ CSVs INCLUDED; videos LOCAL ONLY (regeneratable)
+│  ├─ *_detections.csv         # Phase 1 detection CSVs ✅ INCLUDED
+│  ├─ *_annotated.mp4          # LOCAL ONLY - annotated videos (regeneratable)
+│  ├─ phase2/                  # Phase 2 — tracked CSVs ✅ INCLUDED, tracked MP4s LOCAL ONLY
 │  └─ sample_inference/        # Example detection outputs
 ├─ runs/                       # Ultralytics training runs (gitignored)
 │  └─ detect/                  # Detection training outputs
@@ -142,7 +148,7 @@ polyp-yono/
 ├─ environment.yml             # Conda environment specification
 ├─ requirements.txt            # Python package dependencies
 ├─ yolo_data.yaml              # YOLO training dataset configuration
-├─ yolov8n.pt                  # Pre-trained YOLO weights
+├─ yolov8n.pt                  # LOCAL ONLY - YOLOv8n base weights (gitignored)
 ├─ README.md                   # Project documentation
 └─ REPOSITORY_SIZE.md          # Detailed size analysis and git strategy
 ```
@@ -166,7 +172,7 @@ polyp-yono/
 - **Annotated videos**: Regeneratable locally — run `scripts/video_infer_yolo.py` or `pipeline/main_pipeline.py` (excluded from remote to reduce clone size)
 - **Comprehensive analysis**: Documented in README with performance metrics
 
-**Total remote repository size: ~50MB** (6MB model + 35MB videos + ~1MB CSVs) — ℹ️ annotated `.mp4` outputs excluded (regeneratable; reduces clone size by ~110MB). Full checklist in [Local Data Management](#local-data-management) above.
+**Total remote repository size: ~45MB** (6MB model + 35MB videos + ~1MB CSVs) — ℹ️ annotated `.mp4` outputs excluded (regeneratable; reduces clone size by ~110MB). Full checklist in [Local Data Management](#local-data-management) above.
 
 📊 **[Detailed Size Analysis →](REPOSITORY_SIZE.md)**
 
@@ -256,7 +262,7 @@ python scripts/video_infer_yolo.py \
 
 The trained model significantly exceeds the target mAP@50 of 0.7, achieving outstanding 89.4% accuracy for medical polyp detection. Model weights and training artifacts are available in `models/polyp_yolov8n_clean/`.
 
-**Training Environment**: Conda `polypbench` environment with PyTorch 2.9.1, Ultralytics 8.3.228, CUDA support.
+**Training Environment**: Conda `polypbench` environment with PyTorch 2.9.1, Ultralytics 8.3.228, CPU (no GPU used).
 
 ## Complete Instruction Manual
 
@@ -270,7 +276,7 @@ conda activate polypbench
 
 # Run video inference with trained model
 python scripts/video_infer_yolo.py \
-  --video data/test-set/videos/PolipoMSDz2.mpv \
+  --video data/test-set/videos/PolipoMSDz2.mpg \
   --weights models/polyp_yolov8n_clean/weights/best.pt \
   --out results/annotated_video.mp4 \
   --csv results/detections.csv \
@@ -279,7 +285,7 @@ python scripts/video_infer_yolo.py \
 ```
 
 **Command Parameters Explained:**
-- `--video`: Path to input video file (supports .mp4, .mpv, .avi, etc.)
+- `--video`: Path to input video file (supports .mp4, .mpg, .avi, etc.)
 - `--weights`: Path to trained model weights file (.pt)
 - `--out`: Output path for annotated video with bounding boxes
 - `--csv`: Output path for CSV file containing frame-by-frame detections
@@ -443,16 +449,16 @@ Our trained model was validated across **multiple polyp types** and anatomical l
 
 | Video | Polyp Type | Detections | Max Confidence | Output Size | Performance |
 |-------|------------|------------|----------------|-------------|-------------|
-| **PolipoMSDz2.mpv** | MSD Variant | **711** | 94.99% | 17MB | ⭐ Excellent |
-| **Pediculado3.mpv** | Pedunculated | **469** | 93.66% | 9.1MB | ⭐ Excellent |
-| **Polypileocecalvalve1.mpv** | Ileocecal Valve | **119** | 93.51% | 3.1MB | ⭐ Excellent |
+| **PolipoMSDz2.mpg** | MSD Variant | **711** | 94.99% | 17MB | ⭐ Excellent |
+| **Pediculado3.mpg** | Pedunculated | **469** | 93.66% | 9.1MB | ⭐ Excellent |
+| **Polypileocecalvalve1.mpg** | Ileocecal Valve | **119** | 93.51% | 3.1MB | ⭐ Excellent |
 
 ### Test Commands Used
 
 ```bash
 # Test 1: MSD Variant Polyp
 python scripts/video_infer_yolo.py \
-  --video data/test-set/videos/PolipoMSDz2.mpv \
+  --video data/test-set/videos/PolipoMSDz2.mpg \
   --weights models/polyp_yolov8n_clean/weights/best.pt \
   --out results/PolipoMSDz2_annotated.mp4 \
   --csv results/PolipoMSDz2_detections.csv \
@@ -460,7 +466,7 @@ python scripts/video_infer_yolo.py \
 
 # Test 2: Pedunculated Polyp  
 python scripts/video_infer_yolo.py \
-  --video data/test-set/videos/Pediculado3.mpv \
+  --video data/test-set/videos/Pediculado3.mpg \
   --weights models/polyp_yolov8n_clean/weights/best.pt \
   --out results/Pediculado3_annotated.mp4 \
   --csv results/Pediculado3_detections.csv \
@@ -468,7 +474,7 @@ python scripts/video_infer_yolo.py \
 
 # Test 3: Ileocecal Valve Polyp
 python scripts/video_infer_yolo.py \
-  --video data/test-set/videos/Polypileocecalvalve1.mpv \
+  --video data/test-set/videos/Polypileocecalvalve1.mpg \
   --weights models/polyp_yolov8n_clean/weights/best.pt \
   --out results/Polypileocecalvalve1_annotated.mp4 \
   --csv results/Polypileocecalvalve1_detections.csv \

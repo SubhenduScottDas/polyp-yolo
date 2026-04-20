@@ -1,6 +1,6 @@
 # 🚀 Production Deployment Guide
 
-**Last Updated**: November 14, 2025
+**Last Updated**: April 2026
 
 ## Overview
 
@@ -31,8 +31,9 @@ pip install -r requirements.txt
 
 # Test deployment
 python scripts/infer_and_viz.py \
-  --image data/test-set/non-sequential\ frames/positive/polyp_41.png \
-  --model models/polyp_yolov8n_clean/weights/best.pt
+  --imgs  "data/test-set/non-sequential frames/positive" \
+  --weights models/polyp_yolov8n_clean/weights/best.pt \
+  --out   test_output
 ```
 
 ## 🏥 Clinical Integration
@@ -422,7 +423,7 @@ jobs:
     - name: Run tests
       run: |
         python -m pytest tests/
-        python scripts/eval_val.py --model models/polyp_yolov8n_clean/weights/best.pt
+        python scripts/eval_val.py --weights models/polyp_yolov8n_clean/weights/best.pt
   
   build:
     needs: test
