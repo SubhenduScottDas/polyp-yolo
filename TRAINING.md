@@ -20,8 +20,15 @@ python -c "import torch; print(f'CUDA: {torch.cuda.is_available()}')"
 ### One-Command Training
 ```bash
 # Complete pipeline from scratch
-python scripts/convert_masks_to_yolo.py --input_dir data/archive/Kvasir-SEG/Kvasir-SEG --output_dir data/processed --multi
-python scripts/split_train_val.py
+python scripts/convert_masks_to_yolo.py \
+  --images     data/archive/Kvasir-SEG/Kvasir-SEG/images \
+  --masks      data/archive/Kvasir-SEG/Kvasir-SEG/masks \
+  --labels_out data/processed/labels \
+  --multi
+python scripts/split_train_val.py \
+  --images data/archive/Kvasir-SEG/Kvasir-SEG/images \
+  --labels data/processed/labels \
+  --out    data/processed
 yolo task=detect mode=train model=yolov8n.pt data=yolo_data.yaml epochs=50 imgsz=640 batch=16 name=polyp_yolov8n
 ```
 
@@ -221,13 +228,13 @@ runs/detect/polyp_yolov8n/
 ### Post-Training Analysis
 ```bash
 # Evaluate final model
-python scripts/eval_val.py --model runs/detect/polyp_yolov8n/weights/best.pt
+python scripts/eval_val.py --weights runs/detect/polyp_yolov8n/weights/best.pt
 
 # Test on sample videos
 python scripts/video_infer_yolo.py \
-  --video data/test-set/videos/PolipoMSDz2.mpg \
-  --model runs/detect/polyp_yolov8n/weights/best.pt \
-  --output test_results.mp4
+  --video   data/test-set/videos/PolipoMSDz2.mpg \
+  --weights runs/detect/polyp_yolov8n/weights/best.pt \
+  --out     test_results.mp4
 ```
 
 ---

@@ -236,13 +236,18 @@ python scripts/video_infer_yolo.py \
 3. **Convert masks to YOLO labels:**
    ```bash
    python scripts/convert_masks_to_yolo.py \
-     --input_dir data/archive/Kvasir-SEG/Kvasir-SEG \
-     --output_dir data/processed
+     --images     data/archive/Kvasir-SEG/Kvasir-SEG/images \
+     --masks      data/archive/Kvasir-SEG/Kvasir-SEG/masks \
+     --labels_out data/processed/labels \
+     --multi
    ```
 
 4. **Split into train/val:**
    ```bash
-   python scripts/split_train_val.py
+   python scripts/split_train_val.py \
+     --images data/archive/Kvasir-SEG/Kvasir-SEG/images \
+     --labels data/processed/labels \
+     --out    data/processed
    ```
 
 5. **Train YOLO model:**
@@ -254,7 +259,7 @@ python scripts/video_infer_yolo.py \
 
 6. **Run evaluation:**
    ```bash
-   python scripts/eval_val.py --model models/polyp_yolov8n/weights/best.pt
+   python scripts/eval_val.py --weights models/polyp_yolov8n_clean/weights/best.pt
    ```
 
 ## Training Results
@@ -526,9 +531,10 @@ python scripts/video_infer_yolo.py \
 **Step 2: Mask to YOLO Conversion**
 ```bash
 python scripts/convert_masks_to_yolo.py \
-  --input_dir data/archive/Kvasir-SEG/Kvasir-SEG \
-  --output_dir data/processed \
-  --multi  # Support for multi-component polyps
+  --images     data/archive/Kvasir-SEG/Kvasir-SEG/images \
+  --masks      data/archive/Kvasir-SEG/Kvasir-SEG/masks \
+  --labels_out data/processed/labels \
+  --multi
 ```
 - Converted binary segmentation masks to YOLO bounding box format
 - Used OpenCV `cv2.findContours()` for multi-component detection
@@ -536,7 +542,10 @@ python scripts/convert_masks_to_yolo.py \
 
 **Step 3: Train/Validation Split**
 ```bash
-python scripts/split_train_val.py
+python scripts/split_train_val.py \
+  --images data/archive/Kvasir-SEG/Kvasir-SEG/images \
+  --labels data/processed/labels \
+  --out    data/processed
 ```
 - Created 80/20 random split (800 train, 200 validation)
 - Maintained parallel `images/` and `labels/` directory structure
@@ -641,8 +650,9 @@ For masks containing multiple separate polyps, use the `--multi` flag during con
 
 ```bash
 python scripts/convert_masks_to_yolo.py \
-  --input_dir data/archive/Kvasir-SEG/Kvasir-SEG \
-  --output_dir data/processed \
+  --images     data/archive/Kvasir-SEG/Kvasir-SEG/images \
+  --masks      data/archive/Kvasir-SEG/Kvasir-SEG/masks \
+  --labels_out data/processed/labels \
   --multi
 ```
 
