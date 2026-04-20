@@ -29,6 +29,7 @@
 **📚 Reference**
 - [Thesis & Statistical Analysis](#-thesis--statistical-analysis)
 - [Documentation](#-documentation)
+- [Dataset Attribution](#-dataset-attribution)
 - [License](#-license)
 
 **📄 Sub-READMEs & Guides**
@@ -57,8 +58,9 @@ YOLO model weights are **identical in both phases** — Phase 2 is entirely post
 
 **📦 What's Included in This Repository:**
 - ✅ **Trained model weights** (`models/polyp_yolov8n_clean/weights/best.pt`)
-- ✅ **Test videos** (`data/test-set/videos/` - 7 endoscopy videos)
-- ✅ **Test results** (`results/` - Detection CSVs and annotated videos)
+- ✅ **Test videos** (`data/test-set/videos/` - 7 GIANA challenge endoscopy videos)
+- ✅ **Test result CSVs** (`results/` - Frame-by-frame detection and tracking data)
+- ℹ️ **Annotated result videos** (`.mp4`) — regeneratable locally; not stored on remote
 
 **📥 What You Need to Download for Training:**
 - ❌ **Kvasir-SEG training dataset** (1000 images + masks) - managed locally only
@@ -171,19 +173,21 @@ polyp-yono/
   - `Pediculado3.mpg` (3.8MB) - Pedunculated polyps  
   - `Polypileocecalvalve1.mpg` (960KB) - Ileocecal valve polyps
   - `PolipoMSDz6.mpg`, `Pediculado5.mpg`, `Polypvvv.mpg`, `Rectalcarpet1.mpg`
+- **Source**: [GIANA Challenge](https://giana.grand-challenge.org/) / [GIANA 2017](https://endovissub2017-giana.grand-challenge.org/) — Hospital Clínic, Barcelona, Spain
 
-### Test Results (~35MB total)
+### Test Result CSVs (~1MB on remote)
 - **Detection CSV files**: Frame-by-frame detection data with confidence scores
-- **Annotated videos**: Original videos with bounding box overlays
+- **Annotated videos**: Regeneratable locally — run `scripts/video_infer_yolo.py` or `pipeline/main_pipeline.py` (excluded from remote to reduce clone size)
 - **Comprehensive analysis**: Documented in README with performance metrics
 
 ### Complete Reproducibility Package
 ✅ **Trained model weights** (6MB) - Ready for immediate use  
-✅ **Test videos** (35MB) - Real medical data for validation  
-✅ **Test results** (35MB) - Comprehensive detection outputs  
-✅ **Complete documentation** - Training process, evaluation, and usage instructions
+✅ **Test videos** (35MB) - GIANA challenge colonoscopy videos  
+✅ **Test result CSVs** (~1MB) - Frame-by-frame detection and tracking data  
+✅ **Complete documentation** - Training process, evaluation, and usage instructions  
+ℹ️ **Annotated `.mp4` videos** — excluded from remote (regeneratable; reduces clone size by ~110MB)
 
-**Total repository size: ~97MB** - A complete, self-contained research package!
+**Total remote repository size: ~50MB** - Lean clone; regenerate any output video locally!
 
 📊 **[Detailed Size Analysis →](REPOSITORY_SIZE.md)** - See complete breakdown of local vs. clone sizes
 
@@ -791,6 +795,37 @@ pip install filterpy   # Kalman filter (for SORT tracker)
 ---
 
 **Project Status**: ✅ Complete - Production-ready polyp detection system with medical-grade accuracy
+
+## 🏷️ Dataset Attribution
+
+### Training Dataset
+
+**Kvasir-SEG** — Polyp Segmentation Dataset
+- **Source**: Simula Research Laboratory, Norway
+- **Download**: [datasets.simula.no/kvasir-seg](https://datasets.simula.no/kvasir-seg/)
+- **Content**: 1000 colonoscopy images with pixel-level polyp segmentation masks
+- **License**: Open access for research and educational use
+- **Citation**: Jha et al., *"Kvasir-SEG: A Segmented Polyp Dataset"*, MMM 2020
+
+### Test Videos Dataset
+
+**GIANA — Gastrointestinal Image ANAlysis Challenge**
+- **Challenge websites**: [giana.grand-challenge.org](https://giana.grand-challenge.org/) · [GIANA 2017](https://endovissub2017-giana.grand-challenge.org/)
+- **Clinical partner**: Hospital Clínic, Barcelona, Spain (CVC — Computer Vision Center, UAB)
+- **Content**: Colonoscopy video sequences for polyp detection, stored in `data/test-set/videos/`
+- **License**: Fully publicly available research dataset (MICCAI Endoscopic Vision Challenge series)
+- **Series**: MICCAI 2015 · MICCAI 2017 · MICCAI 2018 challenge data
+
+### Additional Reference Dataset
+
+**PolypGen Video Sequence** — Multi-center open-access polyp dataset
+- **Kaggle**: [kaggle.com/datasets/debeshjha1/polypgen-video-sequence](https://www.kaggle.com/datasets/debeshjha1/polypgen-video-sequence)
+- **Synapse**: [syn26376615](https://www.synapse.org/#!Synapse:syn26376615/wiki/613312)
+- **Source**: Debesh Jha et al. — data from 6 hospitals across Europe and Africa
+- **Content**: 1,537 polyp images + 2,225 positive video sequences + 4,275 negative frames
+- **License**: Open-access
+
+---
 
 ## 📄 License
 

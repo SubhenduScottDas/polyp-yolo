@@ -14,6 +14,9 @@ __pycache__/
 venv/
 env/
 
+# Base YOLO weights (AGPL-3.0; auto-downloaded by ultralytics CLI — not stored on remote)
+yolov8n.pt
+
 # YOLO training artifacts (exclude training runs but keep production model)
 runs/
 wandb/
@@ -30,17 +33,14 @@ models/
 models/polyp_yolov8n_clean/*.png
 models/polyp_yolov8n_clean/*.jpg
 
-# Results directory — include everything except the demo synthesis video
+# Results directory — CSV data only; all .mp4 videos are regeneratable and excluded from remote
 results/*
 !results/demo_detections.csv
-!results/sample_from_images.mp4
-!results/video_demo_out.mp4
 !results/sample_inference/
 !results/*_detections.csv
-!results/*_annotated.mp4
 !results/phase2/
+results/phase2/*.mp4
 !results/phase2/*.csv
-!results/phase2/*.mp4
 
 # Data directory - exclude all except test-set
 data/*
