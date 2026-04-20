@@ -9,3 +9,5 @@ seaborn
 wandb
 onnx
 onnxruntime
+filterpy
+scipy

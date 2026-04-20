@@ -33,6 +33,7 @@ models/polyp_yolov8n_clean/*.jpg
 # Results directory - exclude all except test results
 results/*
 !results/demo_detections.csv
+!results/phase2/
 !results/sample_inference/
 !results/*_detections.csv
 !results/*_annotated.mp4
@@ -48,3 +49,4 @@ thesis-prep-docs/
 tmp/
 temp/
 test_output/
+copilot/
