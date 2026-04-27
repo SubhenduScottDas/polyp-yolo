@@ -243,7 +243,12 @@ python scripts/video_infer_yolo.py \
 
 ## 🧠 Phase 2 — Temporal CADe Pipeline
 
-After training, the Phase 2 temporal pipeline builds on top of the trained model without any retraining. It adds SORT tracking, confidence smoothing, and gap recovery. See `pipeline/main_pipeline.py` and the [Phase 2 section in README.md](README.md#what-was-built).
+After training, the Phase 2 temporal pipeline builds on top of the trained model without any retraining. It adds tracking, confidence smoothing, and gap recovery. Two tracker backends are available:
+
+- **SORT** (`--tracker sort`): Kalman filter + Hungarian algorithm, IoU-only association → `results/phase_2_sort/`
+- **DeepSORT** (`--tracker deepsort`): appearance embeddings (PyTorch MobileNet) + IoU association → `results/phase_2_deepsort/`
+
+See `pipeline/main_pipeline.py` and the [Phase 2 section in README.md](README.md#what-was-built).
 
 ---
 

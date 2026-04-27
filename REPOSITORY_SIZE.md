@@ -63,11 +63,14 @@ A complete, production-ready research package containing:
   - Sequential and non-sequential test cases
 
 #### 📊 Results & Detection Data
-- **Phase 1 Detection CSVs** (`results/*_detections.csv`): **~1 MB**
+- **Phase 1 Detection CSVs** (`results/phase_1/*_phase1.csv`): **~1 MB**
   - Frame-by-frame detection data with confidence scores
-  - 3 primary test videos fully logged
-- **Phase 2 Tracking CSVs** (`results/phase2/*.csv`): **~1 MB**
-  - SORT-tracked output with `conf_raw`, `conf_smooth`, `recovered` columns
+  - All 7 test videos logged
+- **Phase 2 SORT CSVs** (`results/phase_2_sort/logs/*_tracked.csv` + `*.json`): **~1 MB**
+  - SORT-tracked output with `conf_raw`, `conf_smooth`, `recovered` columns + tracking log JSON + metrics JSON
+  - All 7 test videos logged
+- **Phase 2 DeepSORT CSVs** (`results/phase_2_deepsort/logs/*_deepsort.csv` + `*.json`): **~1 MB**
+  - DeepSORT-tracked output (appearance + IoU) with same columns + tracking log JSON + metrics JSON
   - All 7 test videos logged
 - **Documentation & Scripts** (<1 MB): Complete pipeline code
 
@@ -86,11 +89,14 @@ A complete, production-ready research package containing:
 │   ├── args.yaml                   #    Training config
 │   └── results.csv                 #    Metrics log
 ├── data/test-set/                  # ✅ Test videos & frames (35 MB)
-├── results/*_detections.csv        # ✅ Phase 1 detection CSVs (~1 MB)
-├── results/phase2/*.csv            # ✅ Phase 2 tracking CSVs (~1 MB)
+├── results/phase_1/*.csv           # ✅ Phase 1 detection CSVs (~1 MB)
+├── results/phase_2_sort/logs/      # ✅ Phase 2 SORT tracking CSVs + JSON (~1 MB)
+├── results/phase_2_sort/metrics/   # ✅ Phase 2 SORT metrics JSON
+├── results/phase_2_deepsort/logs/  # ✅ Phase 2 DeepSORT tracking CSVs + JSON (~1 MB)
+├── results/phase_2_deepsort/metrics/ # ✅ Phase 2 DeepSORT metrics JSON
 ├── results/sample_inference/       # ✅ Example outputs
 ├── scripts/                        # ✅ Core Phase 1 pipeline
-├── pipeline/                       # ✅ Phase 2 temporal CADe pipeline
+├── pipeline/                       # ✅ Phase 2 temporal CADe pipeline (SORT + DeepSORT)
 ├── .github/copilot-instructions.md # ✅ Copilot dev context
 └── docs & configs                  # ✅ Documentation & configuration
 
@@ -99,8 +105,9 @@ A complete, production-ready research package containing:
 ├── data/processed/                 # ❌ Generated training data (76 MB)
 ├── models/ (except clean)          # ❌ Experimental model variants
 ├── runs/                           # ❌ Ultralytics training logs (22 MB)
-├── results/*.mp4                   # ❌ Phase 1 annotated videos (~90 MB)
-├── results/phase2/*.mp4            # ❌ Phase 2 annotated videos (~20 MB)
+├── results/phase_1/*.mp4           # ❌ Phase 1 annotated videos (~90 MB)
+├── results/phase_2_sort/videos/    # ❌ Phase 2 SORT annotated videos (~20 MB)
+├── results/phase_2_deepsort/videos/ # ❌ Phase 2 DeepSORT annotated videos (~20 MB)
 ├── yolov8n.pt                      # ❌ Base YOLOv8n weights (6.2 MB, AGPL-3.0)
 ├── test_output/                    # ❌ Temporary inference results (14 MB)
 ├── copilot/                        # ❌ Personal Copilot session prompts
@@ -126,14 +133,28 @@ models/
 !models/polyp_yolov8n_clean/args.yaml
 !models/polyp_yolov8n_clean/results.csv
 
-# Results — CSVs only; .mp4 files are regeneratable
+# Results — CSVs/JSON only; .mp4 files are regeneratable
 results/*
-!results/*_detections.csv
 !results/demo_detections.csv
 !results/sample_inference/
-!results/phase2/
-results/phase2/*.mp4   # Exclude Phase 2 annotated videos
-!results/phase2/*.csv  # Allow Phase 2 tracking CSVs
+
+!results/phase_1/
+results/phase_1/*.mp4          # Exclude Phase 1 annotated videos
+!results/phase_1/*.csv         # Allow Phase 1 detection CSVs
+
+!results/phase_2_sort/
+!results/phase_2_sort/logs/
+results/phase_2_sort/videos/   # Exclude Phase 2 SORT annotated videos
+!results/phase_2_sort/logs/*.csv
+!results/phase_2_sort/logs/*.json
+!results/phase_2_sort/metrics/
+
+!results/phase_2_deepsort/
+!results/phase_2_deepsort/logs/
+results/phase_2_deepsort/videos/  # Exclude Phase 2 DeepSORT annotated videos
+!results/phase_2_deepsort/logs/*.csv
+!results/phase_2_deepsort/logs/*.json
+!results/phase_2_deepsort/metrics/
 
 # Always excluded
 runs/          # Ultralytics training logs
@@ -201,7 +222,8 @@ git gc --aggressive
 | Nov 13, 2025 | Initial setup | ~1 MB | Scripts and configs only |
 | Nov 13, 2025 | Production model added | ~7 MB | `polyp_yolov8n_clean/weights/best.pt` included |
 | Nov 14, 2025 | Test data & results added | ~97 MB | Test videos + annotated `.mp4` results included |
-| Apr 2026 | Phase 2 pipeline added | ~97 MB | `pipeline/` package; Phase 2 CSVs tracked |
+| Apr 2026 | Phase 2 pipeline added | ~97 MB | `pipeline/` package; Phase 2 SORT CSVs tracked |
+| Apr 2026 | Phase 2 DeepSORT added | **~47 MB** | DeepSORT tracker + restructured results (`phase_1/`, `phase_2_sort/`, `phase_2_deepsort/`) |
 | Apr 2026 | Remote cleanup | **~45 MB** | Removed `yolov8n.pt` (AGPL-3.0) + 12 annotated `.mp4` videos (~55 MB saved) |
 
 ---

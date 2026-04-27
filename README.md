@@ -18,7 +18,7 @@
 - [Complete Training Process Documentation](#complete-training-process-documentation)
 - [Additional Notes](#additional-notes)
 
-**🧠 Phase 2 — Temporal CADe Pipeline (SORT + Confidence Smoothing)**
+**🧠 Phase 2 — Temporal CADe Pipeline (SORT + DeepSORT + Confidence Smoothing)**
 - [What Was Built](#what-was-built)
 - [Architecture: Seven-Step Pipeline](#architecture-seven-step-pipeline)
 - [Running the Temporal Pipeline](#running-the-temporal-pipeline)
@@ -46,7 +46,8 @@
 | Phase | What it does | Key entry point | Outputs |
 |-------|-------------|-----------------|---------|
 | **Phase 1** — Frame-by-Frame Detection | YOLOv8n inference per frame, no temporal memory | `scripts/video_infer_yolo.py` | `results/phase_1/*_phase1.mp4`, `*_phase1.csv` |
-| **Phase 2** — Temporal CADe Pipeline | SORT tracking + confidence smoothing + gap recovery | `pipeline/main_pipeline.py` | `*_tracked.mp4`, `*_tracked.csv` |
+| **Phase 2a** — SORT Temporal CADe | SORT tracking + confidence smoothing + gap recovery | `pipeline/main_pipeline.py --tracker sort` | `results/phase_2_sort/videos/*_tracked.mp4`, `logs/*_tracked.csv` |
+| **Phase 2b** — DeepSORT Temporal CADe | DeepSORT (appearance+IoU) + confidence smoothing + gap recovery | `pipeline/main_pipeline.py --tracker deepsort` | `results/phase_2_deepsort/videos/*_deepsort.mp4`, `logs/*_deepsort.csv` |
 
 YOLO model weights are **identical in both phases** — Phase 2 is entirely post-processing.
 
