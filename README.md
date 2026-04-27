@@ -759,6 +759,20 @@ done
 
 > **Note on low-continuity videos** (`Pediculado5`, `Rectalcarpet1`): these contain long sections without visible polyps. The model correctly withholds detections — expected clinical behaviour.
 
+### Phase 2 Conclusion: SORT Outperforms DeepSORT for Endoscopy
+
+**SORT outperformed DeepSORT across all 7 test videos** — higher detection continuity, fewer flicker events, and lower confidence variance in 5/7 cases. This is a meaningful thesis finding: algorithmic complexity does not automatically translate to better performance in the medical imaging domain.
+
+**Three domain-specific reasons why DeepSORT underperformed:**
+
+1. **`n_init=2` probation cost** — DeepSORT delays track confirmation until a detection appears in 2 consecutive frames. For a single-polyp scene, every track restart (after an IoU miss between frames) suppresses a valid detection for one additional frame, compounding into significantly lower continuity rates (up to −18 percentage points vs SORT).
+
+2. **Appearance model domain mismatch** — The MobileNet embedder in `deep-sort-realtime` was trained on pedestrian/surveillance footage, not endoscopy. Appearance features extracted from pinkish mucosal tissue are unreliable, causing spurious re-ID failures and driving confidence variance 2–5× higher than SORT.
+
+3. **Single-class, single-object setting** — DeepSORT's core strength is disambiguating *multiple similar-looking objects* (e.g., pedestrians crossing paths). With one polyp class and typically one polyp per frame, IoU-alone (SORT) is already nearly unambiguous. The appearance model adds noise rather than signal.
+
+**Recommendation:** For clinical endoscopy CADe pipelines, **SORT is the preferred tracker** — simpler, faster, higher continuity, and more stable confidence scores. DeepSORT would only be advantageous in multi-polyp scenes with significant occlusion or where a domain-adapted appearance model (trained on endoscopy data) is available.
+
 ### Visual Annotation Changes from Phase 1
 
 | Feature | Phase 1 (`video_infer_yolo.py`) | Phase 2 (`main_pipeline.py`) |
