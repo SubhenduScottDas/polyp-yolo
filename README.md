@@ -516,6 +516,23 @@ python scripts/video_infer_yolo.py \
 - **Processing Consistency**: Stable performance regardless of video length/quality
 - **Output Quality**: High-resolution annotations suitable for medical review
 
+### Phase 1 Conclusion: Strong Detection, No Temporal Memory
+
+**YOLOv8n achieves production-grade accuracy (89.4% mAP@50)** and generalises robustly across all three primary polyp morphologies tested — MSD variant, pedunculated, and ileocecal valve. Real-video validation on GIANA challenge endoscopy confirms that training on Kvasir-SEG transfers well to unseen clinical footage.
+
+**What Phase 1 proved:**
+1. **Detector is reliable** — confidence scores consistently in the 0.50–0.95 range with no systematic drift across video length or polyp type
+2. **Multi-morphology generalisation** — the single-class YOLOv8n model trained on Kvasir-SEG correctly fires across structurally different polyp presentations without per-type tuning
+3. **Frame-level output is sufficient for detection** — bounding boxes are anatomically accurate and suitable for clinical review
+
+**Phase 1's inherent limitation — the motivation for Phase 2:**
+- Detections are **stateless**: each frame is processed independently with no knowledge of adjacent frames
+- This produces flickering bounding boxes (box present frame N, absent frame N+1, present frame N+2) even when the polyp is continuously visible
+- Confidence scores jump frame-to-frame (raw detector variance), making trend analysis unreliable
+- There is no mechanism to bridge short missed-detection gaps (e.g., motion blur, specular reflection)
+
+These limitations are purely post-processing problems — the YOLO weights remain unchanged in Phase 2, which adds SORT tracking, temporal smoothing, and gap recovery entirely downstream.
+
 ## Complete Training Process Documentation
 
 > 📖 **Full step-by-step walkthrough in [TRAINING.md](TRAINING.md)** — data preparation, training configuration, hyperparameter details, and validation methodology.
