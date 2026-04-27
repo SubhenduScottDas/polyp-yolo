@@ -1,0 +1,11 @@
+{
+  "tracker": "deepsort",
+  "video": "data/test-set/videos/Polypileocecalvalve1.mpg",
+  "total_frames": 199,
+  "frames_with_detection": 120,
+  "frames_recovered_only": 11,
+  "detection_continuity_rate": 0.603015,
+  "flicker_count": 16,
+  "confidence_variance": 0.012943,
+  "false_negatives": null
+}

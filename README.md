@@ -45,7 +45,7 @@
 
 | Phase | What it does | Key entry point | Outputs |
 |-------|-------------|-----------------|---------|
-| **Phase 1** — Frame-by-Frame Detection | YOLOv8n inference per frame, no temporal memory | `scripts/video_infer_yolo.py` | `*_annotated.mp4`, `*_detections.csv` |
+| **Phase 1** — Frame-by-Frame Detection | YOLOv8n inference per frame, no temporal memory | `scripts/video_infer_yolo.py` | `results/phase_1/*_phase1.mp4`, `*_phase1.csv` |
 | **Phase 2** — Temporal CADe Pipeline | SORT tracking + confidence smoothing + gap recovery | `pipeline/main_pipeline.py` | `*_tracked.mp4`, `*_tracked.csv` |
 
 YOLO model weights are **identical in both phases** — Phase 2 is entirely post-processing.
@@ -124,13 +124,23 @@ polyp-yono/
 ├─ notebooks/                  # Jupyter notebooks for analysis
 ├─ pipeline/                   # Phase 2 temporal CADe pipeline
 │  ├─ detector.py              # YOLOv8 frame detector wrapper
-│  ├─ tracker.py               # SORT multi-object tracker
-│  ├─ temporal_buffer.py       # Confidence smoother + gap recovery
-│  └─ main_pipeline.py         # Phase 2 entry point
-├─ results/                    # ✅ CSVs INCLUDED; videos LOCAL ONLY (regeneratable)
-│  ├─ *_detections.csv         # Phase 1 detection CSVs ✅ INCLUDED
-│  ├─ *_annotated.mp4          # LOCAL ONLY - annotated videos (regeneratable)
-│  ├─ phase2/                  # Phase 2 — tracked CSVs ✅ INCLUDED, tracked MP4s LOCAL ONLY
+│  ├─ tracker.py               # SORT multi-object tracker (Kalman + Hungarian)
+│  ├─ tracker_deepsort.py      # DeepSORT tracker (PyTorch MobileNet embedder)
+│  ├─ temporal_buffer.py       # Confidence smoother + gap recovery (shared by both trackers)
+│  ├─ output_manager.py        # setup_output_dirs() — tracker-conditional output paths
+│  └─ main_pipeline.py         # Orchestrator — --tracker sort|deepsort switch
+├─ results/                    # ✅ CSVs/JSON included; videos LOCAL ONLY (regeneratable)
+│  ├─ phase_1/                 # Phase 1 outputs (YOLO only, no tracker)
+│  │  ├─ *_phase1.csv          # ✅ INCLUDED — per-frame detection logs
+│  │  └─ *_phase1.mp4          # LOCAL ONLY — annotated videos (regeneratable)
+│  ├─ phase_2_sort/            # Phase 2 outputs — SORT tracker
+│  │  ├─ videos/               # LOCAL ONLY — annotated MP4s
+│  │  ├─ logs/                 # ✅ INCLUDED — *_tracked.csv, *_tracking_log.json
+│  │  └─ metrics/              # ✅ INCLUDED — *_metrics.json
+│  ├─ phase_2_deepsort/        # Phase 2 outputs — DeepSORT tracker
+│  │  ├─ videos/               # LOCAL ONLY — annotated MP4s + frame snapshots
+│  │  ├─ logs/                 # ✅ INCLUDED — *_deepsort.csv, *_tracking_log.json
+│  │  └─ metrics/              # ✅ INCLUDED — *_metrics.json
 │  └─ sample_inference/        # Example detection outputs
 ├─ runs/                       # Ultralytics training runs (gitignored)
 │  └─ detect/                  # Detection training outputs
@@ -346,8 +356,8 @@ conda activate polypbench
 python scripts/video_infer_yolo.py \
   --video data/test-set/videos/PolipoMSDz2.mpg \
   --weights models/polyp_yolov8n_clean/weights/best.pt \
-  --out results/PolipoMSDz2_annotated.mp4 \
-  --csv results/PolipoMSDz2_detections.csv \
+  --out results/phase_1/PolipoMSDz2_phase1.mp4 \
+  --csv results/phase_1/PolipoMSDz2_phase1.csv \
   --conf 0.5 \
   --imgsz 640
 ```
@@ -396,8 +406,8 @@ conda activate polypbench
 python scripts/video_infer_yolo.py \
   --video data/test-set/videos/YOUR_VIDEO.mpg \
   --weights models/polyp_yolov8n_clean/weights/best.pt \
-  --out results/YOUR_VIDEO_annotated.mp4 \
-  --csv results/YOUR_VIDEO_detections.csv \
+  --out results/phase_1/YOUR_VIDEO_phase1.mp4 \
+  --csv results/phase_1/YOUR_VIDEO_phase1.csv \
   --conf 0.5 \
   --imgsz 640
 ```
@@ -405,13 +415,13 @@ python scripts/video_infer_yolo.py \
 **Step 3: Analyze Results**
 ```bash
 # Check detection statistics
-wc -l results/YOUR_VIDEO_detections.csv
+wc -l results/phase_1/YOUR_VIDEO_phase1.csv
 
 # View highest confidence detections  
-awk -F',' 'NR>1 {print $4}' results/YOUR_VIDEO_detections.csv | sort -nr | head -10
+awk -F',' 'NR>1 {print $4}' results/phase_1/YOUR_VIDEO_phase1.csv | sort -nr | head -10
 
 # Check output files
-ls -lh results/YOUR_VIDEO*
+ls -lh results/phase_1/YOUR_VIDEO*
 ```
 
 **Parameter Tuning for Different Videos:**
@@ -460,24 +470,24 @@ Our trained model was validated across **multiple polyp types** and anatomical l
 python scripts/video_infer_yolo.py \
   --video data/test-set/videos/PolipoMSDz2.mpg \
   --weights models/polyp_yolov8n_clean/weights/best.pt \
-  --out results/PolipoMSDz2_annotated.mp4 \
-  --csv results/PolipoMSDz2_detections.csv \
+  --out results/phase_1/PolipoMSDz2_phase1.mp4 \
+  --csv results/phase_1/PolipoMSDz2_phase1.csv \
   --conf 0.5 --imgsz 640
 
 # Test 2: Pedunculated Polyp  
 python scripts/video_infer_yolo.py \
   --video data/test-set/videos/Pediculado3.mpg \
   --weights models/polyp_yolov8n_clean/weights/best.pt \
-  --out results/Pediculado3_annotated.mp4 \
-  --csv results/Pediculado3_detections.csv \
+  --out results/phase_1/Pediculado3_phase1.mp4 \
+  --csv results/phase_1/Pediculado3_phase1.csv \
   --conf 0.5 --imgsz 640
 
 # Test 3: Ileocecal Valve Polyp
 python scripts/video_infer_yolo.py \
   --video data/test-set/videos/Polypileocecalvalve1.mpg \
   --weights models/polyp_yolov8n_clean/weights/best.pt \
-  --out results/Polypileocecalvalve1_annotated.mp4 \
-  --csv results/Polypileocecalvalve1_detections.csv \
+  --out results/phase_1/Polypileocecalvalve1_phase1.mp4 \
+  --csv results/phase_1/Polypileocecalvalve1_phase1.csv \
   --conf 0.5 --imgsz 640
 ```
 
@@ -604,11 +614,11 @@ python3 generate_thesis_figures.py --output-dir /path/to/output
 
 ---
 
-## 🧠 Phase 2: Temporal CADe Pipeline (SORT + Confidence Smoothing)
+## 🧠 Phase 2: Temporal CADe Pipeline (SORT + DeepSORT + Confidence Smoothing)
 
-> **Added:** April 2026 | Based on `copilot/01-master-prompt.md`
+> **Added:** April 2026 | Based on `copilot/01-master-prompt.md` and `copilot/02-deepsort-integration-prompt.md`
 
-The original pipeline processed video frame-by-frame with no memory between frames, causing three clinical problems: flickering bounding boxes, missed detections in intermediate frames, and unstable confidence scores. This phase upgrades it into a **temporally consistent Computer-Aided Detection (CADe) system**.
+The original pipeline processed video frame-by-frame with no memory between frames, causing three clinical problems: flickering bounding boxes, missed detections in intermediate frames, and unstable confidence scores. Phase 2 upgrades it to a **temporally consistent Computer-Aided Detection (CADe) system** with two interchangeable tracker backends.
 
 ### What Was Built
 
@@ -617,94 +627,156 @@ A new modular package `pipeline/` was created alongside the existing `scripts/` 
 ```
 pipeline/
 ├── __init__.py            # Package exports
-├── detector.py            # Step 1: Clean detect(frame) → List[Detection] wrapper
-├── tracker.py             # Step 2: Self-contained SORT tracker (Kalman + Hungarian)
-├── temporal_buffer.py     # Steps 3–5: Sliding window buffer, smoothing, recovery
-└── main_pipeline.py       # Steps 6–7: Orchestrator, annotated video output, metrics
+├── detector.py            # Step 1: detect(frame) → List[Detection] wrapper
+├── tracker.py             # Step 2a: SORT tracker (Kalman + Hungarian, from scratch)
+├── tracker_deepsort.py    # Step 2b: DeepSORT tracker (deep-sort-realtime, PyTorch)
+├── temporal_buffer.py     # Steps 3–5: Sliding window, smoothing, recovery — shared by both
+├── output_manager.py      # setup_output_dirs() utility; tracker-conditional base paths
+└── main_pipeline.py       # Steps 6–7: Orchestrator, HUD, CSV, JSON logs, metrics
 ```
+
+**Both trackers share an identical interface:** `tracker.update(detections, frame) → List[Detection]`
+
+**Both trackers feed the same `TemporalBuffer`** — smoothing and recovery logic is never duplicated.
 
 ### Architecture: Seven-Step Pipeline
 
 | Step | Module | What it does |
-|------|--------|-------------|
+|------|--------|--------------|
 | 1 | `detector.py` | Wraps YOLO into a `Detection` dataclass with `detect(frame)` interface |
-| 2 | `tracker.py` | SORT tracker: Kalman filter predicts bbox, Hungarian algorithm assigns consistent `track_id` across frames |
+| 2 | `tracker.py` / `tracker_deepsort.py` | Assigns consistent `track_id` per polyp across frames |
 | 3 | `temporal_buffer.py` | Stores last 5 frames of bboxes + confidences per `track_id` |
 | 4 | `temporal_buffer.py` | Moving-average confidence: `smoothed_conf = mean(last 5 confs)` |
-| 5 | `temporal_buffer.py` | Missing detection recovery: re-uses last known bbox with decaying confidence when a track disappears for ≤3 frames |
+| 5 | `temporal_buffer.py` | Missing detection recovery: re-uses last bbox with decaying confidence when track disappears for ≤3 frames |
 | 6 | `main_pipeline.py` | Draws stable boxes with filled label tags, frame counter HUD, colour legend |
-| 7 | `main_pipeline.py` | Modular structure + docstrings + BONUS metrics printed at the end |
+| 7 | `main_pipeline.py` | Modular structure + BONUS metrics + JSON tracking log + JSON metrics file |
 
-**SORT algorithm details:**
-- Kalman state vector: `[cx, cy, s, r, vcx, vcy, vs]` (7-D); measurement: `[cx, cy, s, r]` (4-D)
-- Parameters: `max_age=3, min_hits=1, iou_threshold=0.3`
-- Self-contained implementation using `filterpy` + `scipy.optimize.linear_sum_assignment`
+**SORT parameters:** `max_age=3, min_hits=1, iou_threshold=0.3` — IoU-only association
 
-**Recovery algorithm:**
-- After each frame, any `track_id` with recent history but absent from tracker output is bridged
-- Confidence decays by `0.8^gap_frames` (e.g. 1 frame missed → 80% of last conf, 3 frames → 51%)
-- Recovered boxes are drawn in **yellow** and labelled `[R]`; live detections remain **green**
+**DeepSORT parameters:** `max_age=5, n_init=2, max_cosine_distance=0.4` — appearance + IoU association using PyTorch MobileNet embedder (`deep-sort-realtime` library)
+
+**Recovery algorithm:** Confidence decays by `0.8^gap_frames` (1 frame missed → 80%, 3 frames → 51%). Recovered boxes are **yellow** and labelled `[R]`; live detections are **green**.
 
 ### Running the Temporal Pipeline
 
 ```bash
-# Single video
+# Phase 2 — SORT tracker (single video)
 python pipeline/main_pipeline.py \
   --weights models/polyp_yolov8n_clean/weights/best.pt \
   --video data/test-set/videos/PolipoMSDz2.mpg \
-  --conf 0.5
+  --conf 0.5 --tracker sort
+# Output: results/phase_2_sort/videos/PolipoMSDz2_tracked.mp4
+#         results/phase_2_sort/logs/PolipoMSDz2_tracked.csv
+#         results/phase_2_sort/logs/PolipoMSDz2_tracking_log.json
+#         results/phase_2_sort/metrics/PolipoMSDz2_metrics.json
 
-# Outputs saved to results/phase2/<video_stem>_tracked.mp4 and .csv by default
-# Override output paths:
+# Phase 2 — DeepSORT tracker (single video)
 python pipeline/main_pipeline.py \
   --weights models/polyp_yolov8n_clean/weights/best.pt \
   --video data/test-set/videos/PolipoMSDz2.mpg \
-  --out results/phase2/custom_name.mp4 \
-  --csv results/phase2/custom_name.csv \
-  --conf 0.5 \
-  --imgsz 640 \
-  --skip 1
+  --conf 0.5 --tracker deepsort
+# Output: results/phase_2_deepsort/videos/PolipoMSDz2_deepsort.mp4
+#         results/phase_2_deepsort/logs/PolipoMSDz2_deepsort.csv
+#         results/phase_2_deepsort/logs/PolipoMSDz2_tracking_log.json
+#         results/phase_2_deepsort/metrics/PolipoMSDz2_metrics.json
 ```
+
+**All CLI options for `main_pipeline.py`:**
+- `--weights` — path to YOLO `.pt` weights *(required)*
+- `--video` — input video path *(required)*
+- `--tracker` — `sort` (default) or `deepsort`
+- `--conf` — confidence threshold (default: `0.5`)
+- `--imgsz` — inference image size (default: `640`)
+- `--skip` — process every Nth frame (default: `1`)
+- `--out` / `--csv` — override default output paths
 
 **Output CSV columns:** `frame, track_id, class_id, class_name, conf_raw, conf_smooth, x1, y1, x2, y2, recovered`
 
+**tracking_log.json** (per detection per frame): `frame_id, track_id, bbox, confidence, detection_status`
+
+**metrics.json**: `detection_continuity_rate, flicker_count, confidence_variance, frames_recovered_only, false_negatives`
+
+**Frame snapshots** saved automatically in `videos/frames/` for every frame with a recovered or flicker detection.
+
+### Reproducing All Outputs
+
+To regenerate **all** Phase 1 and Phase 2 outputs from scratch:
+
+```bash
+WEIGHTS=models/polyp_yolov8n_clean/weights/best.pt
+
+# ── Phase 1: YOLO-only detection (no tracker) ────────────────────────
+for v in data/test-set/videos/*.mpg; do
+  python scripts/video_infer_yolo.py --weights "$WEIGHTS" --video "$v" --conf 0.5
+done
+# Outputs → results/phase_1/<stem>_phase1.mp4  +  <stem>_phase1.csv
+
+# ── Phase 2 — SORT tracker ───────────────────────────────────────────
+for v in data/test-set/videos/*.mpg; do
+  python pipeline/main_pipeline.py --weights "$WEIGHTS" --video "$v" --conf 0.5 --tracker sort
+done
+# Outputs → results/phase_2_sort/videos/  logs/  metrics/
+
+# ── Phase 2 — DeepSORT tracker ──────────────────────────────────────
+for v in data/test-set/videos/*.mpg; do
+  python pipeline/main_pipeline.py --weights "$WEIGHTS" --video "$v" --conf 0.5 --tracker deepsort
+done
+# Outputs → results/phase_2_deepsort/videos/  logs/  metrics/
+```
+
 ### Phase 2 Results — All 7 Test Videos
 
-All outputs saved to `results/phase2/`:
+**SORT tracker** (`results/phase_2_sort/`):
 
-| Video | Frames | Continuity Rate | Recovery Bridges | Flicker Events |
-|-------|--------|-----------------|------------------|----------------|
-| `Pediculado3` | 646 | **91.3%** | 31 | 69 |
-| `Pediculado5` | 290 | 10.0% | 12 | 0 |
-| `PolipoMSDz2` | 1211 | **87.8%** | 75 | 138 |
-| `PolipoMSDz6` | 1698 | **98.5%** | 37 | 163 |
-| `Polypileocecalvalve1` | 199 | 78.4% | 13 | 17 |
-| `Polypvvv` | 207 | **89.9%** | 4 | 10 |
-| `Rectalcarpet1` | 2101 | 19.8% | 142 | 7 |
+| Video | Frames | Continuity | Recovery bridges | Flicker events | Conf variance |
+|-------|--------|-----------|-----------------|----------------|---------------|
+| `Pediculado3` | 646 | **91.3%** | 31 | 69 | 0.01344 |
+| `Pediculado5` | 290 | 10.0% | 12 | 0 | 0.00031 |
+| `PolipoMSDz2` | 1211 | **87.8%** | 75 | 138 | 0.01731 |
+| `PolipoMSDz6` | 1698 | **98.5%** | 37 | 163 | 0.01543 |
+| `Polypileocecalvalve1` | 199 | 78.4% | 13 | 17 | 0.02026 |
+| `Polypvvv` | 207 | **89.9%** | 4 | 10 | 0.00509 |
+| `Rectalcarpet1` | 2101 | 19.8% | 142 | 7 | 0.00519 |
 
-**Metric definitions (printed at end of every run):**
-- **Detection continuity rate**: `frames_with_any_detection / total_frames_written` — measures pipeline coverage including recovered detections
-- **Recovery bridges**: frames where only recovered (synthesised) detections were shown — counts gap-bridging events
-- **Flicker events**: per-track frames where `|conf_raw[t] − conf_raw[t−1]| > 0.15` — measures raw detector instability
+**DeepSORT tracker** (`results/phase_2_deepsort/`):
 
-> **Note on low-continuity videos** (`Pediculado5`: 10%, `Rectalcarpet1`: 20%): these contain long sections without visible polyps (bowel preparation, camera movement, anatomy transition). The model correctly withholds detections — this is expected clinical behaviour, not a pipeline limitation.
+| Video | Frames | Continuity | Recovery bridges | Flicker events | Conf variance |
+|-------|--------|-----------|-----------------|----------------|---------------|
+| `Pediculado3` | 646 | 82.7% | 129 | 112 | 0.06926 |
+| `Pediculado5` | 290 | 1.4% | 3 | 0 | 0.00000 |
+| `PolipoMSDz2` | 1211 | 73.4% | 236 | 155 | 0.04887 |
+| `PolipoMSDz6` | 1698 | **94.8%** | 167 | 204 | 0.04311 |
+| `Polypileocecalvalve1` | 199 | 60.3% | 11 | 16 | 0.01294 |
+| `Polypvvv` | 207 | 87.0% | 13 | 10 | 0.01299 |
+| `Rectalcarpet1` | 2101 | 4.9% | 54 | 6 | 0.02620 |
+
+**Key observations:**
+- SORT consistently achieves higher continuity — it uses only IoU, so every YOLO detection is immediately confirmed
+- DeepSORT has lower continuity because `n_init=2` requires a track to appear in 2 consecutive frames before being confirmed (probation period), trading short false-positive tracks for more stable long-term tracks
+- Confidence variance is notably higher with DeepSORT — the appearance model causes re-identification across occlusions, introducing ID-switch edge cases that increase raw conf variation
+- Both trackers improve on Phase 1 (no temporal memory) by suppressing isolated single-frame noise and bridging short gaps with recovery
+
+> **Note on low-continuity videos** (`Pediculado5`, `Rectalcarpet1`): these contain long sections without visible polyps. The model correctly withholds detections — expected clinical behaviour.
 
 ### Visual Annotation Changes from Phase 1
 
-| Feature | Phase 1 (`scripts/video_infer_yolo.py`) | Phase 2 (`pipeline/main_pipeline.py`) |
-|---------|----------------------------------------|---------------------------------------|
+| Feature | Phase 1 (`video_infer_yolo.py`) | Phase 2 (`main_pipeline.py`) |
+|---------|--------------------------------|------------------------------|
 | Bounding box colour | Single green | Green (live) / Yellow (recovered `[R]`) |
 | Label style | Plain text above box | Filled colour tag, black text, clamped to frame edges |
 | Confidence shown | Raw detector conf | Smoothed confidence (`mean` of last 5 frames) |
 | Track ID | Not shown | `#id` prefix in label |
 | Frame counter | Not shown | Top-right HUD overlay |
 | Colour legend | Not shown | Bottom-left overlay |
-| Per-run metrics | Not shown | Printed after processing completes |
+| Per-run metrics | Not shown | Printed + saved to `*_metrics.json` |
+| Tracking log | Not saved | `*_tracking_log.json` per-frame per-detection |
+| Frame snapshots | Not saved | Saved to `videos/frames/` for recovered/flicker events |
 
 ### Dependencies Added in Phase 2
 
 ```bash
-pip install filterpy   # Kalman filter (for SORT tracker)
+pip install filterpy            # Kalman filter (SORT tracker)
+pip install deep-sort-realtime  # DeepSORT with PyTorch MobileNet embedder
 # scipy and numpy already present
 ```
 

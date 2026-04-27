@@ -1,0 +1,50 @@
+[
+  {
+    "frame_id": 261,
+    "track_id": 4,
+    "bbox": [
+      39.1,
+      0.1,
+      338.0,
+      232.4
+    ],
+    "confidence": 0.5642,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 262,
+    "track_id": 4,
+    "bbox": [
+      39.1,
+      0.1,
+      338.0,
+      232.4
+    ],
+    "confidence": 0.4513,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 263,
+    "track_id": 4,
+    "bbox": [
+      39.1,
+      0.1,
+      338.0,
+      232.4
+    ],
+    "confidence": 0.3611,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 264,
+    "track_id": 4,
+    "bbox": [
+      39.1,
+      0.1,
+      338.0,
+      232.4
+    ],
+    "confidence": 0.2889,
+    "detection_status": "recovered"
+  }
+]

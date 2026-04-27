@@ -1,0 +1,9698 @@
+[
+  {
+    "frame_id": 3,
+    "track_id": 1,
+    "bbox": [
+      39.8,
+      36.4,
+      150.6,
+      176.2
+    ],
+    "confidence": 0.5111,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 4,
+    "track_id": 1,
+    "bbox": [
+      39.8,
+      36.4,
+      150.6,
+      176.2
+    ],
+    "confidence": 0.5111,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 5,
+    "track_id": 1,
+    "bbox": [
+      60.5,
+      38.6,
+      159.4,
+      169.5
+    ],
+    "confidence": 0.5509,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 6,
+    "track_id": 1,
+    "bbox": [
+      66.1,
+      38.7,
+      159.8,
+      166.7
+    ],
+    "confidence": 0.5276,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 7,
+    "track_id": 1,
+    "bbox": [
+      73.2,
+      40.6,
+      162.2,
+      162.3
+    ],
+    "confidence": 0.5276,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 8,
+    "track_id": 1,
+    "bbox": [
+      70.6,
+      33.9,
+      172.1,
+      167.2
+    ],
+    "confidence": 0.7024,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 9,
+    "track_id": 1,
+    "bbox": [
+      75.4,
+      33.2,
+      176.2,
+      165.6
+    ],
+    "confidence": 0.7024,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 10,
+    "track_id": 1,
+    "bbox": [
+      71.4,
+      26.8,
+      183.3,
+      169.7
+    ],
+    "confidence": 0.7624,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 11,
+    "track_id": 1,
+    "bbox": [
+      73.0,
+      25.0,
+      189.4,
+      170.7
+    ],
+    "confidence": 0.671,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 12,
+    "track_id": 1,
+    "bbox": [
+      72.7,
+      24.8,
+      187.2,
+      170.3
+    ],
+    "confidence": 0.5802,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 13,
+    "track_id": 1,
+    "bbox": [
+      75.1,
+      23.2,
+      190.8,
+      170.1
+    ],
+    "confidence": 0.5802,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 14,
+    "track_id": 1,
+    "bbox": [
+      77.6,
+      21.5,
+      194.4,
+      169.9
+    ],
+    "confidence": 0.5802,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 15,
+    "track_id": 1,
+    "bbox": [
+      80.1,
+      19.9,
+      198.0,
+      169.8
+    ],
+    "confidence": 0.5802,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 16,
+    "track_id": 1,
+    "bbox": [
+      92.5,
+      67.7,
+      192.8,
+      171.3
+    ],
+    "confidence": 0.6471,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 17,
+    "track_id": 1,
+    "bbox": [
+      96.6,
+      70.5,
+      195.0,
+      172.1
+    ],
+    "confidence": 0.6471,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 18,
+    "track_id": 1,
+    "bbox": [
+      99.8,
+      39.2,
+      200.7,
+      153.6
+    ],
+    "confidence": 0.6481,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 19,
+    "track_id": 1,
+    "bbox": [
+      103.6,
+      38.9,
+      203.4,
+      152.1
+    ],
+    "confidence": 0.6481,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 20,
+    "track_id": 1,
+    "bbox": [
+      107.3,
+      38.6,
+      206.1,
+      150.6
+    ],
+    "confidence": 0.6481,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 21,
+    "track_id": 1,
+    "bbox": [
+      111.1,
+      38.3,
+      208.8,
+      149.2
+    ],
+    "confidence": 0.6481,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 22,
+    "track_id": 1,
+    "bbox": [
+      111.1,
+      38.3,
+      208.8,
+      149.2
+    ],
+    "confidence": 0.5184,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 23,
+    "track_id": 1,
+    "bbox": [
+      111.1,
+      38.3,
+      208.8,
+      149.2
+    ],
+    "confidence": 0.4148,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 24,
+    "track_id": 1,
+    "bbox": [
+      111.1,
+      38.3,
+      208.8,
+      149.2
+    ],
+    "confidence": 0.3318,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 29,
+    "track_id": 2,
+    "bbox": [
+      94.1,
+      22.3,
+      207.1,
+      171.4
+    ],
+    "confidence": 0.6477,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 30,
+    "track_id": 2,
+    "bbox": [
+      93.1,
+      23.9,
+      209.0,
+      172.9
+    ],
+    "confidence": 0.8595,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 31,
+    "track_id": 2,
+    "bbox": [
+      92.8,
+      24.5,
+      210.2,
+      175.4
+    ],
+    "confidence": 0.8595,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 32,
+    "track_id": 2,
+    "bbox": [
+      87.7,
+      18.4,
+      210.2,
+      175.4
+    ],
+    "confidence": 0.7558,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 33,
+    "track_id": 2,
+    "bbox": [
+      85.8,
+      19.4,
+      209.4,
+      177.4
+    ],
+    "confidence": 0.7802,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 34,
+    "track_id": 2,
+    "bbox": [
+      85.4,
+      18.1,
+      210.4,
+      178.8
+    ],
+    "confidence": 0.6922,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 35,
+    "track_id": 2,
+    "bbox": [
+      83.5,
+      17.5,
+      210.2,
+      180.5
+    ],
+    "confidence": 0.9104,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 36,
+    "track_id": 2,
+    "bbox": [
+      77.0,
+      18.3,
+      207.6,
+      182.5
+    ],
+    "confidence": 0.9366,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 37,
+    "track_id": 2,
+    "bbox": [
+      78.3,
+      19.9,
+      206.8,
+      183.5
+    ],
+    "confidence": 0.5809,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 38,
+    "track_id": 2,
+    "bbox": [
+      79.6,
+      24.4,
+      206.4,
+      184.6
+    ],
+    "confidence": 0.7714,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 38,
+    "track_id": 3,
+    "bbox": [
+      82.2,
+      29.3,
+      281.9,
+      180.9
+    ],
+    "confidence": 0.6353,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 39,
+    "track_id": 2,
+    "bbox": [
+      77.6,
+      27.1,
+      201.4,
+      184.6
+    ],
+    "confidence": 0.8066,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 39,
+    "track_id": 3,
+    "bbox": [
+      79.5,
+      29.8,
+      278.5,
+      181.2
+    ],
+    "confidence": 0.5772,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 40,
+    "track_id": 2,
+    "bbox": [
+      76.0,
+      27.8,
+      200.4,
+      185.9
+    ],
+    "confidence": 0.8066,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 40,
+    "track_id": 3,
+    "bbox": [
+      76.7,
+      30.5,
+      275.2,
+      181.5
+    ],
+    "confidence": 0.5772,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 41,
+    "track_id": 2,
+    "bbox": [
+      74.5,
+      28.4,
+      199.4,
+      187.2
+    ],
+    "confidence": 0.8066,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 41,
+    "track_id": 3,
+    "bbox": [
+      74.2,
+      29.9,
+      281.6,
+      185.5
+    ],
+    "confidence": 0.7586,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 42,
+    "track_id": 2,
+    "bbox": [
+      73.1,
+      30.1,
+      197.9,
+      187.9
+    ],
+    "confidence": 0.657,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 42,
+    "track_id": 3,
+    "bbox": [
+      68.4,
+      32.4,
+      262.4,
+      184.9
+    ],
+    "confidence": 0.6238,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 43,
+    "track_id": 2,
+    "bbox": [
+      71.6,
+      30.8,
+      196.8,
+      189.2
+    ],
+    "confidence": 0.657,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 43,
+    "track_id": 3,
+    "bbox": [
+      64.0,
+      33.7,
+      257.1,
+      185.6
+    ],
+    "confidence": 0.6238,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 44,
+    "track_id": 2,
+    "bbox": [
+      70.6,
+      32.2,
+      193.4,
+      188.7
+    ],
+    "confidence": 0.8047,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 44,
+    "track_id": 3,
+    "bbox": [
+      59.6,
+      35.0,
+      251.8,
+      186.2
+    ],
+    "confidence": 0.6238,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 45,
+    "track_id": 2,
+    "bbox": [
+      67.5,
+      33.0,
+      189.7,
+      189.2
+    ],
+    "confidence": 0.9174,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 45,
+    "track_id": 3,
+    "bbox": [
+      55.1,
+      36.4,
+      246.5,
+      186.9
+    ],
+    "confidence": 0.6238,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 46,
+    "track_id": 2,
+    "bbox": [
+      62.9,
+      34.0,
+      186.3,
+      190.8
+    ],
+    "confidence": 0.8405,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 46,
+    "track_id": 3,
+    "bbox": [
+      55.1,
+      36.4,
+      246.5,
+      186.9
+    ],
+    "confidence": 0.499,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 47,
+    "track_id": 2,
+    "bbox": [
+      60.5,
+      34.7,
+      185.1,
+      193.4
+    ],
+    "confidence": 0.8789,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 47,
+    "track_id": 3,
+    "bbox": [
+      55.1,
+      36.4,
+      246.5,
+      186.9
+    ],
+    "confidence": 0.3992,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 48,
+    "track_id": 2,
+    "bbox": [
+      59.2,
+      36.0,
+      185.7,
+      195.6
+    ],
+    "confidence": 0.6903,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 48,
+    "track_id": 4,
+    "bbox": [
+      57.4,
+      37.1,
+      262.4,
+      195.8
+    ],
+    "confidence": 0.6337,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 48,
+    "track_id": 3,
+    "bbox": [
+      55.1,
+      36.4,
+      246.5,
+      186.9
+    ],
+    "confidence": 0.3194,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 49,
+    "track_id": 2,
+    "bbox": [
+      56.8,
+      36.5,
+      181.8,
+      196.6
+    ],
+    "confidence": 0.7878,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 49,
+    "track_id": 4,
+    "bbox": [
+      57.4,
+      37.1,
+      262.4,
+      195.8
+    ],
+    "confidence": 0.6337,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 50,
+    "track_id": 2,
+    "bbox": [
+      58.1,
+      38.4,
+      182.9,
+      197.2
+    ],
+    "confidence": 0.9098,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 50,
+    "track_id": 4,
+    "bbox": [
+      57.4,
+      37.1,
+      262.4,
+      195.8
+    ],
+    "confidence": 0.6337,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 51,
+    "track_id": 2,
+    "bbox": [
+      59.4,
+      38.8,
+      182.7,
+      196.2
+    ],
+    "confidence": 0.8415,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 51,
+    "track_id": 4,
+    "bbox": [
+      57.4,
+      37.1,
+      262.4,
+      195.8
+    ],
+    "confidence": 0.6337,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 52,
+    "track_id": 2,
+    "bbox": [
+      58.1,
+      39.0,
+      181.3,
+      195.2
+    ],
+    "confidence": 0.8626,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 52,
+    "track_id": 4,
+    "bbox": [
+      57.4,
+      37.1,
+      262.4,
+      195.8
+    ],
+    "confidence": 0.5069,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 53,
+    "track_id": 2,
+    "bbox": [
+      58.2,
+      39.3,
+      181.5,
+      195.2
+    ],
+    "confidence": 0.8487,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 53,
+    "track_id": 5,
+    "bbox": [
+      57.4,
+      39.2,
+      260.0,
+      194.0
+    ],
+    "confidence": 0.6867,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 53,
+    "track_id": 4,
+    "bbox": [
+      57.4,
+      37.1,
+      262.4,
+      195.8
+    ],
+    "confidence": 0.4056,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 54,
+    "track_id": 2,
+    "bbox": [
+      57.0,
+      39.2,
+      180.5,
+      195.8
+    ],
+    "confidence": 0.905,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 54,
+    "track_id": 5,
+    "bbox": [
+      57.4,
+      39.2,
+      260.0,
+      194.0
+    ],
+    "confidence": 0.6867,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 54,
+    "track_id": 4,
+    "bbox": [
+      57.4,
+      37.1,
+      262.4,
+      195.8
+    ],
+    "confidence": 0.3244,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 55,
+    "track_id": 2,
+    "bbox": [
+      56.4,
+      40.2,
+      179.8,
+      197.8
+    ],
+    "confidence": 0.6223,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 55,
+    "track_id": 5,
+    "bbox": [
+      57.4,
+      39.2,
+      260.0,
+      194.0
+    ],
+    "confidence": 0.6867,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 56,
+    "track_id": 2,
+    "bbox": [
+      56.4,
+      41.0,
+      179.9,
+      200.0
+    ],
+    "confidence": 0.8856,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 56,
+    "track_id": 5,
+    "bbox": [
+      57.4,
+      39.2,
+      260.0,
+      194.0
+    ],
+    "confidence": 0.6867,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 57,
+    "track_id": 2,
+    "bbox": [
+      55.0,
+      41.9,
+      179.3,
+      201.3
+    ],
+    "confidence": 0.7679,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 57,
+    "track_id": 5,
+    "bbox": [
+      57.4,
+      39.2,
+      260.0,
+      194.0
+    ],
+    "confidence": 0.5493,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 58,
+    "track_id": 2,
+    "bbox": [
+      56.1,
+      40.5,
+      180.0,
+      200.3
+    ],
+    "confidence": 0.8288,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 58,
+    "track_id": 5,
+    "bbox": [
+      57.4,
+      39.2,
+      260.0,
+      194.0
+    ],
+    "confidence": 0.4395,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 59,
+    "track_id": 2,
+    "bbox": [
+      57.2,
+      40.4,
+      179.9,
+      200.3
+    ],
+    "confidence": 0.789,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 59,
+    "track_id": 6,
+    "bbox": [
+      59.1,
+      39.2,
+      237.2,
+      199.4
+    ],
+    "confidence": 0.5381,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 59,
+    "track_id": 5,
+    "bbox": [
+      57.4,
+      39.2,
+      260.0,
+      194.0
+    ],
+    "confidence": 0.3516,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 60,
+    "track_id": 2,
+    "bbox": [
+      56.0,
+      41.2,
+      177.2,
+      200.2
+    ],
+    "confidence": 0.8361,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 60,
+    "track_id": 6,
+    "bbox": [
+      59.1,
+      39.2,
+      237.2,
+      199.4
+    ],
+    "confidence": 0.5381,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 61,
+    "track_id": 2,
+    "bbox": [
+      55.7,
+      42.2,
+      175.1,
+      200.7
+    ],
+    "confidence": 0.8203,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 61,
+    "track_id": 6,
+    "bbox": [
+      59.1,
+      39.2,
+      237.2,
+      199.4
+    ],
+    "confidence": 0.5381,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 62,
+    "track_id": 2,
+    "bbox": [
+      55.1,
+      45.0,
+      174.6,
+      202.7
+    ],
+    "confidence": 0.8727,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 62,
+    "track_id": 6,
+    "bbox": [
+      59.1,
+      39.2,
+      237.2,
+      199.4
+    ],
+    "confidence": 0.5381,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 63,
+    "track_id": 2,
+    "bbox": [
+      51.4,
+      46.4,
+      173.8,
+      204.1
+    ],
+    "confidence": 0.9042,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 63,
+    "track_id": 6,
+    "bbox": [
+      59.1,
+      39.2,
+      237.2,
+      199.4
+    ],
+    "confidence": 0.4305,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 64,
+    "track_id": 2,
+    "bbox": [
+      46.1,
+      46.1,
+      172.1,
+      204.8
+    ],
+    "confidence": 0.799,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 64,
+    "track_id": 6,
+    "bbox": [
+      59.1,
+      39.2,
+      237.2,
+      199.4
+    ],
+    "confidence": 0.3444,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 65,
+    "track_id": 2,
+    "bbox": [
+      44.7,
+      46.2,
+      172.4,
+      205.9
+    ],
+    "confidence": 0.9077,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 65,
+    "track_id": 6,
+    "bbox": [
+      59.1,
+      39.2,
+      237.2,
+      199.4
+    ],
+    "confidence": 0.2755,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 66,
+    "track_id": 2,
+    "bbox": [
+      43.1,
+      47.3,
+      173.2,
+      207.4
+    ],
+    "confidence": 0.9137,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 67,
+    "track_id": 2,
+    "bbox": [
+      41.3,
+      46.3,
+      173.8,
+      208.1
+    ],
+    "confidence": 0.8377,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 68,
+    "track_id": 2,
+    "bbox": [
+      40.7,
+      47.3,
+      175.6,
+      209.6
+    ],
+    "confidence": 0.9097,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 69,
+    "track_id": 2,
+    "bbox": [
+      39.5,
+      47.3,
+      175.6,
+      211.4
+    ],
+    "confidence": 0.9112,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 70,
+    "track_id": 2,
+    "bbox": [
+      37.8,
+      47.0,
+      173.3,
+      213.3
+    ],
+    "confidence": 0.841,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 71,
+    "track_id": 2,
+    "bbox": [
+      37.5,
+      47.5,
+      172.8,
+      216.2
+    ],
+    "confidence": 0.7761,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 72,
+    "track_id": 2,
+    "bbox": [
+      37.9,
+      46.3,
+      174.5,
+      218.4
+    ],
+    "confidence": 0.8647,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 73,
+    "track_id": 2,
+    "bbox": [
+      37.4,
+      46.4,
+      174.1,
+      220.0
+    ],
+    "confidence": 0.8736,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 74,
+    "track_id": 2,
+    "bbox": [
+      37.4,
+      45.9,
+      174.8,
+      221.0
+    ],
+    "confidence": 0.7732,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 75,
+    "track_id": 2,
+    "bbox": [
+      37.7,
+      46.7,
+      176.4,
+      222.6
+    ],
+    "confidence": 0.7899,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 76,
+    "track_id": 2,
+    "bbox": [
+      37.5,
+      46.3,
+      176.7,
+      223.2
+    ],
+    "confidence": 0.834,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 77,
+    "track_id": 2,
+    "bbox": [
+      37.9,
+      45.9,
+      179.2,
+      223.2
+    ],
+    "confidence": 0.7856,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 78,
+    "track_id": 2,
+    "bbox": [
+      45.9,
+      45.8,
+      201.5,
+      224.5
+    ],
+    "confidence": 0.7095,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 79,
+    "track_id": 2,
+    "bbox": [
+      36.5,
+      46.2,
+      187.2,
+      226.0
+    ],
+    "confidence": 0.5805,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 80,
+    "track_id": 2,
+    "bbox": [
+      49.8,
+      45.6,
+      223.2,
+      227.7
+    ],
+    "confidence": 0.5819,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 81,
+    "track_id": 2,
+    "bbox": [
+      51.6,
+      45.9,
+      225.8,
+      228.8
+    ],
+    "confidence": 0.5819,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 82,
+    "track_id": 2,
+    "bbox": [
+      53.4,
+      46.2,
+      228.4,
+      229.9
+    ],
+    "confidence": 0.5819,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 83,
+    "track_id": 2,
+    "bbox": [
+      32.8,
+      45.4,
+      196.4,
+      229.7
+    ],
+    "confidence": 0.6703,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 84,
+    "track_id": 2,
+    "bbox": [
+      31.0,
+      44.9,
+      186.9,
+      229.3
+    ],
+    "confidence": 0.6378,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 85,
+    "track_id": 2,
+    "bbox": [
+      31.0,
+      46.4,
+      180.9,
+      230.3
+    ],
+    "confidence": 0.7268,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 86,
+    "track_id": 2,
+    "bbox": [
+      33.4,
+      46.9,
+      181.8,
+      230.0
+    ],
+    "confidence": 0.7597,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 87,
+    "track_id": 2,
+    "bbox": [
+      36.1,
+      45.5,
+      186.6,
+      229.3
+    ],
+    "confidence": 0.5683,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 88,
+    "track_id": 2,
+    "bbox": [
+      35.6,
+      44.9,
+      185.2,
+      229.2
+    ],
+    "confidence": 0.6138,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 89,
+    "track_id": 2,
+    "bbox": [
+      49.7,
+      45.3,
+      222.2,
+      229.6
+    ],
+    "confidence": 0.6307,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 90,
+    "track_id": 2,
+    "bbox": [
+      51.4,
+      45.3,
+      224.5,
+      230.3
+    ],
+    "confidence": 0.6307,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 91,
+    "track_id": 2,
+    "bbox": [
+      53.1,
+      45.2,
+      226.9,
+      231.0
+    ],
+    "confidence": 0.6307,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 92,
+    "track_id": 2,
+    "bbox": [
+      50.9,
+      44.5,
+      249.9,
+      230.0
+    ],
+    "confidence": 0.5069,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 92,
+    "track_id": 7,
+    "bbox": [
+      36.7,
+      43.6,
+      190.8,
+      230.7
+    ],
+    "confidence": 0.5411,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 93,
+    "track_id": 2,
+    "bbox": [
+      53.2,
+      44.3,
+      253.1,
+      230.7
+    ],
+    "confidence": 0.5069,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 93,
+    "track_id": 7,
+    "bbox": [
+      35.8,
+      47.3,
+      180.7,
+      229.3
+    ],
+    "confidence": 0.7325,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 94,
+    "track_id": 2,
+    "bbox": [
+      55.5,
+      44.1,
+      256.2,
+      231.3
+    ],
+    "confidence": 0.5069,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 94,
+    "track_id": 7,
+    "bbox": [
+      35.4,
+      48.3,
+      175.4,
+      228.7
+    ],
+    "confidence": 0.5626,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 95,
+    "track_id": 2,
+    "bbox": [
+      57.8,
+      44.0,
+      259.4,
+      231.9
+    ],
+    "confidence": 0.5069,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 95,
+    "track_id": 7,
+    "bbox": [
+      37.1,
+      49.5,
+      177.2,
+      229.5
+    ],
+    "confidence": 0.7049,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 96,
+    "track_id": 7,
+    "bbox": [
+      37.1,
+      49.3,
+      177.2,
+      229.9
+    ],
+    "confidence": 0.814,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 96,
+    "track_id": 2,
+    "bbox": [
+      57.8,
+      44.0,
+      259.4,
+      231.9
+    ],
+    "confidence": 0.4055,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 97,
+    "track_id": 7,
+    "bbox": [
+      36.0,
+      48.7,
+      174.2,
+      230.0
+    ],
+    "confidence": 0.7148,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 97,
+    "track_id": 2,
+    "bbox": [
+      57.8,
+      44.0,
+      259.4,
+      231.9
+    ],
+    "confidence": 0.3244,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 98,
+    "track_id": 7,
+    "bbox": [
+      37.1,
+      49.5,
+      176.1,
+      231.1
+    ],
+    "confidence": 0.709,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 98,
+    "track_id": 2,
+    "bbox": [
+      57.8,
+      44.0,
+      259.4,
+      231.9
+    ],
+    "confidence": 0.2595,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 99,
+    "track_id": 7,
+    "bbox": [
+      37.2,
+      50.0,
+      176.3,
+      231.8
+    ],
+    "confidence": 0.7937,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 100,
+    "track_id": 7,
+    "bbox": [
+      36.4,
+      49.3,
+      174.3,
+      231.9
+    ],
+    "confidence": 0.5942,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 100,
+    "track_id": 8,
+    "bbox": [
+      32.9,
+      3.8,
+      329.1,
+      231.7
+    ],
+    "confidence": 0.5978,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 101,
+    "track_id": 7,
+    "bbox": [
+      36.6,
+      49.6,
+      174.9,
+      233.1
+    ],
+    "confidence": 0.5989,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 101,
+    "track_id": 8,
+    "bbox": [
+      32.2,
+      50.7,
+      252.8,
+      230.5
+    ],
+    "confidence": 0.5924,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 102,
+    "track_id": 7,
+    "bbox": [
+      36.6,
+      49.6,
+      174.8,
+      233.7
+    ],
+    "confidence": 0.5598,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 102,
+    "track_id": 8,
+    "bbox": [
+      43.7,
+      114.3,
+      164.3,
+      212.5
+    ],
+    "confidence": 0.5924,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 103,
+    "track_id": 7,
+    "bbox": [
+      36.5,
+      50.3,
+      174.3,
+      233.8
+    ],
+    "confidence": 0.5598,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 103,
+    "track_id": 8,
+    "bbox": [
+      5.2,
+      137.1,
+      125.8,
+      235.4
+    ],
+    "confidence": 0.5924,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 104,
+    "track_id": 7,
+    "bbox": [
+      36.5,
+      51.0,
+      173.8,
+      233.9
+    ],
+    "confidence": 0.5598,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 104,
+    "track_id": 8,
+    "bbox": [
+      -33.3,
+      159.9,
+      87.3,
+      258.2
+    ],
+    "confidence": 0.5924,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 105,
+    "track_id": 7,
+    "bbox": [
+      36.3,
+      48.8,
+      174.1,
+      234.1
+    ],
+    "confidence": 0.6416,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 105,
+    "track_id": 8,
+    "bbox": [
+      -33.3,
+      159.9,
+      87.3,
+      258.2
+    ],
+    "confidence": 0.4739,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 106,
+    "track_id": 7,
+    "bbox": [
+      36.7,
+      46.6,
+      175.2,
+      233.6
+    ],
+    "confidence": 0.6552,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 106,
+    "track_id": 8,
+    "bbox": [
+      -33.3,
+      159.9,
+      87.3,
+      258.2
+    ],
+    "confidence": 0.3791,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 107,
+    "track_id": 7,
+    "bbox": [
+      37.2,
+      46.9,
+      177.0,
+      233.2
+    ],
+    "confidence": 0.6999,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 107,
+    "track_id": 8,
+    "bbox": [
+      -33.3,
+      159.9,
+      87.3,
+      258.2
+    ],
+    "confidence": 0.3033,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 108,
+    "track_id": 7,
+    "bbox": [
+      36.3,
+      47.2,
+      174.8,
+      230.2
+    ],
+    "confidence": 0.8385,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 109,
+    "track_id": 7,
+    "bbox": [
+      36.3,
+      47.3,
+      174.5,
+      229.9
+    ],
+    "confidence": 0.8385,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 110,
+    "track_id": 7,
+    "bbox": [
+      36.4,
+      46.5,
+      172.2,
+      225.4
+    ],
+    "confidence": 0.837,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 111,
+    "track_id": 7,
+    "bbox": [
+      37.7,
+      47.9,
+      173.5,
+      224.2
+    ],
+    "confidence": 0.5044,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 112,
+    "track_id": 7,
+    "bbox": [
+      38.6,
+      47.5,
+      172.8,
+      222.0
+    ],
+    "confidence": 0.5336,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 113,
+    "track_id": 7,
+    "bbox": [
+      39.7,
+      46.1,
+      175.2,
+      219.6
+    ],
+    "confidence": 0.7738,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 113,
+    "track_id": 9,
+    "bbox": [
+      38.5,
+      46.6,
+      241.7,
+      217.0
+    ],
+    "confidence": 0.6181,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 114,
+    "track_id": 7,
+    "bbox": [
+      40.5,
+      44.7,
+      176.2,
+      218.0
+    ],
+    "confidence": 0.8793,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 114,
+    "track_id": 9,
+    "bbox": [
+      38.5,
+      46.6,
+      241.7,
+      217.0
+    ],
+    "confidence": 0.6181,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 115,
+    "track_id": 7,
+    "bbox": [
+      39.1,
+      42.1,
+      175.0,
+      217.2
+    ],
+    "confidence": 0.8154,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 115,
+    "track_id": 9,
+    "bbox": [
+      38.5,
+      46.6,
+      241.7,
+      217.0
+    ],
+    "confidence": 0.6181,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 116,
+    "track_id": 7,
+    "bbox": [
+      38.4,
+      41.3,
+      174.6,
+      218.0
+    ],
+    "confidence": 0.74,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 116,
+    "track_id": 9,
+    "bbox": [
+      37.7,
+      37.4,
+      262.4,
+      220.9
+    ],
+    "confidence": 0.5191,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 117,
+    "track_id": 7,
+    "bbox": [
+      39.7,
+      39.9,
+      178.4,
+      219.0
+    ],
+    "confidence": 0.5517,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 117,
+    "track_id": 9,
+    "bbox": [
+      34.7,
+      37.4,
+      251.4,
+      219.8
+    ],
+    "confidence": 0.5967,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 118,
+    "track_id": 7,
+    "bbox": [
+      38.8,
+      39.0,
+      178.3,
+      219.9
+    ],
+    "confidence": 0.863,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 118,
+    "track_id": 9,
+    "bbox": [
+      31.9,
+      35.4,
+      251.5,
+      220.3
+    ],
+    "confidence": 0.5967,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 119,
+    "track_id": 7,
+    "bbox": [
+      39.7,
+      38.5,
+      180.6,
+      220.2
+    ],
+    "confidence": 0.822,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 119,
+    "track_id": 9,
+    "bbox": [
+      35.2,
+      37.5,
+      249.4,
+      220.3
+    ],
+    "confidence": 0.7089,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 120,
+    "track_id": 7,
+    "bbox": [
+      40.0,
+      38.1,
+      180.8,
+      219.6
+    ],
+    "confidence": 0.822,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 120,
+    "track_id": 9,
+    "bbox": [
+      35.7,
+      37.8,
+      248.0,
+      219.7
+    ],
+    "confidence": 0.7361,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 121,
+    "track_id": 7,
+    "bbox": [
+      38.3,
+      38.2,
+      179.2,
+      217.6
+    ],
+    "confidence": 0.7157,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 121,
+    "track_id": 9,
+    "bbox": [
+      34.5,
+      37.1,
+      247.7,
+      219.8
+    ],
+    "confidence": 0.7361,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 122,
+    "track_id": 7,
+    "bbox": [
+      38.5,
+      37.8,
+      179.2,
+      217.0
+    ],
+    "confidence": 0.7157,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 122,
+    "track_id": 9,
+    "bbox": [
+      36.7,
+      37.4,
+      247.4,
+      215.9
+    ],
+    "confidence": 0.7694,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 123,
+    "track_id": 7,
+    "bbox": [
+      40.9,
+      38.2,
+      183.0,
+      213.8
+    ],
+    "confidence": 0.7062,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 123,
+    "track_id": 9,
+    "bbox": [
+      39.5,
+      37.6,
+      255.8,
+      213.7
+    ],
+    "confidence": 0.5121,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 124,
+    "track_id": 7,
+    "bbox": [
+      49.0,
+      38.0,
+      185.0,
+      210.7
+    ],
+    "confidence": 0.716,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 124,
+    "track_id": 9,
+    "bbox": [
+      49.3,
+      37.5,
+      260.5,
+      210.3
+    ],
+    "confidence": 0.535,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 125,
+    "track_id": 7,
+    "bbox": [
+      53.2,
+      38.2,
+      186.5,
+      208.7
+    ],
+    "confidence": 0.8017,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 125,
+    "track_id": 9,
+    "bbox": [
+      53.5,
+      37.7,
+      263.1,
+      208.1
+    ],
+    "confidence": 0.734,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 126,
+    "track_id": 7,
+    "bbox": [
+      57.1,
+      38.4,
+      187.6,
+      206.2
+    ],
+    "confidence": 0.899,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 126,
+    "track_id": 9,
+    "bbox": [
+      56.7,
+      38.2,
+      261.5,
+      205.5
+    ],
+    "confidence": 0.7815,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 127,
+    "track_id": 7,
+    "bbox": [
+      54.4,
+      38.4,
+      185.1,
+      204.4
+    ],
+    "confidence": 0.9039,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 127,
+    "track_id": 9,
+    "bbox": [
+      58.7,
+      37.8,
+      262.6,
+      204.4
+    ],
+    "confidence": 0.7815,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 128,
+    "track_id": 7,
+    "bbox": [
+      58.5,
+      37.9,
+      187.6,
+      200.7
+    ],
+    "confidence": 0.8356,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 128,
+    "track_id": 9,
+    "bbox": [
+      56.8,
+      37.8,
+      251.6,
+      199.3
+    ],
+    "confidence": 0.6796,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 129,
+    "track_id": 7,
+    "bbox": [
+      63.4,
+      37.6,
+      189.5,
+      197.3
+    ],
+    "confidence": 0.8694,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 129,
+    "track_id": 9,
+    "bbox": [
+      58.2,
+      37.4,
+      251.6,
+      197.7
+    ],
+    "confidence": 0.6796,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 130,
+    "track_id": 7,
+    "bbox": [
+      67.7,
+      37.1,
+      190.3,
+      193.3
+    ],
+    "confidence": 0.857,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 130,
+    "track_id": 9,
+    "bbox": [
+      59.7,
+      37.1,
+      251.5,
+      196.1
+    ],
+    "confidence": 0.6796,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 131,
+    "track_id": 7,
+    "bbox": [
+      73.3,
+      36.7,
+      193.1,
+      189.4
+    ],
+    "confidence": 0.8968,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 131,
+    "track_id": 9,
+    "bbox": [
+      61.1,
+      36.7,
+      251.5,
+      194.5
+    ],
+    "confidence": 0.6796,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 132,
+    "track_id": 7,
+    "bbox": [
+      77.8,
+      36.0,
+      193.7,
+      185.0
+    ],
+    "confidence": 0.8852,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 132,
+    "track_id": 9,
+    "bbox": [
+      61.1,
+      36.7,
+      251.5,
+      194.5
+    ],
+    "confidence": 0.5436,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 133,
+    "track_id": 7,
+    "bbox": [
+      81.7,
+      35.8,
+      193.1,
+      181.2
+    ],
+    "confidence": 0.8323,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 133,
+    "track_id": 9,
+    "bbox": [
+      61.1,
+      36.7,
+      251.5,
+      194.5
+    ],
+    "confidence": 0.4349,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 134,
+    "track_id": 7,
+    "bbox": [
+      85.1,
+      37.1,
+      192.9,
+      178.7
+    ],
+    "confidence": 0.915,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 134,
+    "track_id": 9,
+    "bbox": [
+      61.1,
+      36.7,
+      251.5,
+      194.5
+    ],
+    "confidence": 0.3479,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 135,
+    "track_id": 7,
+    "bbox": [
+      87.1,
+      37.1,
+      192.7,
+      175.7
+    ],
+    "confidence": 0.8856,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 136,
+    "track_id": 7,
+    "bbox": [
+      89.5,
+      37.4,
+      192.8,
+      173.6
+    ],
+    "confidence": 0.8631,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 137,
+    "track_id": 7,
+    "bbox": [
+      107.7,
+      37.4,
+      233.5,
+      172.1
+    ],
+    "confidence": 0.5137,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 138,
+    "track_id": 7,
+    "bbox": [
+      111.5,
+      37.1,
+      253.0,
+      170.8
+    ],
+    "confidence": 0.5868,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 138,
+    "track_id": 10,
+    "bbox": [
+      94.3,
+      38.2,
+      194.3,
+      171.0
+    ],
+    "confidence": 0.5255,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 139,
+    "track_id": 7,
+    "bbox": [
+      116.6,
+      36.2,
+      257.4,
+      169.3
+    ],
+    "confidence": 0.5868,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 139,
+    "track_id": 10,
+    "bbox": [
+      94.0,
+      38.0,
+      194.6,
+      170.8
+    ],
+    "confidence": 0.8606,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 140,
+    "track_id": 7,
+    "bbox": [
+      100.0,
+      37.5,
+      241.1,
+      169.8
+    ],
+    "confidence": 0.6406,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 140,
+    "track_id": 10,
+    "bbox": [
+      93.4,
+      38.6,
+      193.5,
+      171.0
+    ],
+    "confidence": 0.7759,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 141,
+    "track_id": 7,
+    "bbox": [
+      101.5,
+      36.7,
+      257.0,
+      168.0
+    ],
+    "confidence": 0.6213,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 141,
+    "track_id": 10,
+    "bbox": [
+      92.8,
+      39.0,
+      192.8,
+      171.2
+    ],
+    "confidence": 0.7759,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 142,
+    "track_id": 7,
+    "bbox": [
+      105.2,
+      35.8,
+      260.1,
+      166.8
+    ],
+    "confidence": 0.6213,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 142,
+    "track_id": 10,
+    "bbox": [
+      88.1,
+      38.5,
+      185.9,
+      168.0
+    ],
+    "confidence": 0.581,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 143,
+    "track_id": 7,
+    "bbox": [
+      108.9,
+      35.0,
+      263.3,
+      165.5
+    ],
+    "confidence": 0.6213,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 143,
+    "track_id": 10,
+    "bbox": [
+      86.1,
+      38.5,
+      183.1,
+      167.1
+    ],
+    "confidence": 0.581,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 144,
+    "track_id": 7,
+    "bbox": [
+      94.5,
+      36.2,
+      260.4,
+      164.9
+    ],
+    "confidence": 0.5904,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 144,
+    "track_id": 10,
+    "bbox": [
+      84.0,
+      38.6,
+      180.2,
+      166.1
+    ],
+    "confidence": 0.581,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 145,
+    "track_id": 7,
+    "bbox": [
+      97.1,
+      35.5,
+      262.7,
+      163.8
+    ],
+    "confidence": 0.5904,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 145,
+    "track_id": 10,
+    "bbox": [
+      81.9,
+      38.7,
+      177.4,
+      165.2
+    ],
+    "confidence": 0.581,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 146,
+    "track_id": 7,
+    "bbox": [
+      99.8,
+      34.7,
+      264.9,
+      162.7
+    ],
+    "confidence": 0.5904,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 146,
+    "track_id": 10,
+    "bbox": [
+      81.9,
+      38.7,
+      177.4,
+      165.2
+    ],
+    "confidence": 0.4648,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 147,
+    "track_id": 7,
+    "bbox": [
+      83.5,
+      41.1,
+      260.9,
+      169.5
+    ],
+    "confidence": 0.577,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 147,
+    "track_id": 10,
+    "bbox": [
+      81.9,
+      38.7,
+      177.4,
+      165.2
+    ],
+    "confidence": 0.3719,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 148,
+    "track_id": 7,
+    "bbox": [
+      60.9,
+      46.7,
+      210.4,
+      173.3
+    ],
+    "confidence": 0.9065,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 148,
+    "track_id": 10,
+    "bbox": [
+      81.9,
+      38.7,
+      177.4,
+      165.2
+    ],
+    "confidence": 0.2975,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 149,
+    "track_id": 7,
+    "bbox": [
+      54.9,
+      50.4,
+      187.7,
+      175.5
+    ],
+    "confidence": 0.8899,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 150,
+    "track_id": 7,
+    "bbox": [
+      54.2,
+      53.3,
+      176.4,
+      177.3
+    ],
+    "confidence": 0.8546,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 151,
+    "track_id": 7,
+    "bbox": [
+      54.7,
+      54.5,
+      168.7,
+      177.6
+    ],
+    "confidence": 0.8962,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 152,
+    "track_id": 7,
+    "bbox": [
+      55.9,
+      55.9,
+      165.9,
+      178.6
+    ],
+    "confidence": 0.8793,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 153,
+    "track_id": 7,
+    "bbox": [
+      71.7,
+      55.5,
+      202.1,
+      179.1
+    ],
+    "confidence": 0.7806,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 154,
+    "track_id": 7,
+    "bbox": [
+      58.7,
+      55.8,
+      180.0,
+      179.2
+    ],
+    "confidence": 0.624,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 155,
+    "track_id": 7,
+    "bbox": [
+      56.0,
+      56.6,
+      171.5,
+      179.5
+    ],
+    "confidence": 0.658,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 155,
+    "track_id": 11,
+    "bbox": [
+      60.3,
+      54.1,
+      247.2,
+      179.9
+    ],
+    "confidence": 0.7069,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 156,
+    "track_id": 7,
+    "bbox": [
+      54.4,
+      57.0,
+      166.0,
+      180.2
+    ],
+    "confidence": 0.6131,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 156,
+    "track_id": 11,
+    "bbox": [
+      55.6,
+      53.7,
+      246.8,
+      182.0
+    ],
+    "confidence": 0.7004,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 157,
+    "track_id": 7,
+    "bbox": [
+      53.8,
+      57.4,
+      160.8,
+      181.1
+    ],
+    "confidence": 0.7568,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 157,
+    "track_id": 11,
+    "bbox": [
+      51.1,
+      53.3,
+      246.2,
+      184.1
+    ],
+    "confidence": 0.7004,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 158,
+    "track_id": 7,
+    "bbox": [
+      53.7,
+      57.4,
+      157.7,
+      181.5
+    ],
+    "confidence": 0.8312,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 158,
+    "track_id": 11,
+    "bbox": [
+      46.6,
+      52.9,
+      245.6,
+      186.3
+    ],
+    "confidence": 0.7004,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 159,
+    "track_id": 7,
+    "bbox": [
+      53.7,
+      57.7,
+      155.8,
+      182.0
+    ],
+    "confidence": 0.8559,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 159,
+    "track_id": 11,
+    "bbox": [
+      42.2,
+      52.5,
+      244.9,
+      188.4
+    ],
+    "confidence": 0.7004,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 160,
+    "track_id": 7,
+    "bbox": [
+      54.0,
+      57.2,
+      154.4,
+      181.9
+    ],
+    "confidence": 0.7287,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 160,
+    "track_id": 11,
+    "bbox": [
+      42.2,
+      52.5,
+      244.9,
+      188.4
+    ],
+    "confidence": 0.5603,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 161,
+    "track_id": 7,
+    "bbox": [
+      54.0,
+      57.4,
+      154.5,
+      182.3
+    ],
+    "confidence": 0.7729,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 161,
+    "track_id": 12,
+    "bbox": [
+      53.1,
+      56.0,
+      241.0,
+      182.9
+    ],
+    "confidence": 0.5602,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 161,
+    "track_id": 11,
+    "bbox": [
+      42.2,
+      52.5,
+      244.9,
+      188.4
+    ],
+    "confidence": 0.4483,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 162,
+    "track_id": 7,
+    "bbox": [
+      53.0,
+      57.9,
+      152.8,
+      182.7
+    ],
+    "confidence": 0.8381,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 162,
+    "track_id": 12,
+    "bbox": [
+      53.1,
+      56.0,
+      241.0,
+      182.9
+    ],
+    "confidence": 0.5602,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 162,
+    "track_id": 11,
+    "bbox": [
+      42.2,
+      52.5,
+      244.9,
+      188.4
+    ],
+    "confidence": 0.3586,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 163,
+    "track_id": 7,
+    "bbox": [
+      53.2,
+      58.3,
+      153.8,
+      183.0
+    ],
+    "confidence": 0.8918,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 163,
+    "track_id": 12,
+    "bbox": [
+      53.1,
+      56.0,
+      241.0,
+      182.9
+    ],
+    "confidence": 0.5602,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 164,
+    "track_id": 7,
+    "bbox": [
+      54.8,
+      58.2,
+      156.7,
+      182.9
+    ],
+    "confidence": 0.8911,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 164,
+    "track_id": 12,
+    "bbox": [
+      53.1,
+      56.0,
+      241.0,
+      182.9
+    ],
+    "confidence": 0.5602,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 165,
+    "track_id": 7,
+    "bbox": [
+      54.1,
+      58.2,
+      155.8,
+      182.7
+    ],
+    "confidence": 0.8407,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 165,
+    "track_id": 12,
+    "bbox": [
+      53.1,
+      56.0,
+      241.0,
+      182.9
+    ],
+    "confidence": 0.4482,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 166,
+    "track_id": 7,
+    "bbox": [
+      52.4,
+      58.3,
+      154.0,
+      183.1
+    ],
+    "confidence": 0.8381,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 166,
+    "track_id": 12,
+    "bbox": [
+      53.1,
+      56.0,
+      241.0,
+      182.9
+    ],
+    "confidence": 0.3586,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 167,
+    "track_id": 7,
+    "bbox": [
+      53.0,
+      59.1,
+      156.5,
+      183.9
+    ],
+    "confidence": 0.5426,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 167,
+    "track_id": 13,
+    "bbox": [
+      45.8,
+      56.0,
+      248.0,
+      184.3
+    ],
+    "confidence": 0.6162,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 167,
+    "track_id": 12,
+    "bbox": [
+      53.1,
+      56.0,
+      241.0,
+      182.9
+    ],
+    "confidence": 0.2868,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 168,
+    "track_id": 7,
+    "bbox": [
+      52.7,
+      60.0,
+      157.3,
+      185.1
+    ],
+    "confidence": 0.6778,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 168,
+    "track_id": 13,
+    "bbox": [
+      48.2,
+      60.3,
+      236.4,
+      185.0
+    ],
+    "confidence": 0.6645,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 169,
+    "track_id": 7,
+    "bbox": [
+      50.3,
+      59.3,
+      153.3,
+      185.1
+    ],
+    "confidence": 0.8043,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 169,
+    "track_id": 13,
+    "bbox": [
+      48.7,
+      66.1,
+      226.6,
+      184.0
+    ],
+    "confidence": 0.6645,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 170,
+    "track_id": 7,
+    "bbox": [
+      50.3,
+      59.5,
+      153.1,
+      185.7
+    ],
+    "confidence": 0.7647,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 170,
+    "track_id": 13,
+    "bbox": [
+      49.5,
+      72.2,
+      216.6,
+      182.9
+    ],
+    "confidence": 0.6645,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 171,
+    "track_id": 7,
+    "bbox": [
+      49.8,
+      60.2,
+      152.3,
+      186.6
+    ],
+    "confidence": 0.8102,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 171,
+    "track_id": 13,
+    "bbox": [
+      50.7,
+      78.5,
+      206.2,
+      181.6
+    ],
+    "confidence": 0.6645,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 172,
+    "track_id": 7,
+    "bbox": [
+      48.4,
+      60.4,
+      149.3,
+      187.1
+    ],
+    "confidence": 0.8035,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 172,
+    "track_id": 13,
+    "bbox": [
+      50.7,
+      78.5,
+      206.2,
+      181.6
+    ],
+    "confidence": 0.5316,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 173,
+    "track_id": 7,
+    "bbox": [
+      49.4,
+      60.8,
+      151.3,
+      187.7
+    ],
+    "confidence": 0.6457,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 173,
+    "track_id": 13,
+    "bbox": [
+      50.7,
+      78.5,
+      206.2,
+      181.6
+    ],
+    "confidence": 0.4253,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 174,
+    "track_id": 7,
+    "bbox": [
+      47.8,
+      60.8,
+      150.2,
+      188.4
+    ],
+    "confidence": 0.8554,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 174,
+    "track_id": 13,
+    "bbox": [
+      50.7,
+      78.5,
+      206.2,
+      181.6
+    ],
+    "confidence": 0.3402,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 175,
+    "track_id": 7,
+    "bbox": [
+      43.5,
+      59.7,
+      146.4,
+      188.2
+    ],
+    "confidence": 0.7823,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 176,
+    "track_id": 7,
+    "bbox": [
+      43.0,
+      60.5,
+      145.5,
+      189.3
+    ],
+    "confidence": 0.8884,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 177,
+    "track_id": 7,
+    "bbox": [
+      41.4,
+      60.7,
+      145.5,
+      190.2
+    ],
+    "confidence": 0.8519,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 178,
+    "track_id": 7,
+    "bbox": [
+      39.7,
+      60.5,
+      144.3,
+      190.8
+    ],
+    "confidence": 0.8808,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 179,
+    "track_id": 7,
+    "bbox": [
+      39.2,
+      60.9,
+      143.6,
+      191.2
+    ],
+    "confidence": 0.8879,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 180,
+    "track_id": 7,
+    "bbox": [
+      38.7,
+      60.9,
+      143.0,
+      191.5
+    ],
+    "confidence": 0.8673,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 181,
+    "track_id": 7,
+    "bbox": [
+      38.2,
+      58.5,
+      142.0,
+      190.5
+    ],
+    "confidence": 0.6529,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 182,
+    "track_id": 7,
+    "bbox": [
+      38.1,
+      60.0,
+      141.6,
+      191.4
+    ],
+    "confidence": 0.8665,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 183,
+    "track_id": 7,
+    "bbox": [
+      37.4,
+      60.6,
+      140.4,
+      191.3
+    ],
+    "confidence": 0.8665,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 184,
+    "track_id": 7,
+    "bbox": [
+      36.7,
+      61.2,
+      139.2,
+      191.2
+    ],
+    "confidence": 0.8665,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 185,
+    "track_id": 7,
+    "bbox": [
+      38.3,
+      61.0,
+      141.6,
+      191.9
+    ],
+    "confidence": 0.7133,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 186,
+    "track_id": 7,
+    "bbox": [
+      38.2,
+      60.6,
+      141.7,
+      192.4
+    ],
+    "confidence": 0.8294,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 187,
+    "track_id": 7,
+    "bbox": [
+      38.1,
+      61.1,
+      141.8,
+      193.6
+    ],
+    "confidence": 0.7508,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 188,
+    "track_id": 7,
+    "bbox": [
+      37.6,
+      61.2,
+      141.1,
+      194.2
+    ],
+    "confidence": 0.8563,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 189,
+    "track_id": 7,
+    "bbox": [
+      37.7,
+      61.3,
+      141.4,
+      194.7
+    ],
+    "confidence": 0.8438,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 190,
+    "track_id": 7,
+    "bbox": [
+      37.1,
+      61.6,
+      140.7,
+      195.3
+    ],
+    "confidence": 0.8947,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 191,
+    "track_id": 7,
+    "bbox": [
+      37.4,
+      61.4,
+      141.6,
+      195.7
+    ],
+    "confidence": 0.8532,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 192,
+    "track_id": 7,
+    "bbox": [
+      37.2,
+      61.1,
+      141.6,
+      196.0
+    ],
+    "confidence": 0.8255,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 192,
+    "track_id": 14,
+    "bbox": [
+      35.9,
+      59.5,
+      217.9,
+      197.3
+    ],
+    "confidence": 0.5012,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 193,
+    "track_id": 7,
+    "bbox": [
+      36.6,
+      59.3,
+      140.6,
+      196.4
+    ],
+    "confidence": 0.6606,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 193,
+    "track_id": 14,
+    "bbox": [
+      35.9,
+      59.5,
+      217.9,
+      197.3
+    ],
+    "confidence": 0.5012,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 194,
+    "track_id": 7,
+    "bbox": [
+      36.4,
+      60.5,
+      139.6,
+      198.4
+    ],
+    "confidence": 0.7926,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 194,
+    "track_id": 14,
+    "bbox": [
+      35.9,
+      59.5,
+      217.9,
+      197.3
+    ],
+    "confidence": 0.5012,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 195,
+    "track_id": 7,
+    "bbox": [
+      36.5,
+      60.4,
+      139.3,
+      199.2
+    ],
+    "confidence": 0.7633,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 195,
+    "track_id": 14,
+    "bbox": [
+      35.9,
+      59.5,
+      217.9,
+      197.3
+    ],
+    "confidence": 0.5012,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 196,
+    "track_id": 7,
+    "bbox": [
+      36.5,
+      60.8,
+      138.7,
+      200.3
+    ],
+    "confidence": 0.7975,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 196,
+    "track_id": 14,
+    "bbox": [
+      35.9,
+      59.5,
+      217.9,
+      197.3
+    ],
+    "confidence": 0.401,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 197,
+    "track_id": 7,
+    "bbox": [
+      36.5,
+      60.6,
+      138.4,
+      200.9
+    ],
+    "confidence": 0.8642,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 197,
+    "track_id": 14,
+    "bbox": [
+      35.9,
+      59.5,
+      217.9,
+      197.3
+    ],
+    "confidence": 0.3208,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 198,
+    "track_id": 7,
+    "bbox": [
+      36.8,
+      60.3,
+      139.0,
+      201.7
+    ],
+    "confidence": 0.7349,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 198,
+    "track_id": 14,
+    "bbox": [
+      35.9,
+      59.5,
+      217.9,
+      197.3
+    ],
+    "confidence": 0.2566,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 199,
+    "track_id": 7,
+    "bbox": [
+      36.7,
+      58.7,
+      138.6,
+      202.2
+    ],
+    "confidence": 0.7394,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 200,
+    "track_id": 7,
+    "bbox": [
+      37.0,
+      59.2,
+      139.0,
+      203.7
+    ],
+    "confidence": 0.7847,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 201,
+    "track_id": 7,
+    "bbox": [
+      36.7,
+      59.3,
+      138.7,
+      204.8
+    ],
+    "confidence": 0.8355,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 202,
+    "track_id": 7,
+    "bbox": [
+      36.8,
+      58.2,
+      138.5,
+      205.5
+    ],
+    "confidence": 0.5562,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 203,
+    "track_id": 7,
+    "bbox": [
+      36.8,
+      58.8,
+      138.9,
+      206.9
+    ],
+    "confidence": 0.7994,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 203,
+    "track_id": 15,
+    "bbox": [
+      35.6,
+      56.9,
+      188.8,
+      207.5
+    ],
+    "confidence": 0.5346,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 204,
+    "track_id": 7,
+    "bbox": [
+      36.4,
+      58.8,
+      138.5,
+      207.6
+    ],
+    "confidence": 0.8594,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 204,
+    "track_id": 15,
+    "bbox": [
+      35.6,
+      56.9,
+      188.8,
+      207.5
+    ],
+    "confidence": 0.5346,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 205,
+    "track_id": 7,
+    "bbox": [
+      36.4,
+      59.3,
+      138.2,
+      207.8
+    ],
+    "confidence": 0.8594,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 205,
+    "track_id": 15,
+    "bbox": [
+      35.6,
+      56.9,
+      188.8,
+      207.5
+    ],
+    "confidence": 0.5346,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 206,
+    "track_id": 7,
+    "bbox": [
+      37.7,
+      59.5,
+      141.4,
+      208.6
+    ],
+    "confidence": 0.6908,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 206,
+    "track_id": 15,
+    "bbox": [
+      37.3,
+      56.7,
+      202.8,
+      210.5
+    ],
+    "confidence": 0.5377,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 207,
+    "track_id": 7,
+    "bbox": [
+      38.1,
+      57.3,
+      143.5,
+      207.9
+    ],
+    "confidence": 0.5365,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 207,
+    "track_id": 15,
+    "bbox": [
+      38.7,
+      56.0,
+      206.7,
+      212.1
+    ],
+    "confidence": 0.5377,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 208,
+    "track_id": 7,
+    "bbox": [
+      38.4,
+      57.7,
+      143.5,
+      207.9
+    ],
+    "confidence": 0.5365,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 208,
+    "track_id": 15,
+    "bbox": [
+      40.0,
+      55.3,
+      210.5,
+      213.8
+    ],
+    "confidence": 0.5377,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 209,
+    "track_id": 7,
+    "bbox": [
+      38.6,
+      58.1,
+      143.5,
+      207.9
+    ],
+    "confidence": 0.5365,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 209,
+    "track_id": 15,
+    "bbox": [
+      41.4,
+      54.6,
+      214.4,
+      215.4
+    ],
+    "confidence": 0.5377,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 210,
+    "track_id": 7,
+    "bbox": [
+      36.2,
+      57.2,
+      140.0,
+      208.5
+    ],
+    "confidence": 0.8248,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 210,
+    "track_id": 15,
+    "bbox": [
+      41.4,
+      54.6,
+      214.4,
+      215.4
+    ],
+    "confidence": 0.4302,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 211,
+    "track_id": 7,
+    "bbox": [
+      35.9,
+      56.6,
+      138.8,
+      209.5
+    ],
+    "confidence": 0.6962,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 211,
+    "track_id": 15,
+    "bbox": [
+      41.4,
+      54.6,
+      214.4,
+      215.4
+    ],
+    "confidence": 0.3441,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 212,
+    "track_id": 7,
+    "bbox": [
+      36.0,
+      56.5,
+      138.2,
+      210.0
+    ],
+    "confidence": 0.8085,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 212,
+    "track_id": 15,
+    "bbox": [
+      41.4,
+      54.6,
+      214.4,
+      215.4
+    ],
+    "confidence": 0.2753,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 213,
+    "track_id": 7,
+    "bbox": [
+      36.2,
+      56.4,
+      138.1,
+      210.2
+    ],
+    "confidence": 0.7978,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 214,
+    "track_id": 7,
+    "bbox": [
+      36.4,
+      56.1,
+      138.0,
+      210.6
+    ],
+    "confidence": 0.7743,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 215,
+    "track_id": 7,
+    "bbox": [
+      36.6,
+      56.1,
+      138.0,
+      211.4
+    ],
+    "confidence": 0.8299,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 216,
+    "track_id": 7,
+    "bbox": [
+      36.4,
+      56.0,
+      137.9,
+      211.9
+    ],
+    "confidence": 0.6908,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 217,
+    "track_id": 7,
+    "bbox": [
+      36.4,
+      56.4,
+      137.7,
+      211.9
+    ],
+    "confidence": 0.6908,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 218,
+    "track_id": 7,
+    "bbox": [
+      36.4,
+      56.7,
+      137.4,
+      211.9
+    ],
+    "confidence": 0.6908,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 219,
+    "track_id": 7,
+    "bbox": [
+      42.6,
+      55.3,
+      153.7,
+      217.3
+    ],
+    "confidence": 0.609,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 220,
+    "track_id": 7,
+    "bbox": [
+      40.2,
+      53.2,
+      154.5,
+      218.8
+    ],
+    "confidence": 0.616,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 221,
+    "track_id": 7,
+    "bbox": [
+      40.9,
+      53.5,
+      155.1,
+      219.0
+    ],
+    "confidence": 0.616,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 222,
+    "track_id": 7,
+    "bbox": [
+      41.9,
+      54.8,
+      162.9,
+      222.7
+    ],
+    "confidence": 0.642,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 223,
+    "track_id": 7,
+    "bbox": [
+      40.2,
+      53.9,
+      164.1,
+      223.3
+    ],
+    "confidence": 0.5291,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 224,
+    "track_id": 7,
+    "bbox": [
+      53.7,
+      54.1,
+      205.3,
+      224.3
+    ],
+    "confidence": 0.572,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 225,
+    "track_id": 7,
+    "bbox": [
+      53.4,
+      55.3,
+      220.0,
+      224.8
+    ],
+    "confidence": 0.6202,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 225,
+    "track_id": 16,
+    "bbox": [
+      37.2,
+      57.3,
+      175.3,
+      224.6
+    ],
+    "confidence": 0.6834,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 226,
+    "track_id": 7,
+    "bbox": [
+      57.0,
+      55.7,
+      223.7,
+      225.4
+    ],
+    "confidence": 0.6202,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 226,
+    "track_id": 16,
+    "bbox": [
+      37.2,
+      57.3,
+      175.3,
+      224.6
+    ],
+    "confidence": 0.6834,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 227,
+    "track_id": 7,
+    "bbox": [
+      60.5,
+      56.0,
+      227.5,
+      226.0
+    ],
+    "confidence": 0.6202,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 227,
+    "track_id": 16,
+    "bbox": [
+      36.6,
+      59.5,
+      171.1,
+      224.1
+    ],
+    "confidence": 0.7726,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 228,
+    "track_id": 7,
+    "bbox": [
+      64.0,
+      56.4,
+      231.2,
+      226.6
+    ],
+    "confidence": 0.6202,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 228,
+    "track_id": 16,
+    "bbox": [
+      36.4,
+      58.8,
+      170.1,
+      223.0
+    ],
+    "confidence": 0.7887,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 229,
+    "track_id": 16,
+    "bbox": [
+      36.2,
+      55.8,
+      169.6,
+      222.9
+    ],
+    "confidence": 0.674,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 229,
+    "track_id": 7,
+    "bbox": [
+      64.0,
+      56.4,
+      231.2,
+      226.6
+    ],
+    "confidence": 0.4962,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 230,
+    "track_id": 16,
+    "bbox": [
+      36.8,
+      55.7,
+      170.3,
+      223.9
+    ],
+    "confidence": 0.8053,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 230,
+    "track_id": 7,
+    "bbox": [
+      64.0,
+      56.4,
+      231.2,
+      226.6
+    ],
+    "confidence": 0.3969,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 231,
+    "track_id": 16,
+    "bbox": [
+      37.2,
+      55.2,
+      171.7,
+      224.6
+    ],
+    "confidence": 0.8349,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 231,
+    "track_id": 7,
+    "bbox": [
+      64.0,
+      56.4,
+      231.2,
+      226.6
+    ],
+    "confidence": 0.3176,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 232,
+    "track_id": 16,
+    "bbox": [
+      37.0,
+      54.8,
+      171.0,
+      224.5
+    ],
+    "confidence": 0.8237,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 233,
+    "track_id": 16,
+    "bbox": [
+      37.2,
+      53.0,
+      172.2,
+      223.8
+    ],
+    "confidence": 0.7793,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 234,
+    "track_id": 16,
+    "bbox": [
+      37.3,
+      55.0,
+      172.6,
+      226.1
+    ],
+    "confidence": 0.8154,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 235,
+    "track_id": 16,
+    "bbox": [
+      36.7,
+      54.7,
+      172.1,
+      226.8
+    ],
+    "confidence": 0.825,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 236,
+    "track_id": 16,
+    "bbox": [
+      36.8,
+      55.2,
+      172.6,
+      227.7
+    ],
+    "confidence": 0.7183,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 237,
+    "track_id": 16,
+    "bbox": [
+      36.7,
+      56.9,
+      172.1,
+      229.7
+    ],
+    "confidence": 0.732,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 238,
+    "track_id": 16,
+    "bbox": [
+      36.7,
+      56.2,
+      172.0,
+      230.3
+    ],
+    "confidence": 0.6926,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 239,
+    "track_id": 16,
+    "bbox": [
+      36.4,
+      57.6,
+      171.0,
+      231.7
+    ],
+    "confidence": 0.7719,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 240,
+    "track_id": 16,
+    "bbox": [
+      36.1,
+      57.7,
+      170.6,
+      232.0
+    ],
+    "confidence": 0.827,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 241,
+    "track_id": 16,
+    "bbox": [
+      35.9,
+      57.9,
+      170.3,
+      233.1
+    ],
+    "confidence": 0.8213,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 242,
+    "track_id": 16,
+    "bbox": [
+      36.1,
+      57.6,
+      171.0,
+      233.8
+    ],
+    "confidence": 0.8233,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 243,
+    "track_id": 16,
+    "bbox": [
+      36.0,
+      56.5,
+      170.8,
+      233.6
+    ],
+    "confidence": 0.827,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 244,
+    "track_id": 16,
+    "bbox": [
+      36.6,
+      57.8,
+      172.2,
+      234.3
+    ],
+    "confidence": 0.8191,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 245,
+    "track_id": 16,
+    "bbox": [
+      36.5,
+      58.4,
+      172.8,
+      233.7
+    ],
+    "confidence": 0.8145,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 246,
+    "track_id": 16,
+    "bbox": [
+      36.4,
+      58.9,
+      172.9,
+      233.1
+    ],
+    "confidence": 0.8047,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 247,
+    "track_id": 16,
+    "bbox": [
+      35.9,
+      59.7,
+      171.9,
+      234.0
+    ],
+    "confidence": 0.7832,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 248,
+    "track_id": 16,
+    "bbox": [
+      36.1,
+      59.8,
+      172.0,
+      234.1
+    ],
+    "confidence": 0.8249,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 249,
+    "track_id": 16,
+    "bbox": [
+      35.8,
+      59.1,
+      171.4,
+      233.1
+    ],
+    "confidence": 0.8586,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 250,
+    "track_id": 16,
+    "bbox": [
+      35.6,
+      59.5,
+      170.7,
+      232.8
+    ],
+    "confidence": 0.847,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 251,
+    "track_id": 16,
+    "bbox": [
+      35.9,
+      58.6,
+      170.9,
+      231.3
+    ],
+    "confidence": 0.8334,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 252,
+    "track_id": 16,
+    "bbox": [
+      36.3,
+      58.0,
+      171.2,
+      231.2
+    ],
+    "confidence": 0.7565,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 253,
+    "track_id": 16,
+    "bbox": [
+      37.0,
+      57.3,
+      172.5,
+      229.6
+    ],
+    "confidence": 0.8155,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 254,
+    "track_id": 16,
+    "bbox": [
+      37.4,
+      57.6,
+      173.6,
+      229.5
+    ],
+    "confidence": 0.7818,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 255,
+    "track_id": 16,
+    "bbox": [
+      38.3,
+      58.3,
+      174.8,
+      228.5
+    ],
+    "confidence": 0.8568,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 256,
+    "track_id": 16,
+    "bbox": [
+      40.3,
+      59.7,
+      176.0,
+      228.0
+    ],
+    "confidence": 0.7948,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 257,
+    "track_id": 16,
+    "bbox": [
+      43.5,
+      59.2,
+      179.7,
+      225.7
+    ],
+    "confidence": 0.8708,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 258,
+    "track_id": 16,
+    "bbox": [
+      48.8,
+      59.2,
+      181.1,
+      222.6
+    ],
+    "confidence": 0.8054,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 259,
+    "track_id": 16,
+    "bbox": [
+      54.8,
+      59.6,
+      184.0,
+      219.3
+    ],
+    "confidence": 0.8855,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 260,
+    "track_id": 16,
+    "bbox": [
+      61.5,
+      60.4,
+      187.8,
+      215.7
+    ],
+    "confidence": 0.8833,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 261,
+    "track_id": 16,
+    "bbox": [
+      65.6,
+      60.6,
+      188.4,
+      211.6
+    ],
+    "confidence": 0.9256,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 262,
+    "track_id": 16,
+    "bbox": [
+      70.1,
+      60.3,
+      189.5,
+      207.3
+    ],
+    "confidence": 0.9134,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 263,
+    "track_id": 16,
+    "bbox": [
+      74.5,
+      61.3,
+      190.4,
+      204.1
+    ],
+    "confidence": 0.8514,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 264,
+    "track_id": 16,
+    "bbox": [
+      78.4,
+      61.3,
+      192.0,
+      200.5
+    ],
+    "confidence": 0.9009,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 265,
+    "track_id": 16,
+    "bbox": [
+      82.4,
+      62.0,
+      192.6,
+      198.4
+    ],
+    "confidence": 0.8567,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 266,
+    "track_id": 16,
+    "bbox": [
+      85.6,
+      61.9,
+      195.5,
+      195.9
+    ],
+    "confidence": 0.661,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 267,
+    "track_id": 16,
+    "bbox": [
+      87.3,
+      61.9,
+      196.6,
+      194.2
+    ],
+    "confidence": 0.8736,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 268,
+    "track_id": 16,
+    "bbox": [
+      88.2,
+      62.1,
+      196.3,
+      192.8
+    ],
+    "confidence": 0.8444,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 269,
+    "track_id": 16,
+    "bbox": [
+      89.5,
+      62.4,
+      197.8,
+      192.1
+    ],
+    "confidence": 0.866,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 270,
+    "track_id": 16,
+    "bbox": [
+      90.3,
+      62.3,
+      199.5,
+      192.2
+    ],
+    "confidence": 0.846,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 271,
+    "track_id": 16,
+    "bbox": [
+      90.4,
+      62.3,
+      200.4,
+      192.2
+    ],
+    "confidence": 0.8565,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 272,
+    "track_id": 16,
+    "bbox": [
+      91.4,
+      61.2,
+      203.1,
+      192.5
+    ],
+    "confidence": 0.8728,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 273,
+    "track_id": 16,
+    "bbox": [
+      91.4,
+      60.6,
+      204.1,
+      193.1
+    ],
+    "confidence": 0.8397,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 274,
+    "track_id": 16,
+    "bbox": [
+      91.3,
+      60.6,
+      204.9,
+      193.7
+    ],
+    "confidence": 0.8159,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 275,
+    "track_id": 16,
+    "bbox": [
+      91.4,
+      60.4,
+      206.5,
+      194.0
+    ],
+    "confidence": 0.5984,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 275,
+    "track_id": 17,
+    "bbox": [
+      87.9,
+      57.3,
+      294.8,
+      195.7
+    ],
+    "confidence": 0.5255,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 276,
+    "track_id": 16,
+    "bbox": [
+      90.5,
+      60.1,
+      205.7,
+      194.1
+    ],
+    "confidence": 0.6712,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 276,
+    "track_id": 17,
+    "bbox": [
+      87.9,
+      57.3,
+      294.8,
+      195.7
+    ],
+    "confidence": 0.5255,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 277,
+    "track_id": 16,
+    "bbox": [
+      90.5,
+      60.4,
+      205.9,
+      194.6
+    ],
+    "confidence": 0.6608,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 277,
+    "track_id": 17,
+    "bbox": [
+      87.9,
+      57.3,
+      294.8,
+      195.7
+    ],
+    "confidence": 0.5255,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 278,
+    "track_id": 16,
+    "bbox": [
+      90.1,
+      60.1,
+      205.5,
+      194.5
+    ],
+    "confidence": 0.7846,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 278,
+    "track_id": 17,
+    "bbox": [
+      87.9,
+      57.3,
+      294.8,
+      195.7
+    ],
+    "confidence": 0.5255,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 279,
+    "track_id": 16,
+    "bbox": [
+      90.0,
+      60.1,
+      204.7,
+      194.4
+    ],
+    "confidence": 0.6316,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 279,
+    "track_id": 17,
+    "bbox": [
+      87.9,
+      57.3,
+      294.8,
+      195.7
+    ],
+    "confidence": 0.4204,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 280,
+    "track_id": 16,
+    "bbox": [
+      91.3,
+      60.0,
+      205.4,
+      194.1
+    ],
+    "confidence": 0.8259,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 280,
+    "track_id": 17,
+    "bbox": [
+      87.9,
+      57.3,
+      294.8,
+      195.7
+    ],
+    "confidence": 0.3363,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 281,
+    "track_id": 16,
+    "bbox": [
+      92.7,
+      60.6,
+      206.9,
+      193.7
+    ],
+    "confidence": 0.5027,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 281,
+    "track_id": 17,
+    "bbox": [
+      87.9,
+      57.3,
+      294.8,
+      195.7
+    ],
+    "confidence": 0.269,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 282,
+    "track_id": 16,
+    "bbox": [
+      92.7,
+      61.1,
+      206.3,
+      193.7
+    ],
+    "confidence": 0.7384,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 282,
+    "track_id": 18,
+    "bbox": [
+      92.1,
+      60.7,
+      262.7,
+      193.2
+    ],
+    "confidence": 0.5813,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 283,
+    "track_id": 16,
+    "bbox": [
+      93.7,
+      61.2,
+      206.8,
+      193.1
+    ],
+    "confidence": 0.7384,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 283,
+    "track_id": 18,
+    "bbox": [
+      92.1,
+      60.7,
+      262.7,
+      193.2
+    ],
+    "confidence": 0.5813,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 284,
+    "track_id": 16,
+    "bbox": [
+      91.1,
+      62.1,
+      205.4,
+      194.4
+    ],
+    "confidence": 0.7729,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 284,
+    "track_id": 18,
+    "bbox": [
+      92.1,
+      60.7,
+      262.7,
+      193.2
+    ],
+    "confidence": 0.5813,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 285,
+    "track_id": 16,
+    "bbox": [
+      90.4,
+      62.5,
+      205.6,
+      195.4
+    ],
+    "confidence": 0.5247,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 285,
+    "track_id": 18,
+    "bbox": [
+      92.1,
+      60.7,
+      262.7,
+      193.2
+    ],
+    "confidence": 0.5813,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 286,
+    "track_id": 16,
+    "bbox": [
+      88.9,
+      62.7,
+      204.7,
+      196.5
+    ],
+    "confidence": 0.8097,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 286,
+    "track_id": 18,
+    "bbox": [
+      92.1,
+      60.7,
+      262.7,
+      193.2
+    ],
+    "confidence": 0.465,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 287,
+    "track_id": 16,
+    "bbox": [
+      89.4,
+      63.0,
+      204.8,
+      196.3
+    ],
+    "confidence": 0.8097,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 287,
+    "track_id": 18,
+    "bbox": [
+      92.1,
+      60.7,
+      262.7,
+      193.2
+    ],
+    "confidence": 0.372,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 288,
+    "track_id": 16,
+    "bbox": [
+      90.0,
+      63.3,
+      204.8,
+      196.0
+    ],
+    "confidence": 0.8097,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 288,
+    "track_id": 18,
+    "bbox": [
+      92.1,
+      60.7,
+      262.7,
+      193.2
+    ],
+    "confidence": 0.2976,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 289,
+    "track_id": 16,
+    "bbox": [
+      86.1,
+      64.9,
+      203.6,
+      201.1
+    ],
+    "confidence": 0.7741,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 290,
+    "track_id": 16,
+    "bbox": [
+      84.7,
+      65.4,
+      204.7,
+      202.8
+    ],
+    "confidence": 0.6792,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 291,
+    "track_id": 16,
+    "bbox": [
+      83.1,
+      65.8,
+      204.8,
+      204.2
+    ],
+    "confidence": 0.7739,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 292,
+    "track_id": 16,
+    "bbox": [
+      81.1,
+      65.9,
+      203.1,
+      205.2
+    ],
+    "confidence": 0.8524,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 293,
+    "track_id": 16,
+    "bbox": [
+      81.0,
+      66.3,
+      204.3,
+      206.5
+    ],
+    "confidence": 0.8292,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 293,
+    "track_id": 19,
+    "bbox": [
+      79.5,
+      65.0,
+      275.4,
+      207.7
+    ],
+    "confidence": 0.5825,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 294,
+    "track_id": 16,
+    "bbox": [
+      79.8,
+      66.7,
+      203.4,
+      207.3
+    ],
+    "confidence": 0.9176,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 294,
+    "track_id": 19,
+    "bbox": [
+      79.5,
+      65.0,
+      275.4,
+      207.7
+    ],
+    "confidence": 0.5825,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 295,
+    "track_id": 16,
+    "bbox": [
+      77.7,
+      66.9,
+      200.6,
+      208.0
+    ],
+    "confidence": 0.9348,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 295,
+    "track_id": 19,
+    "bbox": [
+      79.5,
+      65.0,
+      275.4,
+      207.7
+    ],
+    "confidence": 0.5825,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 296,
+    "track_id": 16,
+    "bbox": [
+      77.3,
+      67.2,
+      201.1,
+      209.2
+    ],
+    "confidence": 0.9134,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 296,
+    "track_id": 19,
+    "bbox": [
+      79.5,
+      65.0,
+      275.4,
+      207.7
+    ],
+    "confidence": 0.5825,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 297,
+    "track_id": 16,
+    "bbox": [
+      75.5,
+      67.3,
+      201.6,
+      210.6
+    ],
+    "confidence": 0.8528,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 297,
+    "track_id": 19,
+    "bbox": [
+      79.5,
+      65.0,
+      275.4,
+      207.7
+    ],
+    "confidence": 0.466,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 298,
+    "track_id": 16,
+    "bbox": [
+      73.0,
+      68.0,
+      201.8,
+      214.1
+    ],
+    "confidence": 0.8292,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 298,
+    "track_id": 19,
+    "bbox": [
+      79.5,
+      65.0,
+      275.4,
+      207.7
+    ],
+    "confidence": 0.3728,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 299,
+    "track_id": 16,
+    "bbox": [
+      70.0,
+      68.5,
+      202.7,
+      217.4
+    ],
+    "confidence": 0.6804,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 299,
+    "track_id": 20,
+    "bbox": [
+      64.3,
+      65.2,
+      280.2,
+      220.9
+    ],
+    "confidence": 0.7441,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 299,
+    "track_id": 19,
+    "bbox": [
+      79.5,
+      65.0,
+      275.4,
+      207.7
+    ],
+    "confidence": 0.2982,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 300,
+    "track_id": 16,
+    "bbox": [
+      68.0,
+      68.8,
+      203.6,
+      220.0
+    ],
+    "confidence": 0.7776,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 300,
+    "track_id": 20,
+    "bbox": [
+      61.4,
+      66.8,
+      270.0,
+      222.3
+    ],
+    "confidence": 0.6289,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 301,
+    "track_id": 16,
+    "bbox": [
+      64.4,
+      68.6,
+      202.7,
+      222.6
+    ],
+    "confidence": 0.744,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 301,
+    "track_id": 20,
+    "bbox": [
+      56.8,
+      69.8,
+      261.6,
+      222.3
+    ],
+    "confidence": 0.6289,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 302,
+    "track_id": 16,
+    "bbox": [
+      62.8,
+      69.4,
+      203.9,
+      225.9
+    ],
+    "confidence": 0.5993,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 302,
+    "track_id": 20,
+    "bbox": [
+      58.7,
+      66.6,
+      277.8,
+      228.6
+    ],
+    "confidence": 0.5124,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 303,
+    "track_id": 16,
+    "bbox": [
+      62.1,
+      70.4,
+      203.3,
+      226.9
+    ],
+    "confidence": 0.5993,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 303,
+    "track_id": 20,
+    "bbox": [
+      55.3,
+      65.2,
+      292.4,
+      232.0
+    ],
+    "confidence": 0.5412,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 304,
+    "track_id": 16,
+    "bbox": [
+      59.2,
+      69.7,
+      215.1,
+      229.5
+    ],
+    "confidence": 0.6753,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 304,
+    "track_id": 20,
+    "bbox": [
+      54.9,
+      64.6,
+      297.4,
+      235.3
+    ],
+    "confidence": 0.5412,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 305,
+    "track_id": 16,
+    "bbox": [
+      52.6,
+      69.7,
+      208.5,
+      231.6
+    ],
+    "confidence": 0.6118,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 305,
+    "track_id": 20,
+    "bbox": [
+      54.6,
+      64.0,
+      302.4,
+      238.5
+    ],
+    "confidence": 0.5412,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 306,
+    "track_id": 16,
+    "bbox": [
+      49.4,
+      68.4,
+      211.2,
+      232.0
+    ],
+    "confidence": 0.5312,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 306,
+    "track_id": 20,
+    "bbox": [
+      54.3,
+      63.5,
+      307.4,
+      241.7
+    ],
+    "confidence": 0.5412,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 307,
+    "track_id": 16,
+    "bbox": [
+      43.6,
+      66.3,
+      206.9,
+      232.4
+    ],
+    "confidence": 0.7667,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 307,
+    "track_id": 20,
+    "bbox": [
+      54.3,
+      63.5,
+      307.4,
+      241.7
+    ],
+    "confidence": 0.4329,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 308,
+    "track_id": 16,
+    "bbox": [
+      42.6,
+      62.5,
+      207.6,
+      231.5
+    ],
+    "confidence": 0.623,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 308,
+    "track_id": 21,
+    "bbox": [
+      39.6,
+      4.8,
+      334.5,
+      222.5
+    ],
+    "confidence": 0.5015,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 308,
+    "track_id": 20,
+    "bbox": [
+      54.3,
+      63.5,
+      307.4,
+      241.7
+    ],
+    "confidence": 0.3464,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 309,
+    "track_id": 16,
+    "bbox": [
+      43.9,
+      59.5,
+      210.3,
+      230.9
+    ],
+    "confidence": 0.8012,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 309,
+    "track_id": 21,
+    "bbox": [
+      39.6,
+      4.8,
+      334.5,
+      222.5
+    ],
+    "confidence": 0.5015,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 309,
+    "track_id": 20,
+    "bbox": [
+      54.3,
+      63.5,
+      307.4,
+      241.7
+    ],
+    "confidence": 0.2771,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 310,
+    "track_id": 16,
+    "bbox": [
+      44.4,
+      58.5,
+      211.3,
+      231.7
+    ],
+    "confidence": 0.8567,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 310,
+    "track_id": 21,
+    "bbox": [
+      39.6,
+      4.8,
+      334.5,
+      222.5
+    ],
+    "confidence": 0.5015,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 311,
+    "track_id": 16,
+    "bbox": [
+      45.5,
+      54.8,
+      214.8,
+      231.3
+    ],
+    "confidence": 0.7325,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 311,
+    "track_id": 21,
+    "bbox": [
+      39.6,
+      4.8,
+      334.5,
+      222.5
+    ],
+    "confidence": 0.5015,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 312,
+    "track_id": 16,
+    "bbox": [
+      49.4,
+      52.7,
+      223.0,
+      232.0
+    ],
+    "confidence": 0.681,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 312,
+    "track_id": 21,
+    "bbox": [
+      47.8,
+      49.0,
+      307.8,
+      234.5
+    ],
+    "confidence": 0.7094,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 313,
+    "track_id": 16,
+    "bbox": [
+      51.0,
+      51.0,
+      223.1,
+      232.3
+    ],
+    "confidence": 0.7169,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 313,
+    "track_id": 21,
+    "bbox": [
+      50.0,
+      51.5,
+      304.8,
+      233.8
+    ],
+    "confidence": 0.6594,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 314,
+    "track_id": 16,
+    "bbox": [
+      54.7,
+      50.6,
+      229.7,
+      233.4
+    ],
+    "confidence": 0.599,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 314,
+    "track_id": 21,
+    "bbox": [
+      51.9,
+      52.6,
+      304.7,
+      232.7
+    ],
+    "confidence": 0.6999,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 315,
+    "track_id": 16,
+    "bbox": [
+      50.0,
+      49.5,
+      225.9,
+      233.5
+    ],
+    "confidence": 0.772,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 315,
+    "track_id": 21,
+    "bbox": [
+      55.3,
+      59.0,
+      299.7,
+      233.1
+    ],
+    "confidence": 0.6999,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 316,
+    "track_id": 16,
+    "bbox": [
+      46.9,
+      48.8,
+      223.6,
+      233.8
+    ],
+    "confidence": 0.7028,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 316,
+    "track_id": 21,
+    "bbox": [
+      50.6,
+      53.1,
+      301.3,
+      231.5
+    ],
+    "confidence": 0.6741,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 317,
+    "track_id": 16,
+    "bbox": [
+      46.7,
+      48.5,
+      223.8,
+      233.9
+    ],
+    "confidence": 0.7028,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 317,
+    "track_id": 21,
+    "bbox": [
+      44.3,
+      54.2,
+      284.2,
+      231.9
+    ],
+    "confidence": 0.7315,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 318,
+    "track_id": 16,
+    "bbox": [
+      47.4,
+      49.5,
+      227.2,
+      235.5
+    ],
+    "confidence": 0.6149,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 318,
+    "track_id": 21,
+    "bbox": [
+      48.5,
+      53.1,
+      294.0,
+      232.3
+    ],
+    "confidence": 0.6868,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 319,
+    "track_id": 16,
+    "bbox": [
+      44.6,
+      50.5,
+      221.5,
+      236.0
+    ],
+    "confidence": 0.7078,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 319,
+    "track_id": 21,
+    "bbox": [
+      49.4,
+      56.2,
+      290.3,
+      232.0
+    ],
+    "confidence": 0.6868,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 320,
+    "track_id": 16,
+    "bbox": [
+      43.1,
+      49.9,
+      218.2,
+      236.2
+    ],
+    "confidence": 0.7784,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 320,
+    "track_id": 21,
+    "bbox": [
+      50.4,
+      59.2,
+      286.7,
+      231.7
+    ],
+    "confidence": 0.6868,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 321,
+    "track_id": 16,
+    "bbox": [
+      42.0,
+      48.3,
+      215.0,
+      235.4
+    ],
+    "confidence": 0.7977,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 321,
+    "track_id": 21,
+    "bbox": [
+      51.4,
+      62.4,
+      283.0,
+      231.4
+    ],
+    "confidence": 0.6868,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 322,
+    "track_id": 16,
+    "bbox": [
+      42.8,
+      49.8,
+      215.4,
+      236.5
+    ],
+    "confidence": 0.7833,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 322,
+    "track_id": 21,
+    "bbox": [
+      51.4,
+      62.4,
+      283.0,
+      231.4
+    ],
+    "confidence": 0.5494,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 323,
+    "track_id": 16,
+    "bbox": [
+      44.4,
+      49.0,
+      216.5,
+      235.9
+    ],
+    "confidence": 0.7137,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 323,
+    "track_id": 22,
+    "bbox": [
+      43.8,
+      49.8,
+      308.9,
+      233.9
+    ],
+    "confidence": 0.5742,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 323,
+    "track_id": 21,
+    "bbox": [
+      51.4,
+      62.4,
+      283.0,
+      231.4
+    ],
+    "confidence": 0.4395,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 324,
+    "track_id": 16,
+    "bbox": [
+      46.4,
+      48.8,
+      219.2,
+      235.7
+    ],
+    "confidence": 0.605,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 324,
+    "track_id": 22,
+    "bbox": [
+      44.7,
+      49.9,
+      311.2,
+      234.1
+    ],
+    "confidence": 0.6724,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 324,
+    "track_id": 21,
+    "bbox": [
+      51.4,
+      62.4,
+      283.0,
+      231.4
+    ],
+    "confidence": 0.3516,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 325,
+    "track_id": 16,
+    "bbox": [
+      45.8,
+      48.4,
+      217.0,
+      235.1
+    ],
+    "confidence": 0.7518,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 325,
+    "track_id": 22,
+    "bbox": [
+      45.8,
+      49.7,
+      313.1,
+      234.6
+    ],
+    "confidence": 0.6724,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 326,
+    "track_id": 16,
+    "bbox": [
+      45.4,
+      48.2,
+      216.9,
+      235.2
+    ],
+    "confidence": 0.7518,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 326,
+    "track_id": 22,
+    "bbox": [
+      46.9,
+      52.7,
+      303.9,
+      232.9
+    ],
+    "confidence": 0.6692,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 327,
+    "track_id": 16,
+    "bbox": [
+      48.9,
+      48.4,
+      221.6,
+      235.8
+    ],
+    "confidence": 0.5196,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 327,
+    "track_id": 22,
+    "bbox": [
+      46.9,
+      50.2,
+      310.1,
+      234.1
+    ],
+    "confidence": 0.5942,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 328,
+    "track_id": 16,
+    "bbox": [
+      46.3,
+      49.5,
+      217.9,
+      236.6
+    ],
+    "confidence": 0.7291,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 328,
+    "track_id": 22,
+    "bbox": [
+      47.4,
+      50.3,
+      310.4,
+      234.0
+    ],
+    "confidence": 0.5942,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 329,
+    "track_id": 16,
+    "bbox": [
+      45.3,
+      49.1,
+      216.5,
+      236.2
+    ],
+    "confidence": 0.7375,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 329,
+    "track_id": 22,
+    "bbox": [
+      43.7,
+      49.9,
+      306.0,
+      234.1
+    ],
+    "confidence": 0.5349,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 330,
+    "track_id": 16,
+    "bbox": [
+      46.1,
+      49.5,
+      217.4,
+      237.1
+    ],
+    "confidence": 0.7891,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 330,
+    "track_id": 22,
+    "bbox": [
+      43.3,
+      49.9,
+      305.4,
+      234.0
+    ],
+    "confidence": 0.5349,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 331,
+    "track_id": 16,
+    "bbox": [
+      46.3,
+      48.6,
+      217.3,
+      236.6
+    ],
+    "confidence": 0.6659,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 331,
+    "track_id": 22,
+    "bbox": [
+      42.8,
+      49.9,
+      304.8,
+      233.9
+    ],
+    "confidence": 0.5349,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 332,
+    "track_id": 16,
+    "bbox": [
+      48.0,
+      50.5,
+      218.3,
+      237.6
+    ],
+    "confidence": 0.7646,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 332,
+    "track_id": 22,
+    "bbox": [
+      42.3,
+      49.9,
+      304.2,
+      233.8
+    ],
+    "confidence": 0.5349,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 333,
+    "track_id": 16,
+    "bbox": [
+      47.7,
+      51.1,
+      216.5,
+      237.1
+    ],
+    "confidence": 0.7237,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 333,
+    "track_id": 22,
+    "bbox": [
+      42.3,
+      49.9,
+      304.2,
+      233.8
+    ],
+    "confidence": 0.4279,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 334,
+    "track_id": 16,
+    "bbox": [
+      45.0,
+      52.5,
+      206.6,
+      237.3
+    ],
+    "confidence": 0.6802,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 334,
+    "track_id": 22,
+    "bbox": [
+      42.3,
+      49.9,
+      304.2,
+      233.8
+    ],
+    "confidence": 0.3423,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 335,
+    "track_id": 16,
+    "bbox": [
+      46.8,
+      54.6,
+      201.1,
+      237.7
+    ],
+    "confidence": 0.6812,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 335,
+    "track_id": 22,
+    "bbox": [
+      42.3,
+      49.9,
+      304.2,
+      233.8
+    ],
+    "confidence": 0.2739,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 336,
+    "track_id": 16,
+    "bbox": [
+      68.2,
+      54.3,
+      245.7,
+      233.7
+    ],
+    "confidence": 0.5554,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 337,
+    "track_id": 16,
+    "bbox": [
+      56.4,
+      55.4,
+      221.7,
+      231.4
+    ],
+    "confidence": 0.8491,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 338,
+    "track_id": 16,
+    "bbox": [
+      69.8,
+      55.7,
+      250.1,
+      228.3
+    ],
+    "confidence": 0.6237,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 339,
+    "track_id": 16,
+    "bbox": [
+      57.8,
+      57.4,
+      229.2,
+      227.7
+    ],
+    "confidence": 0.5892,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 340,
+    "track_id": 16,
+    "bbox": [
+      52.4,
+      59.1,
+      213.8,
+      228.2
+    ],
+    "confidence": 0.8545,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 341,
+    "track_id": 16,
+    "bbox": [
+      50.8,
+      62.8,
+      209.6,
+      232.0
+    ],
+    "confidence": 0.6806,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 342,
+    "track_id": 16,
+    "bbox": [
+      43.5,
+      62.7,
+      201.9,
+      233.3
+    ],
+    "confidence": 0.5123,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 343,
+    "track_id": 16,
+    "bbox": [
+      42.2,
+      63.0,
+      200.8,
+      233.8
+    ],
+    "confidence": 0.5123,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 344,
+    "track_id": 16,
+    "bbox": [
+      70.2,
+      26.7,
+      275.0,
+      222.2
+    ],
+    "confidence": 0.5703,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 345,
+    "track_id": 16,
+    "bbox": [
+      48.7,
+      43.2,
+      244.6,
+      234.6
+    ],
+    "confidence": 0.6743,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 346,
+    "track_id": 16,
+    "bbox": [
+      49.2,
+      42.7,
+      245.5,
+      234.5
+    ],
+    "confidence": 0.6743,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 347,
+    "track_id": 16,
+    "bbox": [
+      40.8,
+      46.6,
+      233.3,
+      237.8
+    ],
+    "confidence": 0.6813,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 348,
+    "track_id": 16,
+    "bbox": [
+      39.2,
+      46.2,
+      231.6,
+      237.7
+    ],
+    "confidence": 0.7036,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 349,
+    "track_id": 16,
+    "bbox": [
+      38.7,
+      46.0,
+      231.4,
+      237.9
+    ],
+    "confidence": 0.7036,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 350,
+    "track_id": 16,
+    "bbox": [
+      43.2,
+      44.5,
+      243.7,
+      237.7
+    ],
+    "confidence": 0.6694,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 351,
+    "track_id": 16,
+    "bbox": [
+      43.2,
+      43.2,
+      249.6,
+      237.3
+    ],
+    "confidence": 0.6147,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 352,
+    "track_id": 16,
+    "bbox": [
+      46.5,
+      41.0,
+      263.7,
+      236.8
+    ],
+    "confidence": 0.562,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 353,
+    "track_id": 16,
+    "bbox": [
+      45.4,
+      38.0,
+      270.7,
+      236.2
+    ],
+    "confidence": 0.67,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 354,
+    "track_id": 16,
+    "bbox": [
+      46.6,
+      37.4,
+      272.5,
+      236.0
+    ],
+    "confidence": 0.67,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 355,
+    "track_id": 16,
+    "bbox": [
+      47.8,
+      36.8,
+      274.3,
+      235.9
+    ],
+    "confidence": 0.67,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 356,
+    "track_id": 16,
+    "bbox": [
+      30.3,
+      18.5,
+      244.7,
+      227.7
+    ],
+    "confidence": 0.548,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 357,
+    "track_id": 16,
+    "bbox": [
+      29.5,
+      16.8,
+      244.4,
+      226.5
+    ],
+    "confidence": 0.548,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 358,
+    "track_id": 16,
+    "bbox": [
+      28.6,
+      15.1,
+      244.1,
+      225.3
+    ],
+    "confidence": 0.548,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 359,
+    "track_id": 16,
+    "bbox": [
+      27.8,
+      13.4,
+      243.8,
+      224.1
+    ],
+    "confidence": 0.548,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 360,
+    "track_id": 16,
+    "bbox": [
+      45.3,
+      10.5,
+      286.2,
+      232.8
+    ],
+    "confidence": 0.5289,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 361,
+    "track_id": 16,
+    "bbox": [
+      46.7,
+      9.1,
+      288.4,
+      232.1
+    ],
+    "confidence": 0.5289,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 362,
+    "track_id": 16,
+    "bbox": [
+      32.1,
+      7.8,
+      260.5,
+      233.8
+    ],
+    "confidence": 0.5439,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 363,
+    "track_id": 16,
+    "bbox": [
+      46.4,
+      6.2,
+      300.4,
+      236.0
+    ],
+    "confidence": 0.6198,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 364,
+    "track_id": 16,
+    "bbox": [
+      48.2,
+      5.0,
+      303.0,
+      235.5
+    ],
+    "confidence": 0.6198,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 365,
+    "track_id": 16,
+    "bbox": [
+      42.7,
+      5.6,
+      304.7,
+      238.2
+    ],
+    "confidence": 0.7522,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 365,
+    "track_id": 23,
+    "bbox": [
+      37.5,
+      5.4,
+      225.3,
+      240.0
+    ],
+    "confidence": 0.5168,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 366,
+    "track_id": 16,
+    "bbox": [
+      41.3,
+      4.5,
+      308.7,
+      238.8
+    ],
+    "confidence": 0.7256,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 366,
+    "track_id": 23,
+    "bbox": [
+      37.5,
+      5.4,
+      225.3,
+      240.0
+    ],
+    "confidence": 0.5168,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 367,
+    "track_id": 16,
+    "bbox": [
+      42.8,
+      3.6,
+      310.9,
+      238.6
+    ],
+    "confidence": 0.7256,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 367,
+    "track_id": 23,
+    "bbox": [
+      37.5,
+      5.4,
+      225.3,
+      240.0
+    ],
+    "confidence": 0.5168,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 368,
+    "track_id": 16,
+    "bbox": [
+      39.7,
+      3.8,
+      315.6,
+      239.4
+    ],
+    "confidence": 0.7816,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 368,
+    "track_id": 23,
+    "bbox": [
+      37.5,
+      5.4,
+      225.3,
+      240.0
+    ],
+    "confidence": 0.5168,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 369,
+    "track_id": 16,
+    "bbox": [
+      35.9,
+      3.4,
+      323.3,
+      239.8
+    ],
+    "confidence": 0.7453,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 369,
+    "track_id": 23,
+    "bbox": [
+      37.5,
+      5.4,
+      225.3,
+      240.0
+    ],
+    "confidence": 0.4134,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 370,
+    "track_id": 16,
+    "bbox": [
+      37.2,
+      2.5,
+      325.5,
+      239.7
+    ],
+    "confidence": 0.7453,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 370,
+    "track_id": 23,
+    "bbox": [
+      37.5,
+      5.4,
+      225.3,
+      240.0
+    ],
+    "confidence": 0.3308,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 371,
+    "track_id": 16,
+    "bbox": [
+      31.2,
+      2.2,
+      312.0,
+      238.4
+    ],
+    "confidence": 0.5266,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 371,
+    "track_id": 23,
+    "bbox": [
+      37.5,
+      5.4,
+      225.3,
+      240.0
+    ],
+    "confidence": 0.2646,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 372,
+    "track_id": 16,
+    "bbox": [
+      31.6,
+      1.3,
+      313.2,
+      238.3
+    ],
+    "confidence": 0.5266,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 373,
+    "track_id": 16,
+    "bbox": [
+      31.9,
+      0.4,
+      314.4,
+      238.1
+    ],
+    "confidence": 0.5266,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 374,
+    "track_id": 16,
+    "bbox": [
+      37.5,
+      0.5,
+      327.4,
+      238.2
+    ],
+    "confidence": 0.5738,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 375,
+    "track_id": 16,
+    "bbox": [
+      38.6,
+      -0.3,
+      329.4,
+      238.1
+    ],
+    "confidence": 0.5738,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 376,
+    "track_id": 16,
+    "bbox": [
+      39.6,
+      -1.1,
+      331.3,
+      238.0
+    ],
+    "confidence": 0.5738,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 377,
+    "track_id": 16,
+    "bbox": [
+      36.0,
+      0.7,
+      328.7,
+      236.9
+    ],
+    "confidence": 0.7046,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 378,
+    "track_id": 16,
+    "bbox": [
+      36.7,
+      -0.0,
+      330.2,
+      236.8
+    ],
+    "confidence": 0.7046,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 379,
+    "track_id": 16,
+    "bbox": [
+      37.4,
+      -0.8,
+      331.8,
+      236.8
+    ],
+    "confidence": 0.7046,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 380,
+    "track_id": 16,
+    "bbox": [
+      38.1,
+      -1.5,
+      333.3,
+      236.7
+    ],
+    "confidence": 0.7046,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 381,
+    "track_id": 16,
+    "bbox": [
+      38.1,
+      -1.5,
+      333.3,
+      236.7
+    ],
+    "confidence": 0.5637,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 382,
+    "track_id": 16,
+    "bbox": [
+      38.1,
+      -1.5,
+      333.3,
+      236.7
+    ],
+    "confidence": 0.451,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 383,
+    "track_id": 24,
+    "bbox": [
+      35.2,
+      3.1,
+      339.6,
+      233.9
+    ],
+    "confidence": 0.6397,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 383,
+    "track_id": 16,
+    "bbox": [
+      38.1,
+      -1.5,
+      333.3,
+      236.7
+    ],
+    "confidence": 0.3608,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 384,
+    "track_id": 24,
+    "bbox": [
+      35.2,
+      3.1,
+      339.6,
+      233.9
+    ],
+    "confidence": 0.6397,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 385,
+    "track_id": 24,
+    "bbox": [
+      36.1,
+      3.8,
+      343.9,
+      237.3
+    ],
+    "confidence": 0.5746,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 386,
+    "track_id": 24,
+    "bbox": [
+      42.7,
+      4.0,
+      343.0,
+      234.4
+    ],
+    "confidence": 0.5883,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 387,
+    "track_id": 24,
+    "bbox": [
+      38.7,
+      3.7,
+      340.4,
+      233.9
+    ],
+    "confidence": 0.6611,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 388,
+    "track_id": 24,
+    "bbox": [
+      36.9,
+      4.2,
+      339.0,
+      234.9
+    ],
+    "confidence": 0.6526,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 389,
+    "track_id": 24,
+    "bbox": [
+      32.4,
+      3.3,
+      328.0,
+      232.6
+    ],
+    "confidence": 0.6479,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 390,
+    "track_id": 24,
+    "bbox": [
+      34.9,
+      0.7,
+      330.7,
+      224.2
+    ],
+    "confidence": 0.5102,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 390,
+    "track_id": 25,
+    "bbox": [
+      34.9,
+      3.7,
+      231.7,
+      222.7
+    ],
+    "confidence": 0.5802,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 391,
+    "track_id": 24,
+    "bbox": [
+      34.4,
+      -0.1,
+      328.4,
+      222.0
+    ],
+    "confidence": 0.5102,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 391,
+    "track_id": 25,
+    "bbox": [
+      34.9,
+      3.7,
+      231.7,
+      222.7
+    ],
+    "confidence": 0.5802,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 392,
+    "track_id": 24,
+    "bbox": [
+      23.5,
+      4.6,
+      298.2,
+      223.4
+    ],
+    "confidence": 0.6232,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 392,
+    "track_id": 25,
+    "bbox": [
+      34.9,
+      3.7,
+      231.7,
+      222.7
+    ],
+    "confidence": 0.5802,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 393,
+    "track_id": 24,
+    "bbox": [
+      20.8,
+      5.2,
+      292.2,
+      221.3
+    ],
+    "confidence": 0.6232,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 393,
+    "track_id": 25,
+    "bbox": [
+      35.9,
+      0.7,
+      255.6,
+      232.1
+    ],
+    "confidence": 0.5364,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 394,
+    "track_id": 24,
+    "bbox": [
+      29.2,
+      5.5,
+      321.7,
+      233.7
+    ],
+    "confidence": 0.6428,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 394,
+    "track_id": 25,
+    "bbox": [
+      37.3,
+      -1.2,
+      262.5,
+      236.1
+    ],
+    "confidence": 0.5364,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 395,
+    "track_id": 24,
+    "bbox": [
+      34.2,
+      4.5,
+      329.5,
+      235.9
+    ],
+    "confidence": 0.6776,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 395,
+    "track_id": 25,
+    "bbox": [
+      38.8,
+      -2.9,
+      269.4,
+      240.0
+    ],
+    "confidence": 0.5364,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 396,
+    "track_id": 24,
+    "bbox": [
+      33.9,
+      4.8,
+      328.9,
+      236.0
+    ],
+    "confidence": 0.6776,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 396,
+    "track_id": 25,
+    "bbox": [
+      40.3,
+      -4.6,
+      276.1,
+      243.8
+    ],
+    "confidence": 0.5364,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 397,
+    "track_id": 24,
+    "bbox": [
+      47.3,
+      4.9,
+      339.1,
+      237.8
+    ],
+    "confidence": 0.7215,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 397,
+    "track_id": 25,
+    "bbox": [
+      40.3,
+      -4.6,
+      276.1,
+      243.8
+    ],
+    "confidence": 0.4291,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 398,
+    "track_id": 24,
+    "bbox": [
+      50.6,
+      4.1,
+      337.8,
+      237.4
+    ],
+    "confidence": 0.6596,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 398,
+    "track_id": 25,
+    "bbox": [
+      40.3,
+      -4.6,
+      276.1,
+      243.8
+    ],
+    "confidence": 0.3433,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 399,
+    "track_id": 24,
+    "bbox": [
+      57.7,
+      4.1,
+      339.9,
+      237.7
+    ],
+    "confidence": 0.7034,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 399,
+    "track_id": 25,
+    "bbox": [
+      40.3,
+      -4.6,
+      276.1,
+      243.8
+    ],
+    "confidence": 0.2747,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 400,
+    "track_id": 24,
+    "bbox": [
+      56.6,
+      4.1,
+      340.6,
+      237.8
+    ],
+    "confidence": 0.5944,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 401,
+    "track_id": 24,
+    "bbox": [
+      57.9,
+      4.4,
+      341.5,
+      237.8
+    ],
+    "confidence": 0.5944,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 402,
+    "track_id": 24,
+    "bbox": [
+      59.3,
+      4.8,
+      342.3,
+      237.7
+    ],
+    "confidence": 0.5944,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 403,
+    "track_id": 24,
+    "bbox": [
+      60.6,
+      5.1,
+      343.2,
+      237.7
+    ],
+    "confidence": 0.5944,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 404,
+    "track_id": 24,
+    "bbox": [
+      60.6,
+      5.1,
+      343.2,
+      237.7
+    ],
+    "confidence": 0.4756,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 405,
+    "track_id": 24,
+    "bbox": [
+      60.6,
+      5.1,
+      343.2,
+      237.7
+    ],
+    "confidence": 0.3804,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 406,
+    "track_id": 26,
+    "bbox": [
+      4.9,
+      2.8,
+      341.1,
+      234.4
+    ],
+    "confidence": 0.5254,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 406,
+    "track_id": 24,
+    "bbox": [
+      60.6,
+      5.1,
+      343.2,
+      237.7
+    ],
+    "confidence": 0.3044,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 407,
+    "track_id": 26,
+    "bbox": [
+      25.6,
+      5.2,
+      343.4,
+      231.6
+    ],
+    "confidence": 0.6909,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 408,
+    "track_id": 26,
+    "bbox": [
+      43.8,
+      9.8,
+      348.3,
+      226.7
+    ],
+    "confidence": 0.6909,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 409,
+    "track_id": 26,
+    "bbox": [
+      62.3,
+      14.5,
+      352.9,
+      221.5
+    ],
+    "confidence": 0.6909,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 410,
+    "track_id": 26,
+    "bbox": [
+      81.2,
+      19.6,
+      357.1,
+      216.1
+    ],
+    "confidence": 0.6909,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 411,
+    "track_id": 26,
+    "bbox": [
+      81.2,
+      19.6,
+      357.1,
+      216.1
+    ],
+    "confidence": 0.5527,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 412,
+    "track_id": 26,
+    "bbox": [
+      81.2,
+      19.6,
+      357.1,
+      216.1
+    ],
+    "confidence": 0.4422,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 413,
+    "track_id": 26,
+    "bbox": [
+      81.2,
+      19.6,
+      357.1,
+      216.1
+    ],
+    "confidence": 0.3538,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 416,
+    "track_id": 27,
+    "bbox": [
+      28.5,
+      3.4,
+      343.5,
+      237.2
+    ],
+    "confidence": 0.5845,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 417,
+    "track_id": 27,
+    "bbox": [
+      20.5,
+      2.5,
+      341.5,
+      237.5
+    ],
+    "confidence": 0.5859,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 418,
+    "track_id": 27,
+    "bbox": [
+      13.7,
+      0.9,
+      338.5,
+      238.6
+    ],
+    "confidence": 0.5859,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 419,
+    "track_id": 27,
+    "bbox": [
+      6.9,
+      -0.8,
+      335.4,
+      239.7
+    ],
+    "confidence": 0.5859,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 420,
+    "track_id": 27,
+    "bbox": [
+      0.1,
+      -2.4,
+      332.3,
+      240.8
+    ],
+    "confidence": 0.5859,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 421,
+    "track_id": 27,
+    "bbox": [
+      0.1,
+      -2.4,
+      332.3,
+      240.8
+    ],
+    "confidence": 0.4687,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 422,
+    "track_id": 27,
+    "bbox": [
+      0.1,
+      -2.4,
+      332.3,
+      240.8
+    ],
+    "confidence": 0.375,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 423,
+    "track_id": 27,
+    "bbox": [
+      0.1,
+      -2.4,
+      332.3,
+      240.8
+    ],
+    "confidence": 0.3,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 425,
+    "track_id": 28,
+    "bbox": [
+      36.6,
+      2.5,
+      342.7,
+      240.0
+    ],
+    "confidence": 0.7971,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 426,
+    "track_id": 28,
+    "bbox": [
+      33.9,
+      2.2,
+      343.4,
+      240.4
+    ],
+    "confidence": 0.6887,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 427,
+    "track_id": 28,
+    "bbox": [
+      13.7,
+      0.2,
+      336.9,
+      242.1
+    ],
+    "confidence": 0.5923,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 428,
+    "track_id": 28,
+    "bbox": [
+      20.0,
+      -0.2,
+      338.9,
+      236.7
+    ],
+    "confidence": 0.7663,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 429,
+    "track_id": 28,
+    "bbox": [
+      19.6,
+      1.3,
+      338.2,
+      238.2
+    ],
+    "confidence": 0.8013,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 430,
+    "track_id": 28,
+    "bbox": [
+      25.5,
+      4.6,
+      328.6,
+      237.7
+    ],
+    "confidence": 0.7695,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 431,
+    "track_id": 28,
+    "bbox": [
+      23.7,
+      6.2,
+      306.9,
+      235.7
+    ],
+    "confidence": 0.6788,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 432,
+    "track_id": 28,
+    "bbox": [
+      30.1,
+      5.4,
+      318.5,
+      237.3
+    ],
+    "confidence": 0.6764,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 433,
+    "track_id": 28,
+    "bbox": [
+      35.4,
+      4.7,
+      328.9,
+      237.9
+    ],
+    "confidence": 0.539,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 434,
+    "track_id": 28,
+    "bbox": [
+      36.1,
+      5.5,
+      327.8,
+      237.3
+    ],
+    "confidence": 0.539,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 435,
+    "track_id": 28,
+    "bbox": [
+      37.5,
+      4.1,
+      331.2,
+      236.2
+    ],
+    "confidence": 0.6778,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 436,
+    "track_id": 28,
+    "bbox": [
+      38.3,
+      4.5,
+      330.7,
+      235.6
+    ],
+    "confidence": 0.6778,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 437,
+    "track_id": 28,
+    "bbox": [
+      39.1,
+      4.9,
+      330.1,
+      234.9
+    ],
+    "confidence": 0.6778,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 438,
+    "track_id": 28,
+    "bbox": [
+      39.9,
+      5.4,
+      329.5,
+      234.3
+    ],
+    "confidence": 0.6778,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 439,
+    "track_id": 28,
+    "bbox": [
+      39.9,
+      5.4,
+      329.5,
+      234.3
+    ],
+    "confidence": 0.5423,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 440,
+    "track_id": 28,
+    "bbox": [
+      39.9,
+      5.4,
+      329.5,
+      234.3
+    ],
+    "confidence": 0.4338,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 441,
+    "track_id": 29,
+    "bbox": [
+      35.2,
+      3.2,
+      318.9,
+      237.8
+    ],
+    "confidence": 0.5159,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 441,
+    "track_id": 28,
+    "bbox": [
+      39.9,
+      5.4,
+      329.5,
+      234.3
+    ],
+    "confidence": 0.347,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 442,
+    "track_id": 29,
+    "bbox": [
+      35.2,
+      3.2,
+      318.9,
+      237.8
+    ],
+    "confidence": 0.5159,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 443,
+    "track_id": 29,
+    "bbox": [
+      35.2,
+      3.2,
+      318.9,
+      237.8
+    ],
+    "confidence": 0.5159,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 444,
+    "track_id": 29,
+    "bbox": [
+      36.0,
+      2.0,
+      325.4,
+      236.5
+    ],
+    "confidence": 0.5222,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 445,
+    "track_id": 29,
+    "bbox": [
+      36.8,
+      1.2,
+      327.1,
+      236.4
+    ],
+    "confidence": 0.5222,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 446,
+    "track_id": 29,
+    "bbox": [
+      36.3,
+      0.5,
+      334.1,
+      237.5
+    ],
+    "confidence": 0.6057,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 447,
+    "track_id": 29,
+    "bbox": [
+      32.0,
+      2.7,
+      327.1,
+      238.6
+    ],
+    "confidence": 0.6073,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 448,
+    "track_id": 29,
+    "bbox": [
+      31.3,
+      2.6,
+      327.5,
+      239.3
+    ],
+    "confidence": 0.6073,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 449,
+    "track_id": 29,
+    "bbox": [
+      32.4,
+      3.9,
+      323.6,
+      239.0
+    ],
+    "confidence": 0.6733,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 450,
+    "track_id": 29,
+    "bbox": [
+      31.8,
+      4.2,
+      323.3,
+      239.5
+    ],
+    "confidence": 0.6733,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 451,
+    "track_id": 29,
+    "bbox": [
+      31.3,
+      4.4,
+      323.1,
+      240.0
+    ],
+    "confidence": 0.6733,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 452,
+    "track_id": 29,
+    "bbox": [
+      30.7,
+      4.6,
+      322.8,
+      240.4
+    ],
+    "confidence": 0.6733,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 453,
+    "track_id": 29,
+    "bbox": [
+      30.7,
+      4.6,
+      322.8,
+      240.4
+    ],
+    "confidence": 0.5387,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 454,
+    "track_id": 29,
+    "bbox": [
+      30.7,
+      4.6,
+      322.8,
+      240.4
+    ],
+    "confidence": 0.4309,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 455,
+    "track_id": 29,
+    "bbox": [
+      30.7,
+      4.6,
+      322.8,
+      240.4
+    ],
+    "confidence": 0.3448,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 456,
+    "track_id": 30,
+    "bbox": [
+      152.7,
+      153.4,
+      208.0,
+      209.0
+    ],
+    "confidence": 0.7137,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 457,
+    "track_id": 30,
+    "bbox": [
+      148.8,
+      154.5,
+      205.8,
+      209.5
+    ],
+    "confidence": 0.6562,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 458,
+    "track_id": 30,
+    "bbox": [
+      142.0,
+      152.6,
+      200.8,
+      209.7
+    ],
+    "confidence": 0.717,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 459,
+    "track_id": 30,
+    "bbox": [
+      136.0,
+      151.3,
+      196.1,
+      209.8
+    ],
+    "confidence": 0.717,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 460,
+    "track_id": 30,
+    "bbox": [
+      129.9,
+      150.1,
+      191.4,
+      209.8
+    ],
+    "confidence": 0.717,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 461,
+    "track_id": 30,
+    "bbox": [
+      123.9,
+      148.9,
+      186.7,
+      209.9
+    ],
+    "confidence": 0.717,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 462,
+    "track_id": 30,
+    "bbox": [
+      123.9,
+      148.9,
+      186.7,
+      209.9
+    ],
+    "confidence": 0.5736,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 463,
+    "track_id": 30,
+    "bbox": [
+      123.9,
+      148.9,
+      186.7,
+      209.9
+    ],
+    "confidence": 0.4589,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 464,
+    "track_id": 30,
+    "bbox": [
+      123.9,
+      148.9,
+      186.7,
+      209.9
+    ],
+    "confidence": 0.3671,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 471,
+    "track_id": 31,
+    "bbox": [
+      33.4,
+      3.6,
+      318.7,
+      240.0
+    ],
+    "confidence": 0.6118,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 472,
+    "track_id": 31,
+    "bbox": [
+      33.6,
+      4.7,
+      316.9,
+      239.9
+    ],
+    "confidence": 0.6211,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 473,
+    "track_id": 31,
+    "bbox": [
+      33.4,
+      5.1,
+      311.0,
+      237.5
+    ],
+    "confidence": 0.6334,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 474,
+    "track_id": 31,
+    "bbox": [
+      34.2,
+      4.9,
+      313.3,
+      238.8
+    ],
+    "confidence": 0.6395,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 475,
+    "track_id": 31,
+    "bbox": [
+      32.0,
+      3.0,
+      321.9,
+      240.7
+    ],
+    "confidence": 0.5696,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 476,
+    "track_id": 31,
+    "bbox": [
+      26.2,
+      4.9,
+      297.0,
+      234.8
+    ],
+    "confidence": 0.6976,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 477,
+    "track_id": 31,
+    "bbox": [
+      27.2,
+      6.2,
+      285.6,
+      232.2
+    ],
+    "confidence": 0.6715,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 478,
+    "track_id": 31,
+    "bbox": [
+      25.3,
+      7.3,
+      279.7,
+      229.9
+    ],
+    "confidence": 0.6715,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 479,
+    "track_id": 31,
+    "bbox": [
+      36.5,
+      5.9,
+      309.9,
+      236.4
+    ],
+    "confidence": 0.5203,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 480,
+    "track_id": 31,
+    "bbox": [
+      37.0,
+      6.3,
+      309.4,
+      235.8
+    ],
+    "confidence": 0.5203,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 481,
+    "track_id": 31,
+    "bbox": [
+      37.5,
+      6.6,
+      308.9,
+      235.3
+    ],
+    "confidence": 0.5203,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 482,
+    "track_id": 31,
+    "bbox": [
+      21.6,
+      11.0,
+      268.5,
+      235.0
+    ],
+    "confidence": 0.6174,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 483,
+    "track_id": 31,
+    "bbox": [
+      25.8,
+      4.8,
+      301.4,
+      237.6
+    ],
+    "confidence": 0.5933,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 484,
+    "track_id": 31,
+    "bbox": [
+      25.2,
+      4.9,
+      300.4,
+      237.5
+    ],
+    "confidence": 0.5933,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 485,
+    "track_id": 31,
+    "bbox": [
+      35.7,
+      3.6,
+      318.9,
+      239.1
+    ],
+    "confidence": 0.5417,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 486,
+    "track_id": 31,
+    "bbox": [
+      36.5,
+      3.4,
+      322.3,
+      239.7
+    ],
+    "confidence": 0.5928,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 487,
+    "track_id": 31,
+    "bbox": [
+      37.2,
+      3.2,
+      323.4,
+      239.8
+    ],
+    "confidence": 0.5928,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 488,
+    "track_id": 31,
+    "bbox": [
+      38.0,
+      3.1,
+      324.4,
+      239.9
+    ],
+    "confidence": 0.5928,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 489,
+    "track_id": 31,
+    "bbox": [
+      38.8,
+      2.9,
+      325.5,
+      240.0
+    ],
+    "confidence": 0.5928,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 490,
+    "track_id": 31,
+    "bbox": [
+      27.0,
+      5.3,
+      292.8,
+      239.1
+    ],
+    "confidence": 0.5623,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 491,
+    "track_id": 31,
+    "bbox": [
+      38.1,
+      4.2,
+      320.5,
+      239.3
+    ],
+    "confidence": 0.5354,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 491,
+    "track_id": 32,
+    "bbox": [
+      35.8,
+      3.5,
+      245.7,
+      237.1
+    ],
+    "confidence": 0.6024,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 492,
+    "track_id": 31,
+    "bbox": [
+      38.9,
+      4.2,
+      321.3,
+      239.4
+    ],
+    "confidence": 0.5354,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 492,
+    "track_id": 32,
+    "bbox": [
+      35.8,
+      3.5,
+      245.7,
+      237.1
+    ],
+    "confidence": 0.6024,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 493,
+    "track_id": 31,
+    "bbox": [
+      39.6,
+      4.1,
+      322.2,
+      239.4
+    ],
+    "confidence": 0.5354,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 493,
+    "track_id": 32,
+    "bbox": [
+      35.8,
+      3.5,
+      245.7,
+      237.1
+    ],
+    "confidence": 0.6024,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 494,
+    "track_id": 31,
+    "bbox": [
+      31.6,
+      4.6,
+      306.1,
+      239.4
+    ],
+    "confidence": 0.5843,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 494,
+    "track_id": 32,
+    "bbox": [
+      35.8,
+      3.5,
+      245.7,
+      237.1
+    ],
+    "confidence": 0.6024,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 495,
+    "track_id": 31,
+    "bbox": [
+      31.4,
+      4.6,
+      305.7,
+      239.4
+    ],
+    "confidence": 0.5843,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 495,
+    "track_id": 32,
+    "bbox": [
+      35.8,
+      3.5,
+      245.7,
+      237.1
+    ],
+    "confidence": 0.4819,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 496,
+    "track_id": 31,
+    "bbox": [
+      31.1,
+      4.7,
+      305.4,
+      239.3
+    ],
+    "confidence": 0.5843,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 496,
+    "track_id": 32,
+    "bbox": [
+      35.8,
+      3.5,
+      245.7,
+      237.1
+    ],
+    "confidence": 0.3855,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 497,
+    "track_id": 31,
+    "bbox": [
+      30.7,
+      4.9,
+      299.5,
+      239.5
+    ],
+    "confidence": 0.5547,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 497,
+    "track_id": 32,
+    "bbox": [
+      35.8,
+      3.5,
+      245.7,
+      237.1
+    ],
+    "confidence": 0.3084,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 498,
+    "track_id": 31,
+    "bbox": [
+      38.2,
+      2.9,
+      320.9,
+      239.7
+    ],
+    "confidence": 0.6524,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 499,
+    "track_id": 31,
+    "bbox": [
+      28.2,
+      4.2,
+      294.1,
+      239.7
+    ],
+    "confidence": 0.5544,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 500,
+    "track_id": 31,
+    "bbox": [
+      39.2,
+      2.0,
+      318.4,
+      237.6
+    ],
+    "confidence": 0.7308,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 501,
+    "track_id": 31,
+    "bbox": [
+      39.9,
+      1.8,
+      319.1,
+      237.5
+    ],
+    "confidence": 0.7308,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 502,
+    "track_id": 31,
+    "bbox": [
+      40.6,
+      1.7,
+      319.9,
+      237.3
+    ],
+    "confidence": 0.7308,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 503,
+    "track_id": 31,
+    "bbox": [
+      43.7,
+      -3.1,
+      335.5,
+      221.4
+    ],
+    "confidence": 0.6814,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 504,
+    "track_id": 31,
+    "bbox": [
+      45.2,
+      -4.2,
+      337.0,
+      220.3
+    ],
+    "confidence": 0.6814,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 505,
+    "track_id": 31,
+    "bbox": [
+      46.6,
+      -5.2,
+      338.4,
+      219.3
+    ],
+    "confidence": 0.6814,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 506,
+    "track_id": 31,
+    "bbox": [
+      38.9,
+      -2.7,
+      335.4,
+      214.1
+    ],
+    "confidence": 0.5466,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 507,
+    "track_id": 31,
+    "bbox": [
+      26.2,
+      2.2,
+      332.6,
+      224.8
+    ],
+    "confidence": 0.7072,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 508,
+    "track_id": 31,
+    "bbox": [
+      25.8,
+      3.8,
+      335.8,
+      229.5
+    ],
+    "confidence": 0.554,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 509,
+    "track_id": 31,
+    "bbox": [
+      29.2,
+      3.1,
+      338.4,
+      231.3
+    ],
+    "confidence": 0.6179,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 510,
+    "track_id": 31,
+    "bbox": [
+      29.6,
+      3.1,
+      339.0,
+      231.4
+    ],
+    "confidence": 0.6179,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 511,
+    "track_id": 31,
+    "bbox": [
+      29.9,
+      3.0,
+      339.7,
+      231.6
+    ],
+    "confidence": 0.6179,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 512,
+    "track_id": 31,
+    "bbox": [
+      26.0,
+      3.7,
+      327.7,
+      232.3
+    ],
+    "confidence": 0.5679,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 513,
+    "track_id": 31,
+    "bbox": [
+      25.7,
+      3.7,
+      327.6,
+      232.5
+    ],
+    "confidence": 0.5679,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 514,
+    "track_id": 31,
+    "bbox": [
+      31.3,
+      4.1,
+      332.0,
+      235.6
+    ],
+    "confidence": 0.5829,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 515,
+    "track_id": 31,
+    "bbox": [
+      31.4,
+      4.2,
+      332.3,
+      235.9
+    ],
+    "confidence": 0.5829,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 516,
+    "track_id": 31,
+    "bbox": [
+      31.5,
+      4.4,
+      332.7,
+      236.3
+    ],
+    "confidence": 0.5829,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 517,
+    "track_id": 31,
+    "bbox": [
+      31.7,
+      4.6,
+      333.0,
+      236.6
+    ],
+    "confidence": 0.5829,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 518,
+    "track_id": 31,
+    "bbox": [
+      28.5,
+      -4.6,
+      319.8,
+      210.4
+    ],
+    "confidence": 0.6682,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 519,
+    "track_id": 31,
+    "bbox": [
+      28.2,
+      -5.7,
+      319.3,
+      209.2
+    ],
+    "confidence": 0.6682,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 520,
+    "track_id": 31,
+    "bbox": [
+      27.6,
+      5.5,
+      314.4,
+      227.3
+    ],
+    "confidence": 0.5342,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 521,
+    "track_id": 31,
+    "bbox": [
+      29.1,
+      5.7,
+      310.5,
+      225.4
+    ],
+    "confidence": 0.6018,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 522,
+    "track_id": 31,
+    "bbox": [
+      28.2,
+      5.1,
+      304.2,
+      224.5
+    ],
+    "confidence": 0.546,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 523,
+    "track_id": 31,
+    "bbox": [
+      27.4,
+      5.2,
+      303.1,
+      224.4
+    ],
+    "confidence": 0.546,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 524,
+    "track_id": 31,
+    "bbox": [
+      29.8,
+      9.3,
+      307.4,
+      228.0
+    ],
+    "confidence": 0.5609,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 525,
+    "track_id": 31,
+    "bbox": [
+      29.4,
+      9.7,
+      306.7,
+      228.2
+    ],
+    "confidence": 0.5609,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 526,
+    "track_id": 31,
+    "bbox": [
+      28.9,
+      10.1,
+      306.0,
+      228.5
+    ],
+    "confidence": 0.5609,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 527,
+    "track_id": 31,
+    "bbox": [
+      39.2,
+      6.5,
+      324.3,
+      226.2
+    ],
+    "confidence": 0.5322,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 528,
+    "track_id": 31,
+    "bbox": [
+      36.4,
+      4.8,
+      321.6,
+      222.9
+    ],
+    "confidence": 0.5023,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 529,
+    "track_id": 31,
+    "bbox": [
+      36.8,
+      4.7,
+      321.9,
+      222.7
+    ],
+    "confidence": 0.5023,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 530,
+    "track_id": 31,
+    "bbox": [
+      35.5,
+      3.3,
+      320.4,
+      218.1
+    ],
+    "confidence": 0.7068,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 531,
+    "track_id": 31,
+    "bbox": [
+      34.1,
+      2.9,
+      318.9,
+      215.4
+    ],
+    "confidence": 0.6456,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 532,
+    "track_id": 31,
+    "bbox": [
+      37.6,
+      6.8,
+      328.2,
+      225.0
+    ],
+    "confidence": 0.5879,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 533,
+    "track_id": 31,
+    "bbox": [
+      37.9,
+      6.7,
+      332.0,
+      226.0
+    ],
+    "confidence": 0.6318,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 534,
+    "track_id": 31,
+    "bbox": [
+      37.6,
+      6.2,
+      333.3,
+      226.4
+    ],
+    "confidence": 0.6154,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 535,
+    "track_id": 31,
+    "bbox": [
+      38.4,
+      6.4,
+      334.1,
+      226.6
+    ],
+    "confidence": 0.6154,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 536,
+    "track_id": 31,
+    "bbox": [
+      34.0,
+      7.7,
+      333.6,
+      233.0
+    ],
+    "confidence": 0.6722,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 537,
+    "track_id": 31,
+    "bbox": [
+      35.1,
+      6.4,
+      334.3,
+      233.4
+    ],
+    "confidence": 0.6126,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 538,
+    "track_id": 31,
+    "bbox": [
+      35.5,
+      6.7,
+      334.9,
+      233.8
+    ],
+    "confidence": 0.6126,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 539,
+    "track_id": 31,
+    "bbox": [
+      36.0,
+      7.1,
+      335.4,
+      234.2
+    ],
+    "confidence": 0.6126,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 540,
+    "track_id": 31,
+    "bbox": [
+      36.4,
+      7.5,
+      336.0,
+      234.7
+    ],
+    "confidence": 0.6126,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 541,
+    "track_id": 31,
+    "bbox": [
+      36.4,
+      7.5,
+      336.0,
+      234.7
+    ],
+    "confidence": 0.49,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 542,
+    "track_id": 31,
+    "bbox": [
+      36.4,
+      7.5,
+      336.0,
+      234.7
+    ],
+    "confidence": 0.392,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 543,
+    "track_id": 31,
+    "bbox": [
+      36.4,
+      7.5,
+      336.0,
+      234.7
+    ],
+    "confidence": 0.3136,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 545,
+    "track_id": 33,
+    "bbox": [
+      33.4,
+      3.4,
+      337.8,
+      238.3
+    ],
+    "confidence": 0.5489,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 546,
+    "track_id": 33,
+    "bbox": [
+      33.4,
+      3.4,
+      337.8,
+      238.3
+    ],
+    "confidence": 0.5489,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 547,
+    "track_id": 33,
+    "bbox": [
+      33.4,
+      3.4,
+      337.8,
+      238.3
+    ],
+    "confidence": 0.5489,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 548,
+    "track_id": 33,
+    "bbox": [
+      33.4,
+      3.4,
+      337.8,
+      238.3
+    ],
+    "confidence": 0.5489,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 549,
+    "track_id": 33,
+    "bbox": [
+      33.4,
+      3.4,
+      337.8,
+      238.3
+    ],
+    "confidence": 0.4391,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 550,
+    "track_id": 33,
+    "bbox": [
+      33.4,
+      3.4,
+      337.8,
+      238.3
+    ],
+    "confidence": 0.3513,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 551,
+    "track_id": 33,
+    "bbox": [
+      33.4,
+      3.4,
+      337.8,
+      238.3
+    ],
+    "confidence": 0.281,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 590,
+    "track_id": 34,
+    "bbox": [
+      34.0,
+      0.8,
+      322.4,
+      233.2
+    ],
+    "confidence": 0.5704,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 591,
+    "track_id": 34,
+    "bbox": [
+      35.2,
+      2.8,
+      320.9,
+      230.2
+    ],
+    "confidence": 0.5461,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 592,
+    "track_id": 34,
+    "bbox": [
+      37.2,
+      4.1,
+      318.5,
+      228.0
+    ],
+    "confidence": 0.5461,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 593,
+    "track_id": 34,
+    "bbox": [
+      34.5,
+      5.3,
+      313.4,
+      230.9
+    ],
+    "confidence": 0.5817,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 594,
+    "track_id": 34,
+    "bbox": [
+      38.0,
+      3.6,
+      327.0,
+      232.2
+    ],
+    "confidence": 0.5574,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 595,
+    "track_id": 34,
+    "bbox": [
+      36.5,
+      3.9,
+      333.1,
+      237.6
+    ],
+    "confidence": 0.6122,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 596,
+    "track_id": 34,
+    "bbox": [
+      37.5,
+      4.2,
+      336.0,
+      239.4
+    ],
+    "confidence": 0.6122,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 597,
+    "track_id": 34,
+    "bbox": [
+      36.5,
+      2.1,
+      338.9,
+      239.4
+    ],
+    "confidence": 0.5635,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 598,
+    "track_id": 34,
+    "bbox": [
+      36.7,
+      2.4,
+      340.3,
+      240.5
+    ],
+    "confidence": 0.7152,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 599,
+    "track_id": 34,
+    "bbox": [
+      30.8,
+      1.9,
+      334.7,
+      237.3
+    ],
+    "confidence": 0.7001,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 600,
+    "track_id": 34,
+    "bbox": [
+      32.7,
+      2.6,
+      336.0,
+      237.9
+    ],
+    "confidence": 0.6365,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 601,
+    "track_id": 34,
+    "bbox": [
+      32.8,
+      2.4,
+      337.3,
+      238.7
+    ],
+    "confidence": 0.6365,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 602,
+    "track_id": 34,
+    "bbox": [
+      27.2,
+      -0.2,
+      335.7,
+      235.5
+    ],
+    "confidence": 0.7221,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 603,
+    "track_id": 34,
+    "bbox": [
+      26.8,
+      -0.7,
+      336.5,
+      236.0
+    ],
+    "confidence": 0.7221,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 604,
+    "track_id": 34,
+    "bbox": [
+      26.3,
+      -1.2,
+      337.3,
+      236.5
+    ],
+    "confidence": 0.7221,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 605,
+    "track_id": 34,
+    "bbox": [
+      25.9,
+      -1.7,
+      338.1,
+      236.9
+    ],
+    "confidence": 0.7221,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 606,
+    "track_id": 34,
+    "bbox": [
+      13.1,
+      -1.1,
+      336.9,
+      235.4
+    ],
+    "confidence": 0.5548,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 607,
+    "track_id": 34,
+    "bbox": [
+      11.9,
+      -1.7,
+      337.1,
+      235.8
+    ],
+    "confidence": 0.5548,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 608,
+    "track_id": 34,
+    "bbox": [
+      26.6,
+      1.5,
+      342.8,
+      235.9
+    ],
+    "confidence": 0.7424,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 609,
+    "track_id": 34,
+    "bbox": [
+      23.1,
+      4.1,
+      324.5,
+      237.2
+    ],
+    "confidence": 0.5407,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 610,
+    "track_id": 34,
+    "bbox": [
+      22.3,
+      4.2,
+      324.1,
+      237.6
+    ],
+    "confidence": 0.5407,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 611,
+    "track_id": 34,
+    "bbox": [
+      21.6,
+      4.3,
+      323.8,
+      238.1
+    ],
+    "confidence": 0.5407,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 612,
+    "track_id": 34,
+    "bbox": [
+      32.3,
+      3.3,
+      334.8,
+      236.4
+    ],
+    "confidence": 0.595,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 613,
+    "track_id": 34,
+    "bbox": [
+      32.5,
+      3.3,
+      335.4,
+      236.6
+    ],
+    "confidence": 0.595,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 614,
+    "track_id": 34,
+    "bbox": [
+      35.3,
+      3.2,
+      338.7,
+      235.9
+    ],
+    "confidence": 0.6778,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 615,
+    "track_id": 34,
+    "bbox": [
+      35.4,
+      3.7,
+      339.0,
+      237.3
+    ],
+    "confidence": 0.6425,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 616,
+    "track_id": 34,
+    "bbox": [
+      35.8,
+      3.7,
+      339.8,
+      237.5
+    ],
+    "confidence": 0.6425,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 617,
+    "track_id": 34,
+    "bbox": [
+      36.5,
+      3.4,
+      338.2,
+      237.0
+    ],
+    "confidence": 0.5317,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 618,
+    "track_id": 34,
+    "bbox": [
+      36.8,
+      3.4,
+      338.8,
+      237.2
+    ],
+    "confidence": 0.5317,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 619,
+    "track_id": 34,
+    "bbox": [
+      37.2,
+      3.4,
+      339.5,
+      237.4
+    ],
+    "confidence": 0.5317,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 620,
+    "track_id": 34,
+    "bbox": [
+      34.5,
+      3.7,
+      336.5,
+      238.1
+    ],
+    "confidence": 0.544,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 621,
+    "track_id": 34,
+    "bbox": [
+      30.9,
+      3.7,
+      336.3,
+      239.2
+    ],
+    "confidence": 0.6152,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 622,
+    "track_id": 34,
+    "bbox": [
+      30.7,
+      3.7,
+      336.5,
+      239.5
+    ],
+    "confidence": 0.6152,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 623,
+    "track_id": 34,
+    "bbox": [
+      30.6,
+      3.7,
+      336.8,
+      239.8
+    ],
+    "confidence": 0.6152,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 624,
+    "track_id": 34,
+    "bbox": [
+      30.9,
+      2.3,
+      338.1,
+      238.4
+    ],
+    "confidence": 0.5012,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 625,
+    "track_id": 34,
+    "bbox": [
+      30.8,
+      2.2,
+      338.4,
+      238.6
+    ],
+    "confidence": 0.5012,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 626,
+    "track_id": 34,
+    "bbox": [
+      30.8,
+      2.1,
+      338.7,
+      238.8
+    ],
+    "confidence": 0.5012,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 627,
+    "track_id": 34,
+    "bbox": [
+      30.7,
+      2.0,
+      339.0,
+      238.9
+    ],
+    "confidence": 0.5012,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 628,
+    "track_id": 34,
+    "bbox": [
+      30.7,
+      2.0,
+      339.0,
+      238.9
+    ],
+    "confidence": 0.4009,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 629,
+    "track_id": 35,
+    "bbox": [
+      36.3,
+      2.9,
+      349.9,
+      233.2
+    ],
+    "confidence": 0.6997,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 629,
+    "track_id": 34,
+    "bbox": [
+      30.7,
+      2.0,
+      339.0,
+      238.9
+    ],
+    "confidence": 0.3207,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 630,
+    "track_id": 35,
+    "bbox": [
+      36.3,
+      2.9,
+      349.9,
+      233.2
+    ],
+    "confidence": 0.6997,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 630,
+    "track_id": 34,
+    "bbox": [
+      30.7,
+      2.0,
+      339.0,
+      238.9
+    ],
+    "confidence": 0.2566,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 631,
+    "track_id": 35,
+    "bbox": [
+      36.3,
+      2.9,
+      349.9,
+      233.2
+    ],
+    "confidence": 0.6997,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 632,
+    "track_id": 35,
+    "bbox": [
+      36.3,
+      2.9,
+      349.9,
+      233.2
+    ],
+    "confidence": 0.6997,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 633,
+    "track_id": 35,
+    "bbox": [
+      32.3,
+      4.0,
+      341.5,
+      235.7
+    ],
+    "confidence": 0.5938,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 634,
+    "track_id": 35,
+    "bbox": [
+      30.4,
+      4.1,
+      342.1,
+      238.6
+    ],
+    "confidence": 0.5702,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 635,
+    "track_id": 35,
+    "bbox": [
+      31.6,
+      4.2,
+      342.0,
+      238.8
+    ],
+    "confidence": 0.6258,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 636,
+    "track_id": 35,
+    "bbox": [
+      31.2,
+      2.9,
+      339.8,
+      238.6
+    ],
+    "confidence": 0.7868,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 637,
+    "track_id": 35,
+    "bbox": [
+      30.3,
+      3.1,
+      339.0,
+      238.9
+    ],
+    "confidence": 0.7868,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 638,
+    "track_id": 35,
+    "bbox": [
+      33.4,
+      3.1,
+      339.1,
+      237.7
+    ],
+    "confidence": 0.6998,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 639,
+    "track_id": 35,
+    "bbox": [
+      33.1,
+      3.3,
+      338.6,
+      237.7
+    ],
+    "confidence": 0.6998,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 640,
+    "track_id": 35,
+    "bbox": [
+      32.8,
+      3.5,
+      338.1,
+      237.7
+    ],
+    "confidence": 0.6998,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 641,
+    "track_id": 35,
+    "bbox": [
+      32.5,
+      3.7,
+      337.6,
+      237.7
+    ],
+    "confidence": 0.6998,
+    "detection_status": "detected"
+  },
+  {
+    "frame_id": 642,
+    "track_id": 35,
+    "bbox": [
+      32.5,
+      3.7,
+      337.6,
+      237.7
+    ],
+    "confidence": 0.5598,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 643,
+    "track_id": 35,
+    "bbox": [
+      32.5,
+      3.7,
+      337.6,
+      237.7
+    ],
+    "confidence": 0.4479,
+    "detection_status": "recovered"
+  },
+  {
+    "frame_id": 644,
+    "track_id": 35,
+    "bbox": [
+      32.5,
+      3.7,
+      337.6,
+      237.7
+    ],
+    "confidence": 0.3583,
+    "detection_status": "recovered"
+  }
+]

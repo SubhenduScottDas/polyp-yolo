@@ -1,0 +1,11 @@
+{
+  "tracker": "sort",
+  "video": "data/test-set/videos/Pediculado5.mpg",
+  "total_frames": 290,
+  "frames_with_detection": 29,
+  "frames_recovered_only": 12,
+  "detection_continuity_rate": 0.1,
+  "flicker_count": 0,
+  "confidence_variance": 0.00031,
+  "false_negatives": null
+}

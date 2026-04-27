@@ -33,14 +33,35 @@ models/
 models/polyp_yolov8n_clean/*.png
 models/polyp_yolov8n_clean/*.jpg
 
-# Results directory — CSV data only; all .mp4 videos are regeneratable and excluded from remote
+# Results directory — keep CSVs and JSON logs/metrics; exclude all video files and frame snapshots
 results/*
 !results/demo_detections.csv
 !results/sample_inference/
-!results/*_detections.csv
-!results/phase2/
-results/phase2/*.mp4
-!results/phase2/*.csv
+
+# Phase 1 — YOLO-only outputs (no tracker)
+!results/phase_1/
+results/phase_1/*.mp4
+!results/phase_1/*.csv
+
+# Phase 2 SORT — YOLO + SORT + temporal pipeline
+!results/phase_2_sort/
+!results/phase_2_sort/logs/
+results/phase_2_sort/videos/*.mp4
+results/phase_2_sort/videos/frames/
+!results/phase_2_sort/logs/*.csv
+!results/phase_2_sort/logs/*.json
+!results/phase_2_sort/metrics/
+!results/phase_2_sort/metrics/*.json
+
+# Phase 2 DeepSORT — YOLO + DeepSORT + temporal pipeline
+!results/phase_2_deepsort/
+!results/phase_2_deepsort/logs/
+results/phase_2_deepsort/videos/*.mp4
+results/phase_2_deepsort/videos/frames/
+!results/phase_2_deepsort/logs/*.csv
+!results/phase_2_deepsort/logs/*.json
+!results/phase_2_deepsort/metrics/
+!results/phase_2_deepsort/metrics/*.json
 
 # Data directory - exclude all except test-set
 data/*

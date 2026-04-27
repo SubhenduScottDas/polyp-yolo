@@ -5,7 +5,7 @@ Usage example:
       --weights runs/detect/train/weights/best.pt \
       --video data/videos/sample.mp4 \
       --out results/video_out.mp4 \
-      --csv results/detections.csv --conf 0.25 --skip 1
+      --csv results/detections.csv --conf 0.5 --skip 1
 """
 from ultralytics import YOLO
 import cv2
@@ -24,7 +24,7 @@ def draw_boxes(img, boxes, scores, classes, names):
     return img
 
 
-def video_infer(weights, video_path, out_video, out_csv=None, conf=0.25, imgsz=640, skip=1):
+def video_infer(weights, video_path, out_video, out_csv=None, conf=0.5, imgsz=640, skip=1):
     model = YOLO(weights)
     names = model.names if hasattr(model, 'names') else {0: 'polyp'}
 
@@ -87,10 +87,14 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', required=True, help='YOLO weights (.pt)')
     parser.add_argument('--video', required=True, help='Input video file')
-    parser.add_argument('--out', default='results/video_out.mp4', help='Output video path')
+    parser.add_argument('--out', default=None, help='Output video path (default: results/phase_1/<stem>_phase1.mp4)')
     parser.add_argument('--csv', default=None, help='Optional CSV path to save detections')
-    parser.add_argument('--conf', type=float, default=0.25)
+    parser.add_argument('--conf', type=float, default=0.5)
     parser.add_argument('--imgsz', type=int, default=640)
     parser.add_argument('--skip', type=int, default=1, help='Process every Nth frame (speedup)')
     args = parser.parse_args()
-    video_infer(args.weights, args.video, args.out, args.csv, args.conf, args.imgsz, args.skip)
+    stem = Path(args.video).stem
+    out_video = args.out or f"results/phase_1/{stem}_phase1.mp4"
+    out_csv   = args.csv or f"results/phase_1/{stem}_phase1.csv"
+    Path(out_video).parent.mkdir(parents=True, exist_ok=True)
+    video_infer(args.weights, args.video, out_video, out_csv, args.conf, args.imgsz, args.skip)

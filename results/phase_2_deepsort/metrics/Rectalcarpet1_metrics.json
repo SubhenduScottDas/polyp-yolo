@@ -1,0 +1,11 @@
+{
+  "tracker": "deepsort",
+  "video": "data/test-set/videos/Rectalcarpet1.mpg",
+  "total_frames": 2101,
+  "frames_with_detection": 102,
+  "frames_recovered_only": 54,
+  "detection_continuity_rate": 0.048548,
+  "flicker_count": 6,
+  "confidence_variance": 0.026204,
+  "false_negatives": null
+}

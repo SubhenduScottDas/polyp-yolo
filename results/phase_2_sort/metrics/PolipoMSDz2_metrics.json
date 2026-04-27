@@ -1,0 +1,11 @@
+{
+  "tracker": "sort",
+  "video": "data/test-set/videos/PolipoMSDz2.mpg",
+  "total_frames": 1211,
+  "frames_with_detection": 1063,
+  "frames_recovered_only": 75,
+  "detection_continuity_rate": 0.877787,
+  "flicker_count": 138,
+  "confidence_variance": 0.017306,
+  "false_negatives": null
+}

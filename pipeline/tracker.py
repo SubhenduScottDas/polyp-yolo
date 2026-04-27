@@ -251,7 +251,11 @@ class SORTTracker:
 
     # ------------------------------------------------------------------
 
-    def update(self, detections: List[Detection]) -> List[Detection]:
+    def update(
+        self,
+        detections: List[Detection],
+        frame: "np.ndarray | None" = None,  # accepted for interface parity with DeepSortTracker; unused by SORT
+    ) -> List[Detection]:
         """Process one frame of detections and return tracked detections.
 
         Algorithm (per frame):
@@ -266,6 +270,9 @@ class SORTTracker:
         Args:
             detections: List of :class:`~pipeline.detector.Detection` objects
                         from the current frame (``track_id`` must be None).
+            frame:      Ignored by SORT (no appearance model); accepted so
+                        both SORT and DeepSORT trackers share the same call
+                        signature ``update(detections, frame)``.
 
         Returns:
             List of :class:`~pipeline.detector.Detection` objects — one per

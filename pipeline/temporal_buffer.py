@@ -50,8 +50,14 @@ class FrameSnapshot:
 class TemporalBuffer:
     """Sliding-window buffer storing per-track history.
 
-    For each ``track_id`` seen by the SORT tracker a :class:`~collections.deque`
-    of :class:`FrameSnapshot` objects is maintained.  The deque is capped at
+    Tracker-agnostic: works identically whether the upstream tracker is
+    SORT (``tracker.py``) or DeepSORT (``tracker_deepsort.py``).  The
+    buffer only consumes the ``track_id`` field that both trackers set on
+    each :class:`~pipeline.detector.Detection` — it has no dependency on
+    which tracker generated those IDs.
+
+    For each ``track_id`` seen a :class:`~collections.deque` of
+    :class:`FrameSnapshot` objects is maintained.  The deque is capped at
     ``window`` entries; the oldest entry is automatically discarded when a
     new one is appended.
 
@@ -80,7 +86,7 @@ class TemporalBuffer:
         """Record the current frame's detections and fill in smoothed confidence.
 
         For each detection (which must already have ``track_id`` set by the
-        SORT tracker):
+        upstream tracker — either SORT or DeepSORT):
         1. Append a :class:`FrameSnapshot` to that track's history deque.
         2. Compute ``smoothed_conf`` = mean of all confidence values in the
            window so far.
@@ -88,8 +94,8 @@ class TemporalBuffer:
 
         Args:
             detections: Tracked detections from the current frame
-                        (``track_id`` must be set; ``smoothed_conf`` will
-                        be filled in by this method).
+                        (``track_id`` must be set by SORT or DeepSORT;
+                        ``smoothed_conf`` will be filled in by this method).
             frame_idx:  Current frame number (1-based).
 
         Returns:
@@ -175,8 +181,11 @@ class TemporalBuffer:
             current_track_ids: Set of ``track_id`` values present in the
                                tracker's output for the current frame.
             frame_idx:         Current frame number (1-based).
-            gap_tolerance:     Maximum frames to bridge (should match SORT's
-                               ``max_age``; defaults to 3).
+            gap_tolerance:     Maximum frames to bridge.  Should be ≥ the
+                               upstream tracker's ``max_age`` (SORT uses 3,
+                               DeepSORT uses 5) so the buffer never tries to
+                               recover a track the tracker has already
+                               confirmed is lost.  Defaults to 3 (conservative).
             conf_decay:        Multiplicative confidence reduction per missed
                                frame (default 0.8 = 20 % decay per frame).
 
